@@ -5,50 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/assets/favicon.ico">
+    <title>WHD/FOH</title>
 
-    <title>Narrow Jumbotron Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap -->
     <link href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="/assets/jumbotron-narrow.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
+<nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WHD | FOH</a>
+    </div>
 
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Project name</h3>
-      </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Browse by Chapter<span class="sr-only">(current)</span></a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search" action="/search.html">
+        <div class="form-group">
+          <input id="searchbox" name="q" type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
 
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
-
-      <div class="row marketing">
-        <h1 id="chapter-39---the-family-and-medical-leave-act-fmla">Chapter 39 - THE FAMILY AND MEDICAL LEAVE ACT (FMLA)</h1>
+    <div id="content" class="container">
+      <h1 id="chapter-39---the-family-and-medical-leave-act-fmla">Chapter 39 - THE FAMILY AND MEDICAL LEAVE ACT (FMLA)</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <h3 id="a---general">39a - GENERAL </h3>
 <ul>
@@ -1801,13 +1796,13 @@
 <p><a href='http://www.law.cornell.edu/uscode/text/29/2617'>29 USC 2617</a></p></li>
 </ol>
 
-      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
 
-      <footer class="footer">
-        <p>&copy; Company 2014</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+    </script>
   </body>
 </html>

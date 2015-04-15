@@ -4,6 +4,14 @@ body {
   padding-bottom: 20px;
 }
 
+#content {
+  margin-top: 50px;
+}
+
+#navbar {
+  margin-bottom: 0px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
