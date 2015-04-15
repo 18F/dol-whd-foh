@@ -7,13 +7,16 @@ sudo apt-get install -y nginx
 sudo cp /vagrant/provision/dev/nginx.conf /etc/nginx/sites-enabled/default
 sudo service nginx restart
 
-# Get Jekyll installed
-sudo apt-get install ruby1.9.1-dev -y
+# Install node
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install nodejs -y
-gem install jekyll
 
+# Install git
 sudo apt-get install git -y
+
+# Install httpie
+sudo apt-get install -y python-pip
+sudo pip install httpie
 
 # Install Elasticsearch
 # Adapted from https://gist.github.com/ricardo-rossi/8265589463915837429d
