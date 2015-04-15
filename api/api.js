@@ -10,20 +10,18 @@ var client = new elasticsearch.Client({
 app.get('/api/search', function (req, res) {
 	client.search({
 		index: 'foh',
-		type: 'chapter',
+		type: 'subchapter',
 		body: {
-		query: {
-			match: {
-				body: req.query.q
+			query: {
+				match: {
+					body: req.query.q
 				}
 			},
 			highlight: {
-				fields: {
-					body: {},
-					heading: {}
-				}
+				fields: {body: {fragment_size: 250}}
 			}
 		}
+
 	}, function (err, response) {
 		res.json(err||response.hits.hits);
 	});
