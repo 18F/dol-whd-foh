@@ -12,6 +12,7 @@ var titles = [];
 // Main function
 _.forEach(html, function (h) {
 	content = fs.readFileSync('html/' + h, encoding="utf-8")
+	content = convertChapter(content)
 	c = Citation.find(content, {
 		types: ["usc","cfr"],
 		replace: function(cite) {
@@ -41,6 +42,14 @@ function getTitle (html) {
     return $("h1").html()
 }
 
+function convertChapter(html) {
+	$ = cheerio.load(html);
+	$("p > strong").each(function (i, elem) {
+		$(this).replaceWith("<h4 class='testClass'>" + $(this).text() + "</h4>");
+	})
+	return $.html()
+}
+
 // Generate the TOC
 toc = swig.renderFile('template/toc.html', {
     chapters: titles,
@@ -57,20 +66,26 @@ var client = new elasticsearch.Client({
 
 // console.log(titles, client)
 _.forEach(titles, function (t) {
-	// console.log(typeof(t.content))
-	client.create({
-		index: 'foh',
-		type: 'chapter',
-	// 	id: t.src,
-		body: {
-			chapter: t.src.replace('.html',''),
-			heading: t.heading,
-			body: t.content
-		}
-	}, function (err) {
-		if (err) {
-			console.log(err)		
-		}
+
+	$ = cheerio.load(t.content)
+	subchapter = $("h4")
+	subchapter.each(function (i, el){ 
+		// console.log("Hello?")
+		body = $(this).nextUntil("h4").text()
+		if (body != "") {
+			client.create({
+				index: 'foh',
+				type: 'subchapter',
+			// 	id: t.src,
+				body: {
+					chapter: t.src.replace('.html',''),
+					subchapter: $(this).text(),
+					heading: t.heading,
+					body: $(this).nextUntil("h4").text()
+				}
+			})
+		} 
 	})
+	
 })
 // client.close()

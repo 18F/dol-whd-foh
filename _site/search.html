@@ -30,7 +30,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Browse by Chapter<span class="sr-only">(current)</span></a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search" action="/search.html">
+      <form id="searchForm" class="navbar-form navbar-left" role="search" action="/search.html">
         <div class="form-group">
           <input id="searchbox" name="q" type="text" class="form-control" placeholder="Search">
         </div>
@@ -43,21 +43,48 @@
 </nav>
 
     <div id="content" class="container">
-      <h1>Table of Contents</h1>
-        <ul>
-        {% for chapter in chapters %}
-          <li{% if loop.first %} class="first"{% endif %}>
-            <a href="chapters/{{ chapter.src }}">{{chapter.heading|safe}}</a>
-          </li>
-        {% endfor %}
-        </ul>
+      <div id="search_term"></div>
+      <div id="results"></div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+<script>
+$(document).ready(function(){
+  q = getParameterByName('q')
+  $("#searchbox").val(q)
+  $("#search_term").text('Search for: "' + q + '"')
+  url = "/api/search?q=" + q
+  $.getJSON(url, function (d) {
+    console.log(d)
+    d = d.map(function  (elem, idx, array) {
+      result = '<p><li><a href="/chapters/' + elem._source.chapter + '.html">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
+      return result
+    })
+    $("#results").html(d)
+  })  
+})
 
-    </script>
+$("#searchForm").submit(function (event){
+  event.preventDefault();
+  $("#search_term").text('Search for: "' + $("#searchbox").val() + '"')
+  url = "/api/search?q=" + $("#searchbox").val()
+  $.getJSON(url, function (d) {
+    d = d.map(function  (elem, idx, array) {
+      result = '<p><li><a href="/chapters/' + elem._source.chapter + '.html">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
+      return result
+    })
+    $("#results").html(d)
+  })
+})
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
   </body>
 </html>
