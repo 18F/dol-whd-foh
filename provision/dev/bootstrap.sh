@@ -9,10 +9,14 @@ sudo service nginx restart
 
 # Install node
 curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs -y
+gem install jekyll
 
-# Install git
+# Install Node 0.12
+curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+nvm install 0.12
+
 sudo apt-get install git -y
+sudo apt-get install build-essential g++ -y
 
 # Install httpie
 sudo apt-get install -y python-pip
@@ -33,3 +37,9 @@ sudo /usr/local/share/elasticsearch/bin/service/elasticsearch install
 sudo ln -s `readlink -f /usr/local/share/elasticsearch/bin/service/elasticsearch` /usr/local/bin/rcelasticsearch
 sudo service elasticsearch start
 
+# Install Pandoc
+wget https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd64.deb
+sudo dpkg -i pandoc-1.13.2-1-amd64.deb
+
+# Install NPM dependencies
+cd /vagrant && npm install

@@ -12,20 +12,26 @@ app.get('/api/search', function (req, res) {
 		index: 'foh',
 		type: 'subchapter',
 		body: {
-			query: {
-				match: {
-					body: req.query.q
-				}
-			},
-			highlight: {
-				fields: {body: {fragment_size: 250}}
-			}
+      query: {
+        match: {
+          body: req.query.q
+        }
+      },
+      highlight: {
+        fields: {
+          body: {
+            fragment_size: 250,
+            pre_tags: ['<span class="highlight">'],
+            post_tags: ['</span>']
+          }
+        }
+      }
 		}
 
 	}, function (err, response) {
 		res.json(err||response.hits.hits);
 	});
-})
+});
 
 var server = app.listen(3000, function () {
 	var host = server.address().address;
