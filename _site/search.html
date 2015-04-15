@@ -1,0 +1,21 @@
+<form id="searchForm">
+<input id="searchbox" type="search"></input>
+</form>
+<div id="search_term"></div>
+<div id="results"></div>
+<script src="/assets/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script>
+$("#searchForm").submit(function (event){
+	event.preventDefault();
+	$("#search_term").text('Search for: "' + $("#searchbox").val() + '"')
+	url = "/api/search?q=" + $("#searchbox").val()
+	$.getJSON(url, function (d) {
+		console.log(d)
+		d = d.map(function  (elem, idx, array) {
+			result = '<p><li><a href="/chapters/' + elem._source.chapter + '.html">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
+			return result
+		})
+		$("#results").html(d)
+	})
+})
+</script>

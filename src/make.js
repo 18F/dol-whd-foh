@@ -71,35 +71,21 @@ _.forEach(titles, function (t) {
 	subchapter = $("h4")
 	subchapter.each(function (i, el){ 
 		// console.log("Hello?")
-		client.create({
-			index: 'foh',
-			type: 'subchapter',
-		// 	id: t.src,
-			body: {
-				chapter: t.src.replace('.html',''),
-				subchapter: $(this).text(),
-				heading: t.heading,
-				body: $(this).nextUntil("h4").text()
-			}
-		})
-
-		// console.log($(this).text())
-		// console.log($(this).nextUntil("h4").text())
+		body = $(this).nextUntil("h4").text()
+		if (body != "") {
+			client.create({
+				index: 'foh',
+				type: 'subchapter',
+			// 	id: t.src,
+				body: {
+					chapter: t.src.replace('.html',''),
+					subchapter: $(this).text(),
+					heading: t.heading,
+					body: $(this).nextUntil("h4").text()
+				}
+			})
+		} 
 	})
 	
-	// client.create({
-	// 	index: 'foh',
-	// 	type: 'subchapter',
-	// // 	id: t.src,
-	// 	body: {
-	// 		chapter: t.src.replace('.html',''),
-	// 		heading: t.heading,
-	// 		body: t.content
-	// 	}
-	// }, function (err) {
-	// 	if (err) {
-	// 		console.log(err)		
-	// 	}
-	// })
 })
 // client.close()
