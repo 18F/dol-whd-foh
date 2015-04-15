@@ -25,9 +25,9 @@ _.forEach(html, function (h) {
 			}
 		}
 	})
-	console.log(c)
+	// console.log(c)
 	title = getTitle(content)
-	titles.push({src: h, heading: title, content: content})
+	titles.push({src: h, heading: title, content: c.text})
 	res = swig.renderFile('template/chapter.html', {
 	    content: c.text,
 	    title: title
@@ -54,20 +54,23 @@ var client = new elasticsearch.Client({
   host: 'localhost:9200',
   // log: 'trace'
 });
-client.delete('foh', function () {
-	_.forEach(titles, function (t) {
-		client.create({
-			index: 'foh',
-			type: 'chapter',
-		// 	id: t.src,
-			body: {
-		// 		chapter: t.src.replace('.html',''),
-				heading: t.heading,
-				body: t.content
-			}
-		}, function (err) {
-			console.log(err)
-		})
+
+// console.log(titles, client)
+_.forEach(titles, function (t) {
+	// console.log(typeof(t.content))
+	client.create({
+		index: 'foh',
+		type: 'chapter',
+	// 	id: t.src,
+		body: {
+			chapter: t.src.replace('.html',''),
+			heading: t.heading,
+			body: t.content
+		}
+	}, function (err) {
+		if (err) {
+			console.log(err)		
+		}
 	})
-	client.close()
 })
+// client.close()
