@@ -7,12 +7,9 @@ sudo apt-get install -y nginx
 sudo cp /vagrant/provision/dev/nginx.conf /etc/nginx/sites-enabled/default
 sudo service nginx restart
 
-# Install node
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-gem install jekyll
-
 # Install Node 0.12
 curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+source ~/.bashrc
 nvm install 0.12
 
 sudo apt-get install git -y
@@ -43,3 +40,10 @@ sudo dpkg -i pandoc-1.13.2-1-amd64.deb
 
 # Install NPM dependencies
 cd /vagrant && npm install
+npm install -g forever
+
+# Start running
+cd /vagrant/src
+./make.js 
+cd /vagrant/api 
+forever start api.js
