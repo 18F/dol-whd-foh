@@ -42,14 +42,12 @@
 </nav>
 
     <div id="content" class="container">
-      <h1>Table of Contents</h1>
-        <ul>
+      <h1>FOH Bluebook</h1>
         {% for chapter in chapters %}
-          <li{% if loop.first %} class="first"{% endif %}>
+          <p>
             <a href="chapters/{{ chapter.src }}">{{chapter.heading|safe}}</a>
-          </li>
+          </p>
         {% endfor %}
-        </ul>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
