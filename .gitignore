@@ -1,4 +1,4 @@
-_site
 .vagrant
 node_modules
 npm-debug.log
+_site/chapters/*

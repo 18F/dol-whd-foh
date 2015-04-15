@@ -51,32 +51,29 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function(){
-  q = getParameterByName('q')
-  $("#searchbox").val(q)
-  $("#search_term").text('Search for: "' + q + '"')
-  url = "/api/search?q=" + q
-  $.getJSON(url, function (d) {
-    console.log(d)
-    d = d.map(function  (elem, idx, array) {
-      result = '<p><li><a href="/chapters/' + elem._source.chapter + '.html">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
-      return result
+
+function search(query) {
+  var url = "/api/search?q=" + query;
+  $("#search_term").text('Search for: "' + query + '"');
+  $.getJSON(url, function (data) {
+    results = data.map(function  (elem, idx, array) {
+      return '<p><li><a href="/chapters/' + elem._source.chapter + '.html#' + elem._source.subchapterId + '">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
     })
-    $("#results").html(d)
-  })  
+    $("#results").html(results);
+  });
+}
+
+$(document).ready(function(){
+  var q = getParameterByName('q');
+  if (q) {
+    $("#searchbox").val(q)
+  }
+  search(q);
 })
 
 $("#searchForm").submit(function (event){
   event.preventDefault();
-  $("#search_term").text('Search for: "' + $("#searchbox").val() + '"')
-  url = "/api/search?q=" + $("#searchbox").val()
-  $.getJSON(url, function (d) {
-    d = d.map(function  (elem, idx, array) {
-      result = '<p><li><a href="/chapters/' + elem._source.chapter + '.html">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></li>' + elem.highlight.body[0] + ' ... </p>'
-      return result
-    })
-    $("#results").html(d)
-  })
+  search($("#searchbox").val());
 })
 
 function getParameterByName(name) {
@@ -85,6 +82,7 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
 </script>
   </body>
 </html>

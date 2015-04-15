@@ -49,14 +49,17 @@ function getTitle (html) {
     return $('h1').html();
 }
 
+function convertSubchapter(idx, elm) {
+    var $elm = $(elm);
+    var text = $elm.text();
+    var subchapterId = cleanTitle(text);
+    $elm.replaceWith('<h4 class="testClass"><a name="' + subchapterId + '">' + text + '</a></h4>');
+}
 function convertChapter(html) {
-    var text, title;
+    var $elm, text, subchapterId;
     $ = cheerio.load(html);
-    $('p > strong').each(function (i, elem) {
-        text = $(this).text();
-        subchapterId = cleanTitle(text);
-        $(this).replaceWith('<h4 class="testClass"><a name="' + subchapterId + '">' + text + '</a></h4>');
-    });
+    $('h4').each(convertSubchapter);
+    $('p > strong').each(convertSubchapter);
     return $.html();
 }
 
