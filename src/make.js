@@ -53,12 +53,12 @@ function convertSubchapter(idx, elm) {
     var $elm = $(elm);
     var text = $elm.text();
     var subchapterId = cleanTitle(text);
-    $elm.replaceWith('<h4 class="testClass"><a name="' + subchapterId + '">' + text + '</a></h4>');
+    $elm.replaceWith('<h4 class="testClass"><a style="top: -60px; display: block; position: relative;" name="' + subchapterId + '"></a>' + text + '</h4>');
 }
 function convertChapter(html) {
     var $elm, text, subchapterId;
     $ = cheerio.load(html);
-    $('h4').each(convertSubchapter);
+    $('h2[id^="chapter-"]').nextAll('h4').each(convertSubchapter);
     $('p > strong').each(convertSubchapter);
     return $.html();
 }
