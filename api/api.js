@@ -16,12 +16,18 @@ app.get('/api/search', function (req, res) {
 			match: {
 				body: req.query.q
 				}
+			},
+			highlight: {
+				fields: {
+					body: {},
+					heading: {}
+				}
 			}
 		}
 	}, function (err, response) {
 		res.json(err||response.hits.hits);
 	});
-})
+});
 
 var server = app.listen(3000, function () {
 	var host = server.address().address;

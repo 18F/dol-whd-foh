@@ -21,7 +21,7 @@ _.forEach(html, function (h) {
 			}
 			else {
 				var url = "http://www.law.cornell.edu/uscode/text/" + cite.cfr.title + "/" + cite.cfr.section;
-			    return "<a href='" + url + "'>" + cite.match + "</a>";	
+			    return "<a href='" + url + "'>" + cite.match + "</a>";
 			}
 		}
 	})
@@ -32,20 +32,20 @@ _.forEach(html, function (h) {
 	    content: c.text,
 	    title: title
 	});
-	fs.writeFileSync('../_site/chapters/' + h, res)
-})
+	fs.writeFileSync('../_site/chapters/' + h, res);
+});
 
 // Helper function
 function getTitle (html) {
     $ = cheerio.load(html);
-    return $("h1").html()
+    return $("h1").html();
 }
 
 // Generate the TOC
 toc = swig.renderFile('template/toc.html', {
     chapters: titles,
 });
-fs.writeFileSync('../_site/index.html', toc)
+fs.writeFileSync('../_site/index.html', toc);
 
 
 // Load to elasticsearch
@@ -65,12 +65,12 @@ _.forEach(titles, function (t) {
 		body: {
 			chapter: t.src.replace('.html',''),
 			heading: t.heading,
-			body: t.content
+			body: cheerio(t).content.text()
 		}
 	}, function (err) {
 		if (err) {
-			console.log(err)		
+			console.log(err);
 		}
-	})
-})
+	});
+});
 // client.close()

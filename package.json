@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "citation": "^0.8.1",
+    "elasticsearch": "^4.0.2",
+    "express": "^4.12.3",
+    "lodash": "^3.6.0",
+    "swig": "^1.4.2"
+  }
+}
