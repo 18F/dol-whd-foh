@@ -73,6 +73,7 @@ $(document).ready(function(){
 
 $("#searchForm").submit(function (event){
   event.preventDefault();
+  window.location.href="http://192.168.33.11/search.html?q=" + $("#searchbox").val();
   search($("#searchbox").val());
 })
 
