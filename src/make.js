@@ -60,6 +60,7 @@ function convertChapter(html) {
     $ = cheerio.load(html);
     $('h2[id^="chapter-"]').nextAll('h4').each(convertSubchapter);
     $('p > strong').each(convertSubchapter);
+    $('h4 > strong').each(convertSubchapter);
     return $.html();
 }
 
