@@ -85,24 +85,19 @@ _.forEach(titles, function (t) {
     var chapter = t.src.replace('.html', '');
     var subchapter = $('h4');
     subchapter.each(function (i, el){
+        records.push({index: {_index: 'foh', _type: 'subchapter'}});
         records.push({
-            'create': {
-                _index: 'foh',
-                _type: 'subchapter',
-                body: {
-                    chapter: chapter,
-                    subchapter: $(this).text(),
-                    subchapterId: cleanTitle($(this).text()),
-                    heading: t.heading,
-                    body: $(this).nextUntil('h4').text()
-                }
-            }
+            chapter: chapter,
+            subchapter: $(this).text(),
+            subchapterId: cleanTitle($(this).text()),
+            heading: t.heading,
+            body: $(this).nextUntil('h4').text()
         });
     });
 });
 
-client.delete({index: 'foh'}).then(function() {
-  client.bulk({body: records}).then(function() {
+client.indices.delete({index: 'foh'}, function() {
+  client.bulk({body: records}, function() {
     client.close();
   });
 });
