@@ -1,17 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Get NGINX fired up
-sudo apt-add-repository ppa:nginx/stable -y
+# Get Apache fired up
 sudo apt-get update -y
-sudo apt-get install -y nginx
-sudo cp /vagrant/provision/dev/nginx.conf /etc/nginx/sites-enabled/default
-sudo service nginx restart
+sudo apt-get install apache2 -y
 
-# Install Node 0.12
-curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
-source ~/.bashrc
-nvm install 0.12
-
+# Install git and such 
 sudo apt-get install git -y
 sudo apt-get install build-essential g++ -y
 
@@ -39,11 +32,30 @@ wget https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd6
 sudo dpkg -i pandoc-1.13.2-1-amd64.deb
 
 # Install NPM dependencies
+sudo su vagrant <<'EOF'
+
+# Install Node
+curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+echo "source /home/vagrant/.nvm/nvm.sh" >> /home/vagrant/.profile
+source /home/vagrant/.profile
+nvm install 0.12
+nvm alias default 0.12
+
 cd /vagrant && npm install
 npm install -g forever
 
 # Start running
 cd /vagrant/src
-./make.js 
-cd /vagrant/api 
+./make.js
+cd /vagrant/api
 forever start api.js
+EOF
+
+# Create a symlink for apache
+sudo rm -rf /var/www/html
+sudo ln -s /vagrant/_site /var/www/html
+
+# Create proxy for elasticsearch
+sudo a2enmod proxy_http
+sudo cp /vagrant/provision/dev/apache.conf /etc/apache2/sites-available/000-default.conf
+sudo service apache2 restart
