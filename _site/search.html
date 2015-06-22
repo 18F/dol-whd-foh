@@ -62,7 +62,7 @@ function search(query) {
   $("#search_term").text('Search for: "' + query + '"');
   $.getJSON(url, function (data) {
     results = data.map(function  (elem, idx, array) {
-      return '<p><div class="row"><div class="col-sm-10"><a href="/chapters/' + elem._source.chapter + '.html#' + elem._source.subchapterId + '">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></br>' + elem.highlight.body[0] + '... <br></div><div class="col-sm-2"><span style="color:#A0A0A0"><i class="glyphicon glyphicon-eye-open"></i> public<br><i class="glyphicon glyphicon-file"></i> Blue Book</span></div></div></p>'
+      return '<p><div class="row"><div class="col-sm-10"><a href="/chapters/' + elem._source.chapter + '.html#' + elem._source.subchapterId + '">Chapter ' + elem._source.chapter + ': Subchapter '  + elem._source.subchapter + '</a></br>' + elem.highlight.body[0] + '... <br></div><div class="col-sm-2"><span style="color:#A0A0A0"><i class="glyphicon glyphicon-eye-open"></i> public<br><i class="glyphicon glyphicon-file"></i> Volume II</span></div></div></p>'
     })
     $("#results").html(results);
   });
