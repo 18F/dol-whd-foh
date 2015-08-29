@@ -5,6 +5,7 @@
     "elasticsearch": "^4.0.2",
     "express": "^4.12.3",
     "forever": "^0.14.1",
+    "h5bp": "^0.1.4",
     "lodash": "^3.6.0",
     "lunr": "^0.5.12",
     "swig": "^1.4.2"
