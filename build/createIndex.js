@@ -11,7 +11,7 @@ searchIndex = lunr(function () {
 });
 
 function init(){
-  var f = fs.readdirSync('../_site/data/');
+  var f = fs.readdirSync('../_site/data/sections');
   var d = f.map(function(e, i, a){
     return loadToIndex(e);
   })
@@ -24,7 +24,7 @@ function init(){
  * @param {filename} the filename containing the text to be loaded
  */
 function loadToIndex(d) {
-  f = fs.readFileSync('../_site/data/' + d, 'utf8');
+  f = fs.readFileSync('../_site/data/sections/' + d, 'utf8');
   data = JSON.parse(f);
   var doc = {
     'title': data["title"],
