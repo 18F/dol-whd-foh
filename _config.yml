@@ -1,4 +1,3 @@
-baseurl: /dol-whd-foh
 name: DOL/WHD FOH
 markdown: kramdown
 safe: true
