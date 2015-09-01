@@ -1,0 +1,25 @@
+baseurl: /dol-whd-foh
+name: DOL/WHD FOH
+markdown: kramdown
+safe: true
+data_source: data
+
+exclude:
+- src
+- build
+- node_modules
+- tests
+- Gemfile
+- Gemfile.lock
+- CONTRIBUTING.md
+- README.md
+- LICENSE.md
+- package.json
+- run.js
+- Staticfile
+- manifest.yml
+
+repos:
+- name: DOL-WHD-FOH
+  description: DOL WHD FOH repo
+  url: https://github.com/18F/dol-whd-foh

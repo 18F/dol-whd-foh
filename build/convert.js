@@ -26,7 +26,7 @@ function getSectionsFromChapter(chapter){
       
       // STILL A WIP: THE TITLES ARE _WRONG_
       var toc = genTOC($("div[class=WordSection1]").children().text())
-      fs.writeFileSync('../_site/data/toc/' + chapter + '.json', JSON.stringify(toc,null,2))
+      fs.writeFileSync('../data/toc/' + chapter + '.json', JSON.stringify(toc,null,2))
 
       $("div[class=WordSection1]").remove();  //Eliminate the Table of Contents from the DOM
       
@@ -61,7 +61,7 @@ function getSectionsFromChapter(chapter){
           // Add all of the data into an object for file write
         results = {section: sectionName, chapter: chapter.replace('.htm',''), title: $(this).text().trim(), text: text.trim(), html: cleanHTML(html)}
 
-        fs.writeFileSync('../_site/data/sections/' + sectionName + '.json', JSON.stringify(results, null, 2), encoding="utf8")
+        fs.writeFileSync('../data/sections/' + sectionName + '.json', JSON.stringify(results, null, 2), encoding="utf8")
           // Write to file
         return results;
       })
