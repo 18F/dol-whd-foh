@@ -1,6 +1,9 @@
+---
+---
+
 var store;
 var index;
-var data = $.getJSON('/assets/searchIndex.json');
+var data = $.getJSON('{{ site.baseurl }}/assets/searchIndex.json');
 
 data.then(function(d) {
   store = d.store;
