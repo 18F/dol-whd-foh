@@ -8,8 +8,8 @@
     <title>WHD/FOH</title>
 
     <!-- Bootstrap -->
-    <link href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/jumbotron-narrow.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/jumbotron-narrow.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,15 +33,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li id="browselink"><a href="/">Browse by Chapter<span class="sr-only">(current)</span></a></li>
+        <li id="browselink"><a href="{{ site.baseurl }}/">Browse by Chapter<span class="sr-only">(current)</span></a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search" action="/search.html">
+      <form class="navbar-form navbar-left" role="search" action="{{ site.baseurl }}/search.html">
         <div class="form-group">
           <input id="searchbox" name="q" type="text" class="form-control" placeholder="Search">
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about.html">About</a></li>
+        <li><a href="{{ site.baseurl }}/about.html">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
