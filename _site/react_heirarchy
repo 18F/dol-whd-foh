@@ -1,0 +1,9 @@
+container
+  - header
+    - tabs
+  - sidebar
+    - search
+      - input
+      - radio_for_search_within_chapter
+    - chapter_listing
+  - content
