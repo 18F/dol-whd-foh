@@ -1,5 +1,8 @@
 ---
 applications:
 - name: foh
-  root: _site
-  directory: visible
+  path: "_site"
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  env:
+    FORCE_HTTPS: true
