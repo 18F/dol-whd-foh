@@ -3,7 +3,7 @@
 
 var store;
 var index;
-var data = $.getJSON('/assets/searchIndex.json');
+var data = $.getJSON('{{site.baseurl}}/assets/searchIndex.json');
 
 data.then(function(d) {
   store = d.store;
@@ -46,7 +46,7 @@ function mapResultsToStore(results) {
 $("#searchForm").submit(function (event){
   event.preventDefault();
   q = $("#searchbox").val();
-  url = "{{site.base_url}}/search/?q=" + q
+  url = "{{site.baseurl}}/search/?q=" + q
   if ($("#chapterCheckbox").prop("checked")){
     url = url + "&chapter=" + window.location.href.split('#')[0].split('chapters/')[1].slice(0,2)
   }
