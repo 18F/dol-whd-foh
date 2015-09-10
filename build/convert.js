@@ -53,7 +53,10 @@ function getSectionsFromChapter(chapter){
 
         text += array.text()
         array.each(function (){
-          html += $(this)[0].outerHTML;
+          prehtml = $(this)[0].outerHTML;
+          if (!($(this).text().match(/^\s+$/))) { //Check to see if the inner text is just whitespace
+            html += prehtml;
+          } 
         })
           
           // Define the sectionName, used as metadata and the filename
