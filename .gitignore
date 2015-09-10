@@ -1,5 +1,4 @@
 .vagrant
 node_modules
 npm-debug.log
-_site/chapters/*
-_site
+_site/cf-ssh.yml
