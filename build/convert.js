@@ -35,7 +35,7 @@ function getSectionsFromChapter(chapter){
       var sections = $('div').children().filter(function (){
         return $(this).text().search(sectionPattern) == 0;
       })
-      // Next, look for the next section header and grab all text/html in bewtween
+      // Next, look for the next section header and grab all text/html in between
       .map(function (){
         var text = '';
         var html = '';
@@ -59,7 +59,7 @@ function getSectionsFromChapter(chapter){
           // Define the sectionName, used as metadata and the filename
         sectionName = $(this).text().trim().match(sectionPattern)[0]
           // Add all of the data into an object for file write
-        results = {section: sectionName, chapter: chapter.replace('.htm',''), title: $(this).text().trim(), text: text.trim(), html: cleanHTML(html)}
+        results = {section: sectionName, chapter: chapter.replace('.htm',''), section_title: $(this).text().trim(), text: text.trim(), html: cleanHTML(html)}
 
         fs.writeFileSync('../data/sections/' + sectionName + '.json', JSON.stringify(results, null, 2), encoding="utf8")
           // Write to file

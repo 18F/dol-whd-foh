@@ -34,3 +34,7 @@ function mapResultsToStore(results) {
 $("#searchbox").keyup(function (e){
   console.log(search($("#searchbox").val()))
 })
+
+$("#searchButton").on("click", function (e){
+  console.log("You clicked me!")
+})

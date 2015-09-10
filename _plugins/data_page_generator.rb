@@ -9,7 +9,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = sanitize_filename(data[name]) + ".html"
+      @name = sanitize_filename(data[name]) + "/index.html"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), template + ".html")

@@ -1,6 +1,6 @@
 name: DOL/WHD FOH
 markdown: kramdown
-safe: true
+
 data_source: data
 
 exclude:
@@ -22,3 +22,11 @@ repos:
 - name: DOL-WHD-FOH
   description: DOL WHD FOH repo
   url: https://github.com/18F/dol-whd-foh
+
+permalink: "/chapters/:title"
+
+page_gen:
+  - data: 'master'
+    template: 'chapter'
+    name: 'chapter'
+    dir: 'chapters'
