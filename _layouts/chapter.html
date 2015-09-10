@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+           
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#">WHD</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#">FOH Online</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </div>
+        
+          </nav>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" />
+                      <button type="submit" class="btn btn-default">
+                        Search
+                      </button>
+                      <p>
+                        <label>
+                          <input type="checkbox">Selected chapter
+                        </label>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    {% for chapter in site.data.toc %}
+                    {% assign chunks = page.url | split:'/' %}
+                    <a href="/chapters/{{chapter[0]}}" class="list-group-item {% if chapter[0] == chunks[2] %} active {% endif %}">{{ chapter[1].chapter | upcase }}
+                    </a>
+                    {% endfor %}
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--<div class="col-md-1">
+            </div>-->
+            <div class="col-md-8">
+                <h2>Chapter {{ page.chapter }}</h2>
+                <ul>
+                {% for section in page.sections %}
+                <li><a href="{{page.url}}#{{section.section}}">{{section.section_title}}</a></li>
+                {% endfor %}
+                </ul>
+                {% for section in page.sections %}
+                  <div id="{{section.section}}"></div><h3>{{section.section_title}}</h3>
+                  {{section.html}}
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% include footer.html %}

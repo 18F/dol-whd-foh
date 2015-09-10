@@ -1,0 +1,5 @@
+---
+applications:
+- name: foh
+  root: _site
+  directory: visible
