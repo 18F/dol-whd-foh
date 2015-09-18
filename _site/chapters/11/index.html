@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+           
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#">WHD</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#">FOH Online</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </div>
+        
+          </nav>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+            <div class="panel-body">
+                <form id="searchForm" class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input id="searchbox" type="text" class="form-control" />
+                        <button type="submit" class="btn btn-default">
+                            Search
+                        </button>
+                        <p>
+                            <label>
+                                <input id="chapterCheckbox" type="checkbox">Selected chapter
+                            </label>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                     
+                    <a href="/chapters/10" class="list-group-item ">CHAPTER 10 - FLSA COVERAGE - EMPLOYMENT RELATIONSHIP, STATUTORY EXCLUSIONS, GEOGRAPHICAL LIMITS
+                    </a>  
+                    <a href="/chapters/11" class="list-group-item  active ">CHAPTER 11 - INDIVIDUAL COVERAGE-FLSA
+                    </a>  
+                    <a href="/chapters/12" class="list-group-item ">CHAPTER 12 - ENTERPRISE COVERAGE – FLSA
+                    </a>  
+                    <a href="/chapters/13" class="list-group-item ">CHAPTER 13 - COVERAGE OF THE PUBLIC CONTRACTS ACT
+                    </a>  
+                    <a href="/chapters/14" class="list-group-item ">CHAPTER 14 - THE MCNAMARA-O’HARA SERVICE CONTRACT ACT
+                    </a>  
+                    <a href="/chapters/15" class="list-group-item ">CHAPTER 15 - DAVIS-BACON AND RELATED ACTS ANDCONTRACT WORK HOURS AND SAFETY STANDARDS ACT
+                    </a>  
+                    <a href="/chapters/16" class="list-group-item ">CHAPTER 16  - TITLE III - CONSUMER CREDIT PROTECTION ACT (WAGE GARNISHMENT) TABLE OF CONTENTS
+                    </a>  
+                    <a href="/chapters/20" class="list-group-item ">CHAPTER 20 - AGRICULTURE, RELATED AND SEASONAL EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/21" class="list-group-item ">CHAPTER 21 - RETAIL OR SERVICE ESTABLISHMENT EXEMPTIONS FROM SECS 6 AND 7
+                    </a>  
+                    <a href="/chapters/22" class="list-group-item ">CHAPTER 22 - EXECUTIVE, ADMINISTRATIVE, PROFESSIONAL, COMPUTER, AND OUTSIDE SALES EXEMPTIONS – FLSA § 13(A)(1) (29 U.S.C. § 213(A)(1))
+                    </a>  
+                    <a href="/chapters/23" class="list-group-item ">CHAPTER 23 - NEWSPAPER AND OTHER COMMUNICATION EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/24" class="list-group-item ">CHAPTER 24 - TRANSPORTATION EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/25" class="list-group-item ">CHAPTER 25 - OTHER EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/30" class="list-group-item ">CHAPTER 30 - RECORDS, MINIMUM WAGE, AND PAYMENT OF WAGES
+                    </a>  
+                    <a href="/chapters/31" class="list-group-item ">CHAPTER 31 - HOURS WORKED
+                    </a>  
+                    <a href="/chapters/32" class="list-group-item ">CHAPTER 32 - OVERTIMETABLE OF CONTENTS
+                    </a>  
+                    <a href="/chapters/33" class="list-group-item ">CHAPTER 33 - CHILD LABOR – FLSA
+                    </a>  
+                    <a href="/chapters/36" class="list-group-item ">CHAPTER 36 - FIELD SANITATION AND TEMPORARY LABOR CAMP STANDARDS IN AGRICULTURE UNDER THE OCCUPATIONAL SAFETY AND HEALTH ACT
+                    </a>  
+                    <a href="/chapters/39" class="list-group-item ">CHAPTER 39 - THE FAMILY AND MEDICAL LEAVE ACT (FMLA)
+                    </a>  
+                    <a href="/chapters/46" class="list-group-item ">CHAPTER 46 - ENFORCEMENT OF H-2B
+                    </a> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-md-1">
+            </div>-->
+    <div class="col-md-8">
+        <h2>Chapter 11</h2>
+        <ul>
+            
+            <li><a href="/chapters/11#11L00">11L00 - Local or
+collateral activities of an interstate producer.</a></li>
+            
+            <li><a href="/chapters/11#11a00">11a00 - Interpretative
+Bulletins and use of chapter.</a></li>
+            
+            <li><a href="/chapters/11#11a01">11a01 - Summary statement of
+individual coverage.</a></li>
+            
+            <li><a href="/chapters/11#11a02">11a02 - Accounting.</a></li>
+            
+            <li><a href="/chapters/11#11a03">11a03 - Advertising.</a></li>
+            
+            <li><a href="/chapters/11#11a04">11a04 - Advertising display
+materials.</a></li>
+            
+            <li><a href="/chapters/11#11a05">11a05 - Advertising,
+manufacturers’ samples, and telephone directories: distribution of:</a></li>
+            
+            <li><a href="/chapters/11#11a06">11a06 - Agricultural
+limestone.</a></li>
+            
+            <li><a href="/chapters/11#11a07">11a07 - Air conditioning
+equipment.</a></li>
+            
+            <li><a href="/chapters/11#11a08">11a08 - Airline passengers
+and goods - ground transportation.</a></li>
+            
+            <li><a href="/chapters/11#11a09">11a09 - Alarm systems.</a></li>
+            
+            <li><a href="/chapters/11#11a10">11a10 - Auction houses.</a></li>
+            
+            <li><a href="/chapters/11#11a11">11a11 - Ambulance
+services.</a></li>
+            
+            <li><a href="/chapters/11#11a12">11a12 - Automobile
+licenses.</a></li>
+            
+            <li><a href="/chapters/11#11b00">11b00 - Banks and
+financial institutions.</a></li>
+            
+            <li><a href="/chapters/11#11b01">11b01 - Blueprints and
+plans.</a></li>
+            
+            <li><a href="/chapters/11#11b02">11b02 - Bottled drinks.</a></li>
+            
+            <li><a href="/chapters/11#11b03">11b03 - Broadcasting.</a></li>
+            
+            <li><a href="/chapters/11#11b04">11b04 - Building
+maintenance and custodial employees.</a></li>
+            
+            <li><a href="/chapters/11#11c00">11c00 - Clerical work.</a></li>
+            
+            <li><a href="/chapters/11#11c01">11c01 - Coal strip-mining.</a></li>
+            
+            <li><a href="/chapters/11#11c02">11c02 - Collection
+agencies.</a></li>
+            
+            <li><a href="/chapters/11#11c03">11c03 - Communication.</a></li>
+            
+            <li><a href="/chapters/11#11c04">11c04 - Concrete drainage
+pipe production.</a></li>
+            
+            <li><a href="/chapters/11#11c05">11c05 - Construction:
+materialmen.</a></li>
+            
+            <li><a href="/chapters/11#11c06">11c06 - Construction: new
+production facilities.</a></li>
+            
+            <li><a href="/chapters/11#11c07">11c07 - Construction:
+connection of water or sewer pipe.</a></li>
+            
+            <li><a href="/chapters/11#11c08">11c08 - Construction: city
+streets.</a></li>
+            
+            <li><a href="/chapters/11#11c09">11c09 - Construction:
+missile launching sites.</a></li>
+            
+            <li><a href="/chapters/11#11c10">11c10 - Construction:
+out-of-State materials.</a></li>
+            
+            <li><a href="/chapters/11#11c11">11c11 - Correspondence
+schools.</a></li>
+            
+            <li><a href="/chapters/11#11c12">11c12 - Cigarette stampers
+employed by intrastate distributors.</a></li>
+            
+            <li><a href="/chapters/11#11d00">11d00 - Domestic service
+employees: general.</a></li>
+            
+            <li><a href="/chapters/11#11d01">11d01 - Domestic service
+employees: babysitting in or about a private home.</a></li>
+            
+            <li><a href="/chapters/11#11e00">11e00 - Electricity, fuel.
+gas, power, water, or other energy produced for instrumentalities or interstate
+commerce.</a></li>
+            
+            <li><a href="/chapters/11#11e01">11e01 - Electricity, fuel.
+gas, power, water, or other energy for producers of goods for interstate
+commerce.</a></li>
+            
+            <li><a href="/chapters/11#11e02">11e02 - Engineering field
+employees.</a></li>
+            
+            <li><a href="/chapters/11#11e03">11e03 - Experiments,
+surveys, and practice operations.</a></li>
+            
+            <li><a href="/chapters/11#11e04">11e04 - Employment
+agencies.</a></li>
+            
+            <li><a href="/chapters/11#11f00">11f00 - Farming.</a></li>
+            
+            <li><a href="/chapters/11#11f01">11f01 - Farmers or farm
+groups - migrant labor camps.</a></li>
+            
+            <li><a href="/chapters/11#11f02">11f02 - Farm machinery and
+equipment manufacture and maintenance.</a></li>
+            
+            <li><a href="/chapters/11#11f03">11f03 - Farm tile.</a></li>
+            
+            <li><a href="/chapters/11#11f04">11f04 - Feed mills.</a></li>
+            
+            <li><a href="/chapters/11#11f05">11f05 - Finance companies.</a></li>
+            
+            <li><a href="/chapters/11#11f06">11f06 - Freight
+forwarders.</a></li>
+            
+            <li><a href="/chapters/11#11h00">11h00 - Highway barrier
+production.</a></li>
+            
+            <li><a href="/chapters/11#11h01">11h01 - Horse racing.</a></li>
+            
+            <li><a href="/chapters/11#11i00">11i00 - Ice companies.</a></li>
+            
+            <li><a href="/chapters/11#11i01">11i01 - Industrial
+restaurant and cafeteria employees.</a></li>
+            
+            <li><a href="/chapters/11#11i02">11i02 - Insecticide,
+chemical and fertilizer producers.</a></li>
+            
+            <li><a href="/chapters/11#11i03">11i03 - Inspection of
+goods in interstate commerce.</a></li>
+            
+            <li><a href="/chapters/11#11i04">11i04 - Installation and
+service employees: individual coverage of employees installing equipment,
+machinery, or other apparatus distinguished from local activities such as
+construction.</a></li>
+            
+            <li><a href="/chapters/11#11i05">11i05 - Installation and
+service employees; illustrations of coverage.</a></li>
+            
+            <li><a href="/chapters/11#11i06">11i06 - Insurance: company
+office employees.</a></li>
+            
+            <li><a href="/chapters/11#11i07">11i07 - Insurance:
+adjusters and inspectors.</a></li>
+            
+            <li><a href="/chapters/11#11i08">11i08 - Insurance: agency
+or brokerage employees.</a></li>
+            
+            <li><a href="/chapters/11#11i09">11i09 - Insurance: intercompany
+organizations.</a></li>
+            
+            <li><a href="/chapters/11#11i10">11i10 - Insurance:
+rate-making bureaus.</a></li>
+            
+            <li><a href="/chapters/11#11i11">11i11 - Insurance: salvage
+companies.</a></li>
+            
+            <li><a href="/chapters/11#11i12">11i12 - Instrumentalities
+of interstate commerce.</a></li>
+            
+            <li><a href="/chapters/11#11i13">11i13 - Instrumentality or
+production facility - military bases.</a></li>
+            
+            <li><a href="/chapters/11#11i14">11i14 - Instrumentality of
+interstate commerce – Canal Zone</a></li>
+            
+            <li><a href="/chapters/11#11i15">11i15 - Intrastate
+distribution of goods received from outside the State.</a></li>
+            
+            <li><a href="/chapters/11#11i16">11i16 - Investigating
+agencies.</a></li>
+            
+            <li><a href="/chapters/11#11m00">11m00 - Machinery and
+equipment.</a></li>
+            
+            <li><a href="/chapters/11#11m01">11m01 - Magazine and
+newspaper wholesale distribution.</a></li>
+            
+            <li><a href="/chapters/11#11m02">11m02 - Magazine
+subscriptions.</a></li>
+            
+            <li><a href="/chapters/11#11m03">11m03 - Meat packing.</a></li>
+            
+            <li><a href="/chapters/11#11m04">11m04 - Medical care.</a></li>
+            
+            <li><a href="/chapters/11#11m05">11m05 - Mining, oil and
+gas wells.</a></li>
+            
+            <li><a href="/chapters/11#11m06">11m06 - Multi-branch
+enterprises.</a></li>
+            
+            <li><a href="/chapters/11#11m07">11m07 - Music service.</a></li>
+            
+            <li><a href="/chapters/11#11n00">11n00 - Newspapers.</a></li>
+            
+            <li><a href="/chapters/11#11n01">11n01 - Nonprofit research
+and educational institutions.</a></li>
+            
+            <li><a href="/chapters/11#11o00">11o00 - Oil wells.</a></li>
+            
+            <li><a href="/chapters/11#11p00">11p00 - Personal loan
+companies.</a></li>
+            
+            <li><a href="/chapters/11#11p01">11p01 - Petroleum products
+bulk plants.</a></li>
+            
+            <li><a href="/chapters/11#11p02">11p02 - Post offices,
+mobile truck.</a></li>
+            
+            <li><a href="/chapters/11#11p03">11p03 - Printing
+establishments.</a></li>
+            
+            <li><a href="/chapters/11#11p04">11p04 - Printing ink
+supply establishments.</a></li>
+            
+            <li><a href="/chapters/11#11p05">11p05 - Processing -
+Effect on interstate commerce.</a></li>
+            
+            <li><a href="/chapters/11#11r00">11r00 - Refrigerator
+equipment servicemen.</a></li>
+            
+            <li><a href="/chapters/11#11r01">11r01 - Retail and
+service.</a></li>
+            
+            <li><a href="/chapters/11#11s00">11s00 - Sand and gravel.</a></li>
+            
+            <li><a href="/chapters/11#11s01">11s01 - Savings and loan
+associations.</a></li>
+            
+            <li><a href="/chapters/11#11s02">11s02 - Shopping analysts.</a></li>
+            
+            <li><a href="/chapters/11#11s03">11s03 - Sign installation
+or painting.</a></li>
+            
+            <li><a href="/chapters/11#11s04">11s04 - Stock brokerage
+houses.</a></li>
+            
+            <li><a href="/chapters/11#11s05">11s05 - Students and
+instructors repairing planes.</a></li>
+            
+            <li><a href="/chapters/11#11t00">11t00 - Telephone
+answering service.</a></li>
+            
+            <li><a href="/chapters/11#11t01">11t01 - Telephone
+solicitors.</a></li>
+            
+            <li><a href="/chapters/11#11t02">11t02 - Telephone and
+telegraph pole production.</a></li>
+            
+            <li><a href="/chapters/11#11t03">11t03 - Test pilots.</a></li>
+            
+            <li><a href="/chapters/11#11t04">11t04 - Theatrical booking
+agencies.</a></li>
+            
+            <li><a href="/chapters/11#11t05">11t05 - Theatricals.</a></li>
+            
+            <li><a href="/chapters/11#11t06">11t06 - Toll road
+employees.</a></li>
+            
+            <li><a href="/chapters/11#11t07">11t07 - Trailers.</a></li>
+            
+            <li><a href="/chapters/11#11t08">11t08 - Trainees.</a></li>
+            
+            <li><a href="/chapters/11#11t09">11t09 - Transportation.</a></li>
+            
+            <li><a href="/chapters/11#11t10">11t10 - Transportation
+terminals.</a></li>
+            
+            <li><a href="/chapters/11#11t11">11t11 - Travel.</a></li>
+            
+            <li><a href="/chapters/11#11t12">11t12 - Truck renting
+companies.</a></li>
+            
+            <li><a href="/chapters/11#11v00">11v00 - Vending machines.</a></li>
+            
+            <li><a href="/chapters/11#11w00">11w00 - Warehousing:
+controlling principles.</a></li>
+            
+            <li><a href="/chapters/11#11w01">11w01 - Warehousing: chain
+store.</a></li>
+            
+            <li><a href="/chapters/11#11w02">11w02 - Washers, car or bus.</a></li>
+            
+            <li><a href="/chapters/11#11w03">11w03 - Waste material,
+scrap metal and junk.</a></li>
+            
+            <li><a href="/chapters/11#11w04">11w04 Watching and guarding.</a></li>
+            
+            <li><a href="/chapters/11#11w05">11w05 - Wholesaling: general
+considerations.</a></li>
+            
+            <li><a href="/chapters/11#11w06">11w06 - Wholesaling: receipt
+of out-of-State goods.</a></li>
+            
+            <li><a href="/chapters/11#11w07">11w07 - Wholesaling: where
+out-of-State goods come to rest.</a></li>
+            
+            <li><a href="/chapters/11#11w08">11w08 - Wholesaling: prior
+orders, pre-existent understandings, and anticipation of needs.</a></li>
+            
+            <li><a href="/chapters/11#11w09">11w09 - Wholesaling: chain
+store distribution.</a></li>
+            
+            <li><a href="/chapters/11#11w10">11w10 - Wholesaling:
+interstate shipment by wholesaler.</a></li>
+            
+            <li><a href="/chapters/11#11w11">11w11 - Wholesaling: second
+wholesalers.</a></li>
+            
+            <li><a href="/chapters/11#11w12">11w12 - Woods and mine crew
+auxiliary employees.</a></li>
+            
+            <li><a href="/chapters/11#11w13">11w13 - Wrecking contractor.</a></li>
+            
+        </ul>
+        
+            <a href="#">Back to top</a><div id="11L00"></div>
+            <h3>11L00 - Local or
+collateral activities of an interstate producer.</h3>
+            <p>Certain employees of a
+producer of goods for interstate commerce may be engaged solely in essentially
+local activities that are undertaken by the employer independent of his/her
+productive operations, or that are undertaken by him/her as a dispensable
+collateral incident to those productive operations. These employees are not
+engaged in work closely related or directly essential to the production for
+interstate or foreign commerce. (See IB 776.18(b).)</p>
+        
+            <a href="#">Back to top</a><div id="11a00"></div>
+            <h3>11a00 - Interpretative
+Bulletins and use of chapter.</h3>
+            <p>(a)   IB 776, Subparts A and B, together with releases
+issued to the general public, contain the official WH position regarding
+coverage under FLSA which is based on the individual employee’s engagement in
+or production for interstate or foreign commerce or in a closely related
+process or occupation directly related to such production. FOH Chapter 11
+supplements these documents with respect to such individual coverage.</p><p>(b)   The examples of specific occupations contained in this
+chapter are designed to illustrate only the application of individual coverage
+principles. The possibility of coverage based on the particular employee’s
+employment in an enterprise described in Sec 3(s) must not be overlooked where
+individual coverage does not exist.</p>
+        
+            <a href="#">Back to top</a><div id="11a01"></div>
+            <h3>11a01 - Summary statement of
+individual coverage.</h3>
+            <p>(a)   Individual coverage depends on the nature of the
+particular employee’s work. An employee is covered on an individual basis in
+each workweek in which he or she performs any work constituting engagement in
+interstate or foreign commerce, or the production of goods for interstate or
+foreign commerce, including any closely related process or occupation directly
+essential to such production. As a practical matter, WH does not assert
+individual coverage over an employee who is ordinarily engaged in employment
+which is not so covered but who may on isolated occasions spend an
+insubstantial amount of time performing individually covered work. However,
+this rule is not applicable in any workweek in which an employee spends a
+substantial amount of time doing individually covered work. If, in viewing the
+employment over a more extended period, it is apparent that the pattern of
+individual coverage is regular and recurrent, the employee involved is so
+covered in each workweek in which he does such work, regardless of whether the
+amount of time spent in this work is substantial or insubstantial. In
+situations where an employer, for compliance purposes, seeks to segregate
+individual coverage from other employment, the employer must be prepared to
+demonstrate the basis of this segregation from his or her records.</p><p>(b)   It is not possible to establish precise guidelines to
+be followed in determining whether an employee who is not otherwise covered on an
+individual basis spends an insubstantial amount of time on isolated occasions
+in the performance of individually covered work. In view of the remedial
+purposes of the Act, the application of this rule is limited to circumstances
+where the time consumed by an employee in doing such covered work is obviously
+trivial, and the incidence of this covered work is so infrequent and
+out-of-pattern that it would be unrealistic to assert individual coverage
+solely on such grounds. This must be decided on the facts in a particular case.</p>
+        
+            <a href="#">Back to top</a><div id="11a02"></div>
+            <h3>11a02 - Accounting.</h3>
+            <p>(a)   Accounting service rendered for, or on behalf of
+instrumentalities of interstate commerce, or organizations which are engaged in
+interstate commerce, is so closely related to that commerce as to be a part
+thereof.</p><p>(b)   The preparation of reports for direct or indirect
+interstate transmission is also individually covered.</p><p>(c)   Accounting service rendered exclusively within the
+State for an interstate producer is a closely related process or occupation
+directly essential to the production of goods by the interstate producer.</p>
+        
+            <a href="#">Back to top</a><div id="11a03"></div>
+            <h3>11a03 - Advertising.</h3>
+            <p>Employees engaged in
+making local surveys in accordance with a questionnaire prepared by an
+advertising, agency, which information is transmitted to other States in the
+form of publications, pamphlets, or other written material, are actually
+producing goods for interstate commerce. Even where the information or material
+prepared merely serves as a basis for other printed matter which is shipped
+directly or indirectly out of the State, the employees preparing the
+information or material are engaged in a process or occupation closely related
+and directly essential to the production of the goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11a04"></div>
+            <h3>11a04 - Advertising display
+materials.</h3>
+            <p>Where advertising
+display materials are shipped across State lines, all employees who in any
+manner work on such goods are engaged in interstate commerce. Individual
+coverage thus extends to those employees who order, receive, handle, or unpack
+the materials which come from outside the State, to employees who transport the
+display materials across State lines, and to employees whose movements across
+State lines are regular and recurring and are made in the performance of their
+duties. In addition, display materials received from out of State sources and
+earmarked for particular sites remain in interstate commerce until final
+installation is effected; and, the employees installing such material (for
+example, window trimmers and billboard pasters) are individually covered. This
+is not temporary storage until the site of installation is ready for the
+display to be installed, since the interstate movement of the display materials
+is not terminated by such storage.</p>
+        
+            <a href="#">Back to top</a><div id="11a05"></div>
+            <h3>11a05 - Advertising,
+manufacturers’ samples, and telephone directories: distribution of:</h3>
+            <p>(a)   Employees of an agency engaged in the intrastate
+distribution of out-of-State advertising, manufacturers’ samples, and telephone
+directories by hand to local individuals and businesses may be subject to the
+FLSA as engaged in interstate commerce. Where the items distributed are
+received from out-of-State sources, they remain in the stream of interstate
+commerce until they reach the destination intended for them by the importer.
+Thus, they remain in interstate commerce while they are being distributed from
+door to door. With respect to telephone books, for example, there is a
+pre-existing contract or understanding with the subscribers for their delivery.
+The door-to-door delivery is not any more of an interruption in the interstate
+journey than the drop-shipment delivery to a customer of out-of-State goods by
+any local transportation company. The distributing companies are merely agents
+for their principals, their only function being to make deliveries of the
+advertising matter, manufacturers’ samples, or telephone directories in
+accordance with previous understandings or instructions.</p><p>(b)   Employees engaged in the collection and shipment of
+old telephone directories across State lines are engaged in interstate commerce
+and in the production of goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11a06"></div>
+            <h3>11a06 - Agricultural
+limestone.</h3>
+            <p>Individual coverage
+shall not be asserted for employees engaged in the intrastate production and
+distribution of agricultural limestone, which like fertilizer is used in
+raising agricultural products for shipment in interstate commerce. (See IB
+776.19(b)(4).)</p>
+        
+            <a href="#">Back to top</a><div id="11a07"></div>
+            <h3>11a07 - Air conditioning
+equipment.</h3>
+            <p>(a)   Employees engaged in the sale, installation, and
+servicing of air conditioning systems in establishments engaged in the
+production of goods for interstate commerce are engaged in activities which are
+both closely related and directly essential to production of the goods, since
+these activities are directed to the improvement of the facilities of
+production. This is true whether the work in connection with air conditioning
+is performed in the manufacturing portion of the factory or in the
+administrative offices of the factory or building in which the goods are
+produced.</p><p>(b)   Individual coverage shall not be asserted, however, on
+the basis of the intrastate sale of window or room type cooling equipment
+merely because it is sold to producers of goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11a08"></div>
+            <h3>11a08 - Airline passengers
+and goods - ground transportation.</h3>
+            <p>Employees engaged in
+transporting passengers and freight to and from an airport in connection with
+interstate trips are engaged in interstate commerce, although all the
+operations of the transit service may be wholly within the borders of the
+State.</p>
+        
+            <a href="#">Back to top</a><div id="11a09"></div>
+            <h3>11a09 - Alarm systems.</h3>
+            <p>(a)   The installation, servicing and repair of burglar or
+fire alarm systems in establishments engaged in the production of goods for
+commerce, and the receipt and relay of alarms from such establishments, are
+activities closely related and directly essential to the production of goods
+for interstate commerce. Individual coverage on these grounds also exists for
+maintenance, custodial, clerical and all other employees of an alarm service
+whose work is a part their employer’s integrated effort to meet the needs of
+production establishments for protection of the establishment and finished or
+unfinished goods.  </p><p>(b)   Employees who install or service alarms in warehouse
+buildings, freight and passenger terminals, radio and telegraph stations, and
+telephone exchanges are performing work so closely related to the interstate
+commerce flowing through such facilities as to be regarded as engaged in
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11a10"></div>
+            <h3>11a10 - Auction houses.</h3>
+            <p>(a)   Employees of auction houses may be subject to the
+FLSA, i.e., engaged in interstate commerce or in the production of goods for
+interstate commerce, or both. Auctioneers and catalogue and appraisal clerks
+who are regularly engaged in traveling across State lines in the performance of
+their duties are engaged in interstate commerce.</p><p>(b)   Clerical employees, whose work involves the continued
+use of the interstate mails or telephone or telegraph for communication across
+State lines are likewise engaged in interstate commerce. On the other hand,
+employees who merely receive goods delivered by local prospective
+vender-customers of the auction house, and shipping employees who merely
+prepare and release items purchased by a local high bidder are not engaged in
+interstate commerce, assuming that none of the goods when received are still in
+interstate commerce and that they are not to be shipped out of the State.</p><p>(c)   Auctioneers, callers, catalogue, deposit, and
+appraisal clerks, who are engaged in preparation and sale of industrial
+machinery and equipment for use by producers of goods for interstate commerce,
+are engaged in closely related processes or occupations directly essential to
+the production of the goods. In addition, all the employees of the auction
+house, including maintenance, custodial, and clerical employees, whose work is
+part of the employer’s integrated effort to supply the needs of producers of
+goods for interstate commerce with such industrial machinery and equipment, are
+subject to the FLSA for the same reason.</p>
+        
+            <a href="#">Back to top</a><div id="11a11"></div>
+            <h3>11a11 - Ambulance
+services.</h3>
+            <p>(a)   Ambulance drivers and attendants who transport persons
+on part of an interstate trip (as to or from an airport or railway terminal) or
+who travel across State lines in performing ambulance services are engaged in
+covered activities.</p><p>(b)   Ambulance crews engaged in making intrastate trips to
+pick up dead or injured victims of motor vehicle accidents from the scenes of
+such accidents on city streets, county roads or State or federal highways are
+also engaged in individually covered activities. It is well established that
+vehicle accidents which interfere with the interstate movement of goods and
+persons on the highways require prompt action to remove the stopped and
+disabled vehicles which constitute a costly and dangerous impediment to the
+free movement of such commerce. The vehicles blocking the traffic cannot in
+most instances be permitted to be moved from their post-accident positions on
+the roadway until such persons as may have been injured or killed in the
+accident have been attended to. Ordinarily, this requires ambulance service
+whenever a highway accident involves deaths or personal injuries of a serious
+nature. To appreciate the serious effect on traffic of any delay in the arrival
+of ambulances and removal of damaged vehicles by towtrucks in such cases, it is
+only necessary to listen to the aerial police reports on traffic during the
+rush hours in any sizable city. Detours, delay, and congestion of traffic on
+any interstate route in which one or more lanes become blocked by such
+accidents are the rule until the vehicles are removed, which police ordinarily
+do not permit pending necessary attention to any victims of the accident. Such
+ambulance service is not “isolated local activity”, but rather so closely
+related to the movement of commerce and the functioning of its instrumentalities
+as to be a part thereof. (See also FOH 24c08 and IB 779.369(e).)</p>
+        
+            <a href="#">Back to top</a><div id="11a12"></div>
+            <h3>11a12 - Automobile
+licenses.</h3>
+            <p>Automobile license
+bureaus or tag agencies may be operated as a separate business by private
+employers under contract with the State, or in conjunction with some other
+business, such as insurance or accounting. Employees of such establishments who
+handle applications for automotive licenses and deliver such licenses to users,
+collecting the authorized fees therefor, are individually covered by the Act.
+The relationship of the employee’s work to interstate commerce stems from the
+fact that registrations and registration plates are issued to provide
+identification of the vehicle in controlling the flow of traffic and the
+movement of persons and goods over the highways which carry interstate traffic,
+and that the revenues from such sources are customarily used to build and
+maintain these arteries of commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11b00"></div>
+            <h3>11b00 - Banks and
+financial institutions.</h3>
+            <p>(a)   Employees of banks and financial institutions,
+including mutual savings banks and savings and loan associations, may be
+subject to the FLSA as either engaged in interstate commerce or in the
+production of goods for interstate commerce, or both. Employees engaged in the
+interstate transmittal, directly or indirectly, of money, drafts, travelers’
+checks, and letters of credit, the making of loans to persons residing in other
+States, and the taking as security for loans property located in other States
+are actually engaged in interstate commerce.</p><p>(b)   Employees who engage in the preparation, execution,
+and liquidation of bonds, shares of stock, commercial paper, bills of lading,
+and the like are producing goods, even though the activity may be no more than
+registering one of a series of bonds. Where such instruments are transmitted
+directly or indirectly out of the State, the employees so engaged are engaged
+in the production of goods for interstate commerce.</p><p>(c)   Those whose clerical activities directly relate to the
+preparation, execution, and validation of the instruments mentioned above, and
+those who prepare letters, documents, pamphlets, papers, and other records
+pertaining to the interstate activity of the institution are subject to the
+FLSA because they are producing goods for interstate commerce. They may also be
+individually covered because their activities are so closely related to the
+interstate movement of the instruments as to be regarded as interstate
+commerce. They also are engaged in processes or occupations closely related and
+directly essential to the production of goods for interstate commerce by other
+employees of the bank.</p><p>(d)   Watchmen, maintenance and custodial employees, and guards
+may be subject to the FLSA for the same reasons as clerical employees.</p><p>(e)   However, individual coverage shall not be asserted for
+bank employees who operate an adjacent parking lot for the convenience of bank
+customers. They cannot be said to be either engaged in activities closely
+related to the movement of the interstate commerce, nor are they engaged in
+processes or occupations closely related and directly essential to the
+production of goods for interstate commerce by other employees of the bank.</p><p>(f)   Employees regulating and operating the space devoted
+to a drive-in bank are engaged in work closely related and directly essential
+to the bank’s production for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11b01"></div>
+            <h3>11b01 - Blueprints and
+plans.</h3>
+            <p>Employees engaged in
+the preparation of blueprints, sketches, plans, and the like, are covered on an
+individual basis if, the blueprints, et cetera, move either directly or
+indirectly in interstate commerce. The preparation of the blueprints, et
+cetera, constitutes production of goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11b02"></div>
+            <h3>11b02 - Bottled drinks.</h3>
+            <p>(a)   Employees of a bottler of drinks engaged in the
+ordering, buying, and receiving of barrels and bottles from out-of-State
+sources, or re-shipping or returning them after their contents have been
+removed, are engaged in interstate commerce. The fact that the bottled drink is
+produced for intrastate commerce and intrastate consumption only is not
+material</p><p>(b)   Employees engaged in operations connected with the
+making ready of barrels and bottles for the return interstate transit after
+their contents have been removed are also individually covered.</p><p>(c)   Whether the employees of an intrastate wholesale
+distributor of bottled drinks are covered on an individual basis depends upon
+the application of the principles of the Jacksonville Paper case. (See FOH
+11w08.)</p><p>(d)   Employees engaged in collecting, loading, returning,
+and unloading empty bottles for return to a local bottler for refilling
+purposes are individually covered if their employer believes, or has reason to
+believe, that the bottles will enter interstate commerce after being refilled.</p>
+        
+            <a href="#">Back to top</a><div id="11b03"></div>
+            <h3>11b03 - Broadcasting.</h3>
+            <p>Employees of a radio
+or TV station which broadcasts news, advertising copy and other program
+material received from outside the State are engaged in interstate commerce.
+This is so even though all the station’s listeners and advertisers are located
+within the State.</p>
+        
+            <a href="#">Back to top</a><div id="11b04"></div>
+            <h3>11b04 - Building
+maintenance and custodial employees.</h3>
+            <p>(a)   Individual coverage of building maintenance and
+custodial employees (boiler firemen, building engineers, electricians,
+painters, janitors, elevator operators and the like), is to be determined in
+accordance with the principles stated in (b) through (d) below.</p><p>(b)   A maintenance or custodial employee serving the
+building or any part of it is individually covered if he or she is regularly
+and recurringly engaged in such activities as ordering or receiving goods from
+outside the State, handling or otherwise “producing” goods for shipment to
+other States, keeping records relative to interstate transactions, or using the
+telephone or the mails for interstate communication. Individual coverage on
+this basis may arise from a variety of activities. For example, a building
+switchboard operator would be individually covered if he or she regularly and
+recurringly handles interstate telephone calls for tenants. Likewise, a porter
+or elevator operator who regularly and recurringly handles interstate freight
+and packages for tenants would be individually covered. Moreover, an elevator
+operator is individually covered if letter carriers and parcel post conveyers
+regularly and recurringly ride the elevator he or she operates to make
+deliveries of letters and parcels which have moved in interstate commerce.</p><p>(c)   A building maintenance or custodial employee will be
+considered to be individually covered if as a regular and recurring part of
+their duties they serve those portions of the building occupied by a tenant
+engaged in that location in interstate commerce or the production of goods for
+interstate commerce. Such an employee will be individually covered, as if he or
+she were employed by the tenant himself to perform the covered work. For
+example, a janitor would be covered if as a part of their duties they regularly
+and recurringly clean those portions of the building occupied by an interstate
+insurance firm or a bank (thereby being engaged in the insurance firm’s or
+bank’s production of goods for interstate commerce). Likewise, a janitor would
+be covered if as a part of their duties they regularly and recurringly clean
+those portions of a building occupied by a radio or TV station engaged in
+interstate communications. In applying these principles to any employee the
+element of substantiality must be taken into consideration. For example, a
+janitor would not be considered covered  solely on the basis of taking a few
+minutes each day to empty waste baskets in an “interstate” insurance office, or
+because, on occasion, called upon outside their regular duties to perform some
+incidental cleaning task in a bank. Nor would the performance of maintenance or
+custodial services in those portions of the building occupied by an
+“essentially local” business provide a basis of coverage, if the same work
+would not provide a basis of coverage for a worker employed by such a tenant.
+Cases where coverage is questionable will be submitted through channels to the
+RS for opinion, including all cases where compliance depends on the application
+of these principles to custodial employees who clean only the halls and
+corridors outside the portions of the building occupied by “interstate”
+tenants, or building engineers whose duties relate to the building in general
+(heating air-conditioning, etc.).</p><p>(d)   Without regard to any other basis of coverage,
+maintenance and custodial employees are covered on an individual basis if the
+building for which they perform these functions is devoted to interstate
+commerce or to the production of goods for interstate commerce to such a
+substantial extent that there may be said to be a “close and immediate tie”
+between the activities of such employees and the interstate commerce or
+production involved. On this basis the Act has been held to cover all building
+maintenance and custodial employees in loft buildings where goods are
+physically produced for interstate commerce, in headquarters buildings of
+companies engaged elsewhere in producing goods for interstate commerce, in
+buildings substantially devoted to interstate operations of insurance companies
+or government agencies, and in multi-tenant office or other buildings in which
+occupants engaged in actual production of goods for commerce on the premises
+utilize a substantial portion of the rentable areas for their operations.
+Building maintenance and custodial employees are not individually covered by
+the Act solely by reason of the fact that they service buildings operated as a
+local activity not dedicated in any way to interstate commerce or to the
+production of goods for such commerce, which are held out for tenancy by and
+are in fact tenanted by the “usual miscellany” of offices, in which no
+manufacturing is carried on. In determining whether or not the building as a
+whole is so maintained and operated as to have a “close and immediate tie” to
+interstate commerce or the production of goods for interstate commerce, it is
+not possible to establish precise mathematical formulas based either on the
+percentage of rentable space occupied by specific types of tenants or the
+extent of commerce or production conducted on the premises. It is necessary to
+look at the building as a whole and at the business operations conducted on the
+premises by its tenants. Where compliance depends upon such a determination,
+the following procedure shall be followed:</p><p>(1)  If at least half of the rentable area of the building
+is occupied by tenants substantially engaged on the premises in interstate
+commerce or the production of goods for interstate commerce, the building as a
+whole shall be considered as maintained and operated as an instrumentality of
+interstate commerce or an interstate production facility (i.e., there is the
+“close and immediate tie”) and all maintenance and custodial employees shall be
+considered to be individually covered. (This would clearly apply, for example,
+where at lease half of the rentable area is occupied by such tenants as an
+interstate insurance company or a bank, or some combination of such tenants.)</p><p>(2)  If less than half of the rentable area is occupied by
+such tenants, the facts shall be obtained and the matter shall be referred
+through channels to the RS for opinion. In developing the necessary
+information, the approximate rentable area of the building, the types of
+tenants, and the business operations conducted by the tenants with particular
+reference to whether or not the Inv considers them to fall into the
+“interstate” or the “usual miscellany” category shall be included. This
+information can be shown by chart or in any appropriate manner with such
+explanations as are required. For example, the percentage of rentable area
+occupied by “interstate” tenants such as banks, insurance firms, Federal
+agencies, manufacturers, and radio and TV stations can be shown in one column;
+the percentage of rentable area occupied by the “usual miscellany” of local
+tenants such as lawyers, doctors, and real estate agents in another column</p><p>(e)   The principles stated above do not apply to building
+maintenance and custodial employees employed by a shopping center which is
+composed of individual buildings contiguously located for convenience, having
+only party walls as a common ground between tenants. However, such employees
+may otherwise be individually covered.</p><p>(f)   In some cases, employees may be engaged to perform
+only activities such as cleaning, waxing, and buffing floors, as opposed to
+general janitorial services work. For purposes of individual coverage, such
+employees are held in the same light as employees performing general janitorial
+service work notwithstanding that their work contributes to the operations of
+the customers’ buildings only from an aesthetic point of view and that the
+finish on the floor has little preservative effect and does not add
+significantly to the wearability of the floor. Thus, such employees are
+considered to be individually covered in any w/w in which they perform such
+duties in truck terminals, banks, factories producing goods for commerce, etc.
+The activities of these employees are distinguished from the activities of
+window washers, landscapers or exterminators. (See IB 776.19(b)(5).)</p>
+        
+            <a href="#">Back to top</a><div id="11c00"></div>
+            <h3>11c00 - Clerical work.</h3>
+            <p>(a)   Office and clerical employees who are engaged in the
+sending and receiving of out-of-State remittances, letters, bills, contracts,
+et cetera, or whose work involves the regular and recurrent use of the
+interstate mails, telephone, telegraph, and similar agencies for communication
+across State lines, are engaged in interstate commerce. R/K activities,
+incident to the sending and receiving of such subjects of interstate commerce,
+performed by office and clerical employees are so closely related to the
+interstate movement that the R/K employees too are regarded as engaged in
+interstate commerce.</p><p>(b)   Office and clerical employees whose work is performed
+in connection with the production of goods or any part or ingredient thereof
+for interstate commerce are subject to the FLSA as engaged in the production of
+goods for interstate commerce. Those who not only transmit, but also prepare
+letters, bills, contracts, and other papers which are sent out of the State,
+are actually engaged in the production of goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11c01"></div>
+            <h3>11c01 - Coal strip-mining.</h3>
+            <p>The replacement of
+soil performed in connection with the strip-mining of coal, which coal moves in
+interstate commerce, is not a process or occupation directly essential to the
+production of the coal. Employees engaged only in such activities are therefore
+not covered on an individual basis.</p>
+        
+            <a href="#">Back to top</a><div id="11c02"></div>
+            <h3>11c02 - Collection
+agencies.</h3>
+            <p>Employees of
+collection agencies or collection departments of credit bureaus engaged in the
+collection and remittance of funds and negotiable instruments for transmittal
+across State lines are engaged in interstate commerce, as are employees engaged
+in the preparation of financial reports, statements, correspondence, or other
+written material for transmittal across State lines.</p>
+        
+            <a href="#">Back to top</a><div id="11c03"></div>
+            <h3>11c03 - Communication.</h3>
+            <p>(a)   Employees who are engaged in communicating messages,
+information, and reports to points outside the State or in receiving such
+matter directly from other States, are engaged in interstate commerce. The
+employees included are of two classes, namely those who operate the
+instrumentalities by which the interstate communication is effected (telephone,
+telegraph, and radio operations), and those who regularly and consistently make
+use of such facilities for the interstate sending or receiving of messages
+pertaining to their employer’s business.</p><p>(b)   Employees such as news-gatherers, reporters, and
+clerical employees are engaged in activities closely related and directly
+essential to the production of the news, et cetera, being transmitted.</p>
+        
+            <a href="#">Back to top</a><div id="11c04"></div>
+            <h3>11c04 - Concrete drainage
+pipe production.</h3>
+            <p>Employees engaged in
+the production of concrete drainage pipe for use or consumption in the
+maintenance, repair, or reconstruction of highways, over which interstate
+commerce regularly travels, are covered on an individual basis.</p>
+        
+            <a href="#">Back to top</a><div id="11c05"></div>
+            <h3>11c05 - Construction:
+materialmen.</h3>
+            <p>IB 776.21(b)(2) and
+(3), and 776.27(d), contain the official WH position regarding individual
+coverage of employees of producers of concrete ready-mixed and other
+materialmen.</p>
+        
+            <a href="#">Back to top</a><div id="11c06"></div>
+            <h3>11c06 - Construction: new
+production facilities.</h3>
+            <p>(a)   Under IB 776.26 and 776.27, the construction of a new
+factory building or other production facility designed as a replacement,
+enlargement, extension or improvement of an existing covered production
+facility will be individually covered. IB 776.26 points out that “Coverage of
+any construction work, whether new or repair work, depends upon how closely
+integrated it is with, and how essential it is to the functioning of, existing
+covered facilities. Neither the mere fact that the construction is ‘new
+construction’ nor the fact that it is physically separated from an existing
+covered plant, is determinative.” Thus the fact that the new plant is located
+at a considerable distance from the existing facility will not preclude
+individual coverage. If such coverage is present, certain preparatory
+operations would likewise be covered under the principles set fourth in IB
+776.28(a)(3).</p><p>(b)   The following examples, while not intended to be
+restrictive in any way, are illustrative of some types of construction over
+which individual coverage has been asserted under the position set forth in (a)
+above:</p><p>(1)  The construction of a new building in an adjacent town
+to expand the operations of an existing plant which will continue to produce
+goods for commerce.</p><p>(2)  The construction of a suburban drive-in branch for an
+existing downtown bank. Also, the construction of a building for an existing
+bank to serve as a replacement of the bank notwithstanding that the predominant
+use of the new structure may be devoted to uses other than banking.</p><p>(3)  The construction of a new factory at a new location to
+replace the existing plant of a firm manufacturing goods for commerce although
+the new factory is at a substantial distance from the manufacturer’s present
+plant.</p><p>(4)  The construction of a new factory outside of the city
+limits designed specifically for the purpose of housing a garment factory now
+operating in the same town, in rented quarters. The building is being financed
+by local subscription under a State program of inducing new industries to move
+into or remain in the state. The building when constructed will be leased to
+the manufacturer.</p><p>(c)   If the Inv can make a clear determination that the
+construction is individually covered because it falls within any of the four
+examples described in (b) above, the investigation may proceed. If not, the
+following facts should be developed and the case referred to the RS:</p><p>(1)  Is the new plant to be coordinated in any way with
+production at the existing plant, and if so, how (i.e., will it be used to
+produce the complete ultimate product, or will it be used for partial
+processing or assembling of products begun, finished, or otherwise processed at
+an existing plant)? </p><p>(2)  Does the new plant include features (in design,
+materials or equipment, or otherwise) specifically adapted to the particular
+kind of production?</p><p>(3)  Will there be any transfer of employees or equipment
+from the existing plant to the new plant, or will there be any interchange of
+employees between the existing and the new plant?</p><p>(4)  Will there be joint management and operation of the
+new and the existing plant, giving any available information on plans for a
+joint or segregated management and operation?</p><p>(5)  Will production start at the new plant before
+completion of the construction, and if so, when and to what extent; or how soon
+after completion is production at the new plant to start?</p><p>(6)  Is the new plant being constructed to produce products
+for an entirely new set of customers, or is it to meet the needs of the present
+source of customers because their current or imminent needs have expanded
+beyond the capacity of the existing plant?</p><p>(7)  Are there outstanding any specific orders or contracts
+which the new plant will be used to fill?</p>
+        
+            <a href="#">Back to top</a><div id="11c07"></div>
+            <h3>11c07 - Construction:
+connection of water or sewer pipe.</h3>
+            <p>Activities such as
+excavating, backfilling, and resurfacing of interstate streets and highways are
+not considered individually covered where the only purpose of this construction
+work is to connect water or sewer pipes leading from private dwellings or other
+nonproduction facilities with a main line.</p>
+        
+            <a href="#">Back to top</a><div id="11c08"></div>
+            <h3>11c08 - Construction: city
+streets.</h3>
+            <p>(a)   IB 776.29(f)(3) states in part as follows: “The
+construction, reconstruction or repair of a city street, whether residential or
+not, which is part of an interstate highway or which directly connects with any
+interstate highway is so closely related to the interstate commerce moving on
+the existing highway as to be a part of it”. Therefore, employees performing
+activities in connection with such construction are individually covered. The
+term “directly connected” would apply in all situations where the streets, city
+or otherwise, are constructed as a part of a network of interstate use or
+travel.</p><p>(b)   IB 776.29(f)(3) further states “Construction of other
+streets, which are not a part of a public road building program and are
+constructed on private property as a part of a new residential development,
+will not be considered covered until further clarification from the courts”.
+This statement refers exclusively to the construction of such streets. However,
+the repair of them is individually covered work if the streets are being regularly
+used and are open to interstate commerce even though there has not yet been
+State acceptance or dedication. </p>
+        
+            <a href="#">Back to top</a><div id="11c09"></div>
+            <h3>11c09 - Construction:
+missile launching sites.</h3>
+            <p>The construction of
+ballistic missile launching sites, sometimes referred to as “complexes” or pads,
+constitutes an improvement or extension of existing facilities of interstate
+commerce and is thus individually covered.</p>
+        
+            <a href="#">Back to top</a><div id="11c10"></div>
+            <h3>11c10 - Construction:
+out-of-State materials.</h3>
+            <p>Construction materials
+received from outside the State are deemed to come to rest when delivered to
+the construction site and commerce shall not be considered as continuing during
+the actual construction process even though, as is sometimes the case,
+particular materials may be so designed or formed that their place in the
+finished structure is designated at the time of delivery. Thus, for example,
+employees engaged in installing porcelain enamel paneling (such as is used on gasoline
+service stations or store fronts) or in erecting prefabricated houses or other
+structures are not thereby individually covered where the sole basis for such
+coverage would be that the materials have been shipped from out-of-State. Of
+course, employees engaged at the construction site in receiving materials which
+are still moving interstate commerce would be individually covered under the
+Act. (See also FOH 11i04 and 11i05.)</p>
+        
+            <a href="#">Back to top</a><div id="11c11"></div>
+            <h3>11c11 - Correspondence
+schools.</h3>
+            <p>Employees engaged in
+the collection of information which is transmitted to other States in the form
+of publications, pamphlets, or any other written materials are subject to the
+FLSA because they are producing goods for interstate commerce. Those
+disseminating information or receiving material from out of the State are
+engaged in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11c12"></div>
+            <h3>11c12 - Cigarette stampers
+employed by intrastate distributors.</h3>
+            <p>Whether cigarette
+stampers employed by intrastate distributors are covered on an individual basis
+depends upon whether they are still in the channels of commerce. It has been
+determined that goods come to rest when they are placed in storage in the
+warehouse pending the affixing of stamps. However, the goods could not be said
+to have come to rest if they had been purchased and stored in the warehouse
+pursuant to prior orders or in anticipation of filling specific orders of
+specific customers</p>
+        
+            <a href="#">Back to top</a><div id="11d00"></div>
+            <h3>11d00 - Domestic service
+employees: general.</h3>
+            <p>(a)   Domestic service employees, pursuant to the concluding
+sentence of FLSA Sec 2(a), are subject to the Act: “The Congress further finds
+that the employment of persons in domestic service in households affects
+commerce.”</p><p>(b)   Although “domestic service” is not defined therein,
+for purposes of the Act a domestic service employee is one who performs work of
+a household service nature in or about an employer’s private home. Domestic
+service employees include, but are in no way limited to, the following
+illustrative occupations:</p><div>
+
+<table>
+ <tbody><tr>
+  <td>
+  <p>Butlers</p>
+  </td>
+  <td>
+  <p>Chauffeurs of family autos</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Nurses</p>
+  </td>
+  <td>
+  <p>Cooks</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Caretakers</p>
+  </td>
+  <td>
+  <p>Grooms</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Footmen</p>
+  </td>
+  <td>
+  <p>Governesses</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Gardeners</p>
+  </td>
+  <td>
+  <p>Handymen</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Housekeepers</p>
+  </td>
+  <td>
+  <p>Janitors</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Laundresses</p>
+  </td>
+  <td>
+  <p>Maids</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Valets</p>
+  </td>
+  <td>
+  <p> </p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div><p>Covered
+domestic service must be performed in a private home which is a fixed place of
+abode of an individual or family. A separate and distinct dwelling in an
+apartment house or hotel may constitute a home. However, a boarding or lodging
+house for the purpose of supplying such services to the public, as a business
+enterprise, is not a private home and its employees are therefore not domestic
+service employees for the purposes of the Act. Domestic service employees who
+accompany their employers on trips, such as a vacation, continue to be covered.</p><p>(c)   Maids and cleaning personnel employed by businesses
+furnishing home cleaning services to residential customers are not considered
+domestic service employees for purposes of Secs 6(f) and 7(l) of the FLSA.
+Typically, home cleaning service employers hire, train, and schedule employees,
+and direct and inspect their work. The customer pays the home cleaning service
+employer for the services performed. The residential customer does not directly
+exercise control over the work performed by employees of the cleaning service.
+As indicated in (b) above and Secs 552.3 and 552.101 of Reg 552, a domestic
+service employee is one who performs household work in or about his/her
+employer’s private home. Thus, an employee of a home cleaning service employer
+is not a domestic service employee, and coverage for such employees would be
+determined on an individual or enterprise basis.</p>
+        
+            <a href="#">Back to top</a><div id="11d01"></div>
+            <h3>11d01 - Domestic service
+employees: babysitting in or about a private home.</h3>
+            <p>In order to be subject
+to the Act’s monetary provisions, babysitting must be noncasual and performed
+in or about a private home of the person by whom the babysitter is employed.
+Thus, persons who, in their own homes, care for children are not covered as
+employed in domestic service. (However, see FOH 12g03 and 12g16 re possible
+employment in a day-care center.)</p>
+        
+            <a href="#">Back to top</a><div id="11e00"></div>
+            <h3>11e00 - Electricity, fuel.
+gas, power, water, or other energy produced for instrumentalities or interstate
+commerce.</h3>
+            <p>(a)   Employees engaged in the production and delivery of
+electricity, fuel, gas, power, water, or other energy for use and consumption
+by instrumentalities of interstate commerce to aid the movement of the commerce
+carried on by the instrumentalities are individually covered. This is so even
+though the production, sale, distribution, and consumption is wholly
+intrastate.</p><p>(b)   Employees engaged in the production of energy to
+operate the movable facilities of interstate commerce, such as interstate
+trucks or railroad rolling stock, or to propel oil through an interstate
+pipeline, or to send telephone, telegraph, and radio impulses across State
+lines, are individually covered. They are similarly covered by the FLSA where
+the energy operates the channels of interstate commerce, such as a drawbridge
+which carries an interstate highway, the signal equipment of a railroad along
+its road-bed, or the beacon lights at an airport. The same is true when the
+energy is used to operate fixed facilities of interstate commerce, such as
+freight and passenger terminals, pipeline and electric transmission power
+stations, telephone exchanges, and radio and telegraph stations.</p>
+        
+            <a href="#">Back to top</a><div id="11e01"></div>
+            <h3>11e01 - Electricity, fuel.
+gas, power, water, or other energy for producers of goods for interstate
+commerce.</h3>
+            <p>(a)   Employees engaged in the production or supply of
+electricity, fuel, gas, power, water, or other energy for use or consumption in
+the production of goods for interstate commerce are engaged in processes or
+occupations closely related and directly essential to the production of the
+goods.</p><p>(b)   Where the energy is used not as power, but merely to
+heat a building which houses establishments producing goods for interstate
+commerce the employees are not individually covered by the FLSA. It should be
+noted, however, that where the maintenance of temperature control within the
+building is required by special circumstance of production, then the use of the
+energy is directly essential to the production.</p><p>(c)   In establishments whose employees are subject to the
+FLSA for the reasons set forth above, all the employees (maintenance,
+custodial, and clerical, as well as operational personnel) of the
+energy-producing employer whose work is part of his integrated effort to meet
+the power or heating needs of producers of goods for interstate commerce are individually
+covered by the FLSA.</p><p>(d)   Employees engaged in the production or supply of water
+to farmers within the same State to irrigate their crops or for other use in
+production of agricultural goods for out-of-State shipment are individually
+covered.</p>
+        
+            <a href="#">Back to top</a><div id="11e02"></div>
+            <h3>11e02 - Engineering field
+employees.</h3>
+            <p>Field employees of an
+engineering company operating solely on an intrastate basis are engaged in the
+production of goods for interstate commerce in any workweek in which, at the
+time they perform surveys, it can be reasonably anticipated that the
+information secured as a result of the survey will leave the State in the form
+of plans or other documents.</p>
+        
+            <a href="#">Back to top</a><div id="11e03"></div>
+            <h3>11e03 - Experiments,
+surveys, and practice operations.</h3>
+            <p>(a)   Employees engaged in activities such as research,
+experiments, surveys, and practice operations which are performed in
+contemplation of, and for the purpose of facilitating, expediting, or improving,
+the production of goods for interstate commerce are engaged in processes or
+occupations which are closely related and directly essential to the production
+of goods for interstate commerce. This is so, even though it is contemplated
+that production shall be undertaken only if the experiments or explorations
+shall prove successful.</p><p>(b)   Employees engaged in research, experiments, surveys,
+practice operations, and like activities are also subject to the FLSA in that
+their activities are in closely related processes or occupations directly
+essential to the production of goods for interstate commerce where the reports,
+tables, and maps which incorporate the information obtained from such
+activities are intended to be shipped in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11e04"></div>
+            <h3>11e04 - Employment
+agencies.</h3>
+            <p>(a)   Where an employment agency regularly performs
+placement services out-of-State or has a recruiting affiliation with other such
+employment agencies, various resumes, reports, or other employment data are
+sent across State lines. Those employees using the mails and other means of
+interstate communication are engaged in commerce.</p><p>(b)   If an employment agency merely screens and refers
+applicants to the usual miscellany of local customers, some of whom are engaged
+in the production of goods for commerce, the employees who handle the
+producers’ accounts are not engaged in an occupation closely related and
+directly essential to the production of goods for commerce and thus are not
+individually covered by the FLSA.</p><p>(c)   However, if any employment agency engages in
+recruitment or renders specialized services for producers of goods for
+commerce, and thus acts as a substitute for the employment or personnel office
+of the producer, employees whose work is clearly connected with a particular
+employer or industry or whose activities are specifically directed to meet the
+special personnel needs of producers are individually covered as engaged in an
+occupation closely related and directly essential to the production of goods
+for commerce. In determining whether the activities of an employment agency are
+closer to the substitute function than to the typical agency (b) above, the
+following factors should be considered:</p><p>(1)  Who pays the agency fees?</p><p>(2)  Is there a continuing contractual relationship between
+the employer and the agency?</p><p>(3)  Is it a large scale recruitment program for particular
+producers?</p><p>(4)  Does the agency actually take part in the selection of
+employees or does it merely refer an applicant to possible employers?</p><p>(5)  Does the agency check references?</p><p>(6)  Does the producer of goods also advertise and solicit
+help directly or does he depend primarily on the agency for his employment
+supply?</p><p>(7)  Are the efforts of the agency directed primarily to
+servicing the job applicant or the employer?</p><p>Where
+a determination cannot be made based upon the factors noted above, the matter
+should be referred through channels to the RS for an opinion.</p>
+        
+            <a href="#">Back to top</a><div id="11f00"></div>
+            <h3>11f00 - Farming.</h3>
+            <p>Employees engaged in
+farming, the production, cultivation, and harvest of vegetables, livestock,
+cotton, or dairy products for shipment in interstate commerce are engaged in
+production for such commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11f01"></div>
+            <h3>11f01 - Farmers or farm
+groups - migrant labor camps.</h3>
+            <p>Farmers and certain
+farm groups (such as cooperatives or associations of various types) operate or
+contract for the operation of camp facilities where migrant farm laborers are
+housed or fed, or both, while working on growers’ farms in the area. If the
+growers’ farm commodities are produced for interstate commerce, the employees
+engaged in the maintenance and operation of the migrant camps may be performing
+work which is closely related and directly essential to such production. The
+facts are very important to such a determination, however. Such employees in camps
+maintained to satisfy a legal obligation under the Bracero program (Mexican
+contract labor) are considered individually covered. On the other hand, where a
+camp is operated merely as a convenience available to migrant workers and not
+as an integral and indispensable part of the agricultural operations, we would
+not assert individual coverage with respect to camp employees based solely on
+their relationships to the agricultural production. Where questionable coverage
+exists, the facts should be submitted to the RS.</p>
+        
+            <a href="#">Back to top</a><div id="11f02"></div>
+            <h3>11f02 - Farm machinery and
+equipment manufacture and maintenance.</h3>
+            <p>Employees of an
+establishment manufacturing farm machinery and equipment who engage in the
+intrastate sale or rental of the machinery and equipment to farmers for use in
+the production of goods for interstate commerce as well as those employees
+engaged in the maintenance and repair of the machinery and equipment, are
+engaged in activities closely related and directly essential to the production
+of goods for interstate commerce. This is true also if a piece of the
+manufactured machinery is used only for the purpose of clearing a field of
+stalks, preparatory to plowing for the next crop. The preparatory clearing of a
+field is as compelling a necessity to the planting or seeding operations as
+would be the turning of the soil.</p>
+        
+            <a href="#">Back to top</a><div id="11f03"></div>
+            <h3>11f03 - Farm tile.</h3>
+            <p>Concrete irrigation
+pipe is a specialized product designed and produced specifically for irrigation
+purposes. Its manufacture, like that of the mine props in IB 776.19(b)(3), is
+closely related and directly essential to the production of goods for
+interstate commerce. Drainage tile, however, is not so specialized and
+individual coverage should not be asserted on the basis of its production for
+intrastate sale to or for use by farmers.</p>
+        
+            <a href="#">Back to top</a><div id="11f04"></div>
+            <h3>11f04 - Feed mills.</h3>
+            <p>(a)   For the present and until further notice, do not
+assert individual coverage in any situation in which the sole basis therefor is
+the production, sale, and distribution of feed or feed ingredients for use
+within the State in the raising of poultry or livestock, even though the
+poultry and livestock are raised for commerce. Thus, employees exclusively
+engaged in such activities will not be considered as individually covered. (See
+IB 776.19(b)(4).)</p><p>(b)   Employees in this category who inquire as to their
+status under the FLSA shall be advised that the court'’ decision in the Garrard
+Mills case casts doubt on the interpretative position heretofore held, and the
+WH will await further court clarification. Such employees shall be advised of
+Sec. 16(b).</p><p>(c)   Employers shall be informed that although WH is
+awaiting court clarification with respect to employees in this category, such
+employees may sue under Sec. 16(b).</p>
+        
+            <a href="#">Back to top</a><div id="11f05"></div>
+            <h3>11f05 - Finance companies.</h3>
+            <p>(a)   Specialized financial institutions extend installment
+credit to dealers. Such companies usually engage in wholesale financing by
+means of which a retail dealer is supplied with the funds needed for the
+purchase of consumer’s goods at wholesale from the manufacturer. The employees
+of such a finance company, whether national or local in scope, are individually
+covered when their activities contribute to the financing of goods which move
+in interstate commerce from the out-of-State producer to the dealer.</p><p>(b)   Those employees who are engaged in making remittances
+in interstate commerce, or who regularly travel between States in the
+performance of their duties, are engaged in interstate commerce. In addition,
+employees engaged in the compilation and preparation of reports to be sent in
+interstate commerce are so closely related to interstate commerce as to be
+engaged in interstate commerce, and they are also engaged in the production of
+goods for interstate commerce. (See also FOH 11p00  Personal loan companies.)</p>
+        
+            <a href="#">Back to top</a><div id="11f06"></div>
+            <h3>11f06 - Freight
+forwarders.</h3>
+            <p>Employees of
+establishments which consolidate for interstate shipment freight received from
+various other establishments are actually engaged in interstate commerce, or
+are so closely related to the transportation of freight in interstate commerce
+as to be in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11h00"></div>
+            <h3>11h00 - Highway barrier
+production.</h3>
+            <p>Employees engaged in
+the production of highway guard posts, jersey walls, and other barriers used to
+direct and control vehicular traffic through areas where highways on which
+interstate commerce regularly travels are undergoing maintenance, repair or
+reconstruction are covered on an individual basis.</p>
+        
+            <a href="#">Back to top</a><div id="11h01"></div>
+            <h3>11h01 - Horse racing.</h3>
+            <p>Employees training or
+handling race horses are engaged in the production of goods for interstate
+commerce in that the horses will be shipped across State lines.</p>
+        
+            <a href="#">Back to top</a><div id="11i00"></div>
+            <h3>11i00 - Ice companies.</h3>
+            <p>Employees engaged in
+manufacturing, selling, transporting, and delivering ice used to refrigerate
+interstate shipments are subject to the FLSA. It is not material that the ice
+may be consumed before the interstate movement is accomplished.</p>
+        
+            <a href="#">Back to top</a><div id="11i01"></div>
+            <h3>11i01 - Industrial
+restaurant and cafeteria employees.</h3>
+            <p>(a)   Employees of an industrial restaurant or cafeteria
+engaged only in such activities as the preparation and serving of food, the
+cleaning of dishes and tables, and the like, ordinarily are not subject to the
+monetary provisions of the FLSA on individual coverage grounds, but the CL
+provisions of Sec. 12(a) apply. It is not material that the restaurant is
+operated by the producer of the goods for interstate commerce or by a
+concessionaire. The activities of such employees are not directly essential to
+the production of the goods shipped in interstate commerce.</p><p>(b)   Where eating facilities are provided in an isolated
+location, such as a mining or a lumber camp, cooks and like personnel of the
+boarding house or dining hall are engaged in processes and occupations that are
+not only closely related but also directly essential to the production of the
+goods shipped in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11i02"></div>
+            <h3>11i02 - Insecticide,
+chemical and fertilizer producers.</h3>
+            <p>Employees of an
+establishment which produces insecticides, chemicals or fertilizers for
+agricultural used solely within the State are not engaged in interstate
+commerce or in the production of goods for interstate commerce. Some concerns
+sell and actually apply insecticides, chemicals or fertilizers on farms
+producing goods for interstate commerce. The employees of such concerns who handle,
+load, maintain records, etc., of such activities are individually covered by
+the Act.</p>
+        
+            <a href="#">Back to top</a><div id="11i03"></div>
+            <h3>11i03 - Inspection of
+goods in interstate commerce.</h3>
+            <p>Employees engaged in
+the inspection of goods during the time that they are moving in interstate
+commerce are engaged in interstate commerce. This applies not only to
+inspections that occur during the actual movement in interstate commerce, but
+also to those that are made in connection with the commencement or termination
+of the interstate movement. For example, inspections made by employees of a
+wholesaler receiving goods from outside the State who check the goods prior to
+the time they come to rest within the State are individually covered.</p>
+        
+            <a href="#">Back to top</a><div id="11i04"></div>
+            <h3>11i04 - Installation and
+service employees: individual coverage of employees installing equipment,
+machinery, or other apparatus distinguished from local activities such as
+construction.</h3>
+            <p>(a)   Employees who engage in the installation of apparatus,
+equipment, machinery, and similar goods which are still moving in interstate
+commerce are individually covered. Whether such goods remain in commerce during
+the installation process is determined by both the nature of the contract of
+sale and by the character of the installation activities. If there is primarily
+a contract for work to be performed and the sale of the goods is incidental
+thereto, the installation is considered to be predominantly of a local nature
+and individual coverage will not apply. On the other hand, if the contract is
+primarily a sale of the goods, individual coverage will apply where it is
+determined that the installation activities are a necessary incident to the
+sale. In making the latter determination, consideration shall be given to:</p><p>(1)  whether the performance of the installation work is
+essential to the complete delivery in interstate commerce because of complexity
+inherent in the product; or</p><p>(2)  whether the installation work is inherently intrastate
+in character and reasonably separable from the interstate features of the sale.</p><p>If
+delivery to the customer and installation are accomplished in what practically
+amounts to a single operation, the goods would retain their character as goods
+in commerce until installation has been completed.</p><p>(b)   in applying the principles set out in (a) above, the
+installation of the goods considered therein shall be distinguished from the
+erection of construction materials. (See FOH 11c10.)</p><p>(c)   In addition to other bases of coverage, installation
+or service employees may likewise be individually covered where the
+installation or service is the repair, maintenance, extension, or
+reconstruction of movable or fixed facilities or channels of interstate
+commerce, or of machinery or premises used in the production of goods for
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11i05"></div>
+            <h3>11i05 - Installation and
+service employees; illustrations of coverage.</h3>
+            <p>(a)   Bowling alley lanes.  The installation of
+prefabricated bowling lanes received from out of the State and pursuant to a
+contract of sale is individually covered by the FLSA in that the services of
+specially skilled mechanics at the site of installation are required to bring
+the bowling lanes into existence.</p><p>(b)   Storm windows and awnings.  The installation of
+custom-built storm windows and awnings received from out of the State and
+pursuant to contracts of sale is individually covered where no construction-type
+operations are involved. However, the installation of plate glass in hotels,
+apartment houses, private residences, and the like, is not individually covered
+merely because the glass came directly from outside the State.</p><p>(c)   Machinery.  The erection, supervision, and testing of
+a machine and its component parts, which was constructed by an out-of-State
+manufacturer who also agreed in the contract of sale to send an engineer to the
+site of installation for supervisory and testing purposes, is individually
+covered work.</p><p>(d)   Insulation.  Employees installing rock wool insulation
+are not individually covered merely because the insulation is received from
+outside the State. However, individual coverage may result if the installation
+is in a building used for production of goods for interstate commerce or in an
+instrumentality of interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11i06"></div>
+            <h3>11i06 - Insurance: company
+office employees.</h3>
+            <p>(a)   Employees employed in the home office of an insurance
+company are covered on an individual basis if the company operates in more
+States than one, or if the activities of the employee involve the regular and
+continuous use of the mails and other channels and instrumentalities of
+interstate commerce and communication.</p><p>(b)   Employees of the home office of a national insurance
+company may also be considered as actually producing goods for interstate
+commerce. All activity at the home office which contributes to the acceptance
+and issuance of an insurance policy constitutes production of goods. This
+includes personnel of the underwriting department who determine whether the
+insurance application will be accepted and a policy issued, the typist who
+fills in the policy form, and those who photostat the application for
+attachment to the policy for delivery to the branch office for collection of
+the premium.</p><p>(c)   If the company operates a branch office, general
+agency in a foreign country or in a State other than that in which its home
+office is located, or if it reinsures its risks with a reinsurance company
+located in another State, it is operating in more than one State. Likewise, if
+it insures risks in States other than that in which its home office is located,
+or through its own employees, a general agency, or in any other manner,
+solicits or sells insurance in other States, collects premiums or assessments
+from other States, adjusts cases for loss in other States, sends notices,
+applications, policies, and the like, in interstate commerce, or regularly and
+continuously uses the channels of interstate commerce in connection with the
+investment of surplus and reserve funds, it and its employees so engaged are
+engaged in interstate commerce.</p><p>(d)   Branch office employees of an insurance company are
+individually covered if the office at or out of which they work is located in a
+State other than that in which the home office of the company is located.
+Employees of a branch office located in the same State as the home office are
+likewise covered if the branch office is operating in more than one State, or
+is engaged in the regular and continuous use of the mails and other channels
+and instrumentalities of interstate commerce and communication, or if the risks
+it insures are reinsured by out-of-State companies.</p>
+        
+            <a href="#">Back to top</a><div id="11i07"></div>
+            <h3>11i07 - Insurance:
+adjusters and inspectors.</h3>
+            <p>(a)   The adjusters do not go out-of-State to adjust claims.
+Where the policyholder lives outside of the State he or she is met at the site
+of burned property or nearby. The adjuster’s report is mailed to his office
+within the State. The adjusters have nothing to do with handling reinsurance.
+Inspectors examine the properties insured and determine the maximum possible
+loss. Their duties do not take them out of the State, nor do they decide the
+amount of reinsurance that shall be carried or whether it shall be placed with
+out-of-State companies. Adjusters and inspectors are individually covered as
+employees of insurance companies which are considered as operating in more than
+one State and to the extent that they reinsure risks with reinsurance companies
+located outside of the State or reinsure risks for a company located outside of
+the State</p><p>(b)   Insurance company employees who prepare or aid in the
+preparation of letters, reports, documents, and the like, that will leave the
+State, as well as those employees who gather the information used as their
+basis, are engaged in the production of goods for interstate commerce,
+regardless of the fact that they adjust losses or inspect properties where the
+owners and properties are located within the State.</p>
+        
+            <a href="#">Back to top</a><div id="11i08"></div>
+            <h3>11i08 - Insurance: agency
+or brokerage employees.</h3>
+            <p>The employees of an
+insurance agent or broker are individually covered if the agent or broker
+operates in more than one State and the activities of the employees contribute
+to the regular and continuous use of the mails and other channels and
+instrumentalities of interstate commerce and communication. In addition, where
+the functions performed by the agent or broker and his employees are so closely
+related to the business carried on by out-of-State insurance companies as to be
+deemed an integral part thereof, individual coverage exists. Thus, for example,
+where through the employees of a broker or agent, clients within the State
+purchase insurance policies from companies located throughout the United
+States, such employees are engaged in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11i09"></div>
+            <h3>11i09 - Insurance: intercompany
+organizations.</h3>
+            <p>The application of
+individual coverage to employees of bureaus performing functions which are
+indispensable to the general business of insuring risks, such as adjustment
+bureaus, and bureaus engaged in payroll auditing, safety inspections, and
+similar “outside” activities, is determined as if they were employees of the
+particular risk-bearing company to which their services are rendered rather
+than as employees of the bureau.</p>
+        
+            <a href="#">Back to top</a><div id="11i10"></div>
+            <h3>11i10 - Insurance:
+rate-making bureaus.</h3>
+            <p>The requirements of
+various State insurance laws for equitable rate-making has resulted in the
+formation of voluntary or compulsory rate-making bureaus or organizations, the
+function of which is to inspect properties, analyze fire hazards, prepare
+surveys, and arrive at a rate; or to compile the statistical data from which
+the proper schedule of rates for a particular group of insurance companies is
+derived. Where the data so collected is for transmittal in interstate commerce,
+the employees of such a bureau are individually covered. Even if it can
+definitely be established that such data are not being prepared for transmittal
+in interstate commerce, if the insurance companies use such data and are
+engaged in interstate commerce, the rate-making function is individually
+covered by the FLSA.</p>
+        
+            <a href="#">Back to top</a><div id="11i11"></div>
+            <h3>11i11 - Insurance: salvage
+companies.</h3>
+            <p>Some inter-company
+associations maintain inter-company salvage companies whose function it is to
+recondition and sell goods which have been damaged and taken by a member
+company at the appraised or agreed value. Such an organization, from the
+standpoint of determining the applicability of the FLSA, is in its nature
+somewhat of a hybrid, since it might be covered not only by reason of the
+principles of coverage peculiar to employees in the insurance business, but
+also by reason of the fact that employees of such an organization may be
+engaged in commerce or in the production of goods for interstate commerce under
+conditions which are in no way peculiar to the insurance industry.</p>
+        
+            <a href="#">Back to top</a><div id="11i12"></div>
+            <h3>11i12 - Instrumentalities
+of interstate commerce.</h3>
+            <p>(a)   Employees of contractors engaged in maintaining,
+repairing, reconstructing, replacing, or extending railroads, ships, highways,
+bridges, pipelines, navigable waters of the United States, or other essential
+instrumentalities of interstate or foreign commerce are engaged in interstate
+commerce.</p><p>(b)   Employees engaged in the following operations
+performed on essential instrumentalities of interstate commerce are covered on
+an individual basis (regardless of whether the instrumentality is in operation
+at the time the construction is performed): repairing, maintaining, and
+reconstructing bridges; replacing existing bridges with new ones; widening, straightening,
+resurfacing, and relocating highways and city streets over which interstate
+commerce regularly travels; repaving, repairing, and replacing drainage
+facilities, curbs, and sidewalks appurtenant to such highways and streets;
+repairing and replacing railroad bridges, viaducts, and right-of-way
+maintenance shops; maintaining railroad tracks and roadbeds; repairing,
+relocating, and reconstructing telephone lines and other transmission
+facilities; repairing and maintaining pipelines; and, repairing and maintaining
+dams, dikes, and revetments on navigable waters, where the effect of the work
+is to enhance and improve navigable waters as instrumentalities of interstate
+commerce. Individual coverage also applies to employees who maintain, repair,
+reconstruct, or replace radio broadcasting facilities, harbors and navigable
+waters, warehouses, airports, wharves and docks which directly facilitate the
+movement of goods in interstate commerce, telephone exchanges, telephone
+buildings, and post offices.</p><p>(c)   The planting and maintenance of grass, shrubs, trees
+and similar items on highway shoulders, and the control of weeds along highways
+are activities directly and vitally connected with the proper maintenance of an
+instrumentality of commerce. Employees engaged in such work are individually
+covered under FLSA.</p>
+        
+            <a href="#">Back to top</a><div id="11i13"></div>
+            <h3>11i13 - Instrumentality or
+production facility - military bases.</h3>
+            <p>(a)   Military and defense installations such as air bases
+(including helicopter bases), communications centers, naval stations, supply
+depots, and the like typically function in their entirety as instrumentalities
+of interstate commerce. Employees of contractors engaged in the construction,
+reconstruction, operation, maintenance and guarding of all buildings, areas,
+and facilities which are provided so such installations may function according
+to plan are thus generally covered on an individual basis.</p><p>(b)   Where a military installation as a whole (such as an
+ordnance plant) functions as a facility for the production of goods (including
+written materials) for interstate or foreign commerce, contractors’ employees
+who work on all parts of the installation which are a part of the integrated
+effort for producing such goods are generally covered on an individual basis.</p><p>(c)   In applying (a) and (b) above, no distinction is
+warranted (as a general rule) between employees whose work relates to the
+actual production facilities or to the facilities and areas through which the
+interstate or foreign commerce moves (or in which the production or movement is
+directed or assisted) and other employees whose work is confined to those
+supporting facilities or areas which are provided as integral parts of the
+installation in order that it may continue to function effectively as planned
+without interruption or impairment. The following are examples of such
+supporting facilities:</p><div>
+
+<table>
+ <tbody><tr>
+  <td>
+  <p>Barracks,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Hospital facilities,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Mess halls,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Recreation facilities, such as libraries,
+  recreational service clubs, and gymnasiums,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Quarters for military and civilian personnel,
+  including family housing units.</p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div><p>Employees
+whose work relates to such facilities are engaged in interstate commerce or
+production for such commerce within the meaning of the Act equally with those
+whose work relates to the actual production facilities or areas through which
+the actual movement of commerce takes place. Employees engaged in the following
+are examples of such employees:</p><div>
+
+<table>
+ <tbody><tr>
+  <td>
+  <p>Kitchen police duties,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Refuse and garbage collection,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Maintenance and repair of buildings, (including
+  interior and exterior painting of apartments and houses), roads, water
+  systems, and gas systems,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Janitorial services for interior and exterior
+  maintenance and cleanliness of buildings and grounds,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Pest control,</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Snow and ice removal</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Vehicle repair and maintenance, and</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Fire prevention and fire-fighting services.</p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div><p>(d)   Situations may be encountered where the work performed
+by certain employees is so remote from commerce or the production of goods for
+commerce, and too insignificant as a factor contributing to the functioning of
+the installation as an instrumentality of commerce or interstate production
+facility, that WH would not at this time assert individual coverage on the
+basis of (a) and (b) above. Employees whose duties have been found to consist
+of such a remote or insignificant nature in particular cases include employees
+of the following:</p><p>Concessionaires engaged in operating barber shops, photographic
+studios, NCO or Officers’ Clubs and shops repairing shoes, radios, watches, TV
+sets and the like, and</p><p>Contractors engaged in work under contracts limited to cutting or
+mowing grass or irrigating lawns and seeded areas around buildings (as
+distinguished from airstrips, highways or railroads) or on parade grounds, polo
+grounds, baseball fields, football fields and golf courses. It should be noted,
+however, that employees of contractors engaged in operating concessions or in
+grounds maintenance may be subject to individual coverage where it
+affirmatively appears from all the facts and circumstances that, at the
+particular base, providing such goods and services to base personnel is so
+directly and vitally related to their effective participation in the movements
+in interstate or foreign commerce to and from the base that without the
+provision there of such goods or services the instrumentality of commerce or
+production facility would be unable to function as planned.</p><p>(e)   In situations where the application of the principles
+set out in (a) through (d) above is not clear, all of the facts shall be
+obtained and transmitted through channels to the RS for an opinion.</p><p>(f)   There may be situations where the operations or
+functions of a military installation are of such mixed or diverse nature, as
+for example, the U.S. Air Force Academy, that it would not be realistic to
+consider such an installation in its entirety as an interstate production
+facility or instrumentality of interstate commerce. In such situations, all the
+facts shall be obtained and transmitted through channels to the RS for an
+opinion.</p><p>(g)   Armed Services Housing Projects on or in close
+proximity to the military installations described in (a) and (b) above are
+considered an integral part of such installations and employees engaged in the
+construction, operation, and maintenance of such housing units are considered covered
+accordingly. If the Armed Services Housing Project is not on or in close
+proximity to the military installation, the Inv shall obtain the facts,
+including the distance from the installation, whether other communities
+intervene, whether it is part of an established community of nonmilitary
+personnel and whether it is tenanted exclusively by military and civilian
+personnel from the installation, and submit the file through channels to the RS
+for an opinion.</p>
+        
+            <a href="#">Back to top</a><div id="11i14"></div>
+            <h3>11i14 - Instrumentality of
+interstate commerce – Canal Zone</h3>
+            <p>(a)   For purposes of IB 776.11, the Canal Zone in its
+entirety is considered an instrumentality of interstate commerce. In the usual
+situation, therefore, all employees engaged in work on government contracts for
+the construction, maintenance, and servicing of those buildings, areas and
+facilities which are provided so that the Canal may function as planned are
+covered on an individual basis.</p><p>(b)   In applying the above rule, no distinction is
+warranted between employees whose work relates to the physical facilities and
+areas through which the interstate or foreign commerce moves and other
+employees whose work is confined to supporting facilities or areas which are
+provided by the Government as integral parts of its program for using the Zone
+as an instrumentality of commerce. Examples of such support facilities, which
+typically are necessary for the planned functioning of the Canal, are the
+following: barracks, schools, mess halls, civilian and military family housing
+units, and the like.</p><p>(c)   Situations may be encountered where the work performed
+by certain employees is so remote from commerce of the production of goods for
+commerce, and too insignificant as a factor contributing to the functioning of
+Zone facilities as an instrumentality of commerce, that WH would not at this
+time assert individual coverage on the basis of (a) and (b) above. Where the
+facts in a particular case appear to support such a conclusion, all the facts
+shall be transmitted through channels to the RS for an opinion.</p>
+        
+            <a href="#">Back to top</a><div id="11i15"></div>
+            <h3>11i15 - Intrastate
+distribution of goods received from outside the State.</h3>
+            <p>Intrastate
+distribution, by sales or otherwise, of goods or information received by the
+distributor directly from another State may be a part of the antecedent
+interstate movement, and thus constitute engagement in interstate commerce.
+Shipment of goods from another State direct to a customer located in the same
+State as the distributor who ordered the shipment, constitutes interstate
+commerce by virtue of which both the distributor’s employees who procured the
+shipment to be made and the customer’s employees who receive the goods at the
+end of their interstate movement are covered by the FLSA as being engaged in
+interstate commerce. Similarly, shipment of goods from another State to a
+distributor who has procured the shipment to be made pursuant to a prior order
+from the customer, and transshipment from the distributor to the customer,
+constitute interstate commerce, by reason of which the distributor’s employees
+who procured the shipment to be made from the other State, who received the
+goods, and who delivered them to the customer, are covered by the FLSA as being
+engaged in interstate commerce. This rule of coverage is not affected by the
+fact that goods received from outside the State are mixed with like goods
+originating within the State, so that the intrastate distribution is of goods
+received in part only from outside the State.</p>
+        
+            <a href="#">Back to top</a><div id="11i16"></div>
+            <h3>11i16 - Investigating
+agencies.</h3>
+            <p>Employees engaged in
+the investigative and clerical work performed by an independent investigating
+agency rendering services to clients who are engaged in the production of goods
+for interstate commerce are covered on an individual basis. Clerical employees
+who type reports of investigators as to the qualifications of prospective
+employees of establishments engaged in the production of goods for interstate
+commerce are in processes or occupations closely related and directly essential
+to the production of goods for interstate commerce. It is not material that
+none of the reports leave the State.</p>
+        
+            <a href="#">Back to top</a><div id="11m00"></div>
+            <h3>11m00 - Machinery and
+equipment.</h3>
+            <p>(a)   Employees engaged in the manufacture or supply of
+machinery or tools and dies used in the production of goods for interstate
+commerce are engaged in processes or occupations closely related and directly
+essential to the production of the goods. Likewise, those employees engaged in
+the reconstruction, installation, repair, and maintenance of such machinery,
+tools, dies, or specialized equipment that are, or are contemplated, to be used
+in the production of goods for interstate commerce are individually covered.
+This is true whether they are employed by the owner and operator of the
+machinery or by an independent contractor.</p><p>(b)   Employees are engaged in processes or occupations
+closely related and directly essential to the production of goods for
+interstate commerce when they are engaged in:</p><p>(1)  producing machinery for sale within the State to
+another manufacturer who in turn uses that machinery to produce goods for
+interstate commerce,</p><p>(2)  producing completed parts for sale to another
+manufacturer within the State who installs them as replacements for worn-out
+parts in machinery used in the production of goods for interstate commerce,</p><p>(3)  repairing or reconstructing machine parts which are
+installed within the State in machinery used in the production of goods for
+interstate commerce,</p><p>(4)  installing within the State new or repaired parts to replace
+worn-out parts in machinery used in the production of goods for interstate
+commerce,</p><p>(5)  repairing or reconstructing used machinery brought by
+their employer within the State for sale within the State to manufacturers
+engaged in the production of goods for interstate commerce, or</p><p>(6)  office, maintenance, and custodial work which
+contribute to the integrated effort of the employer to meet the needs of
+producers of goods for interstate commerce.</p><p>(c)   Employees of an independent employer, who manufactures
+or supplies producers of goods for interstate commerce with things as directly
+essential to production as electric motors, are in processes or occupations
+closely related and directly essential to the production of the goods where the
+goods produced by the customer are shipped out of the State. This includes:</p><p>(1)  logging trucks for use in hauling logs from the woods
+to a mill or railroad,</p><p>(2)  mine props for mining operations,</p><p>(3)  oil-drilling machinery for the production of oil, and</p><p>(4)  threshing equipment for the production of grain.</p>
+        
+            <a href="#">Back to top</a><div id="11m01"></div>
+            <h3>11m01 - Magazine and
+newspaper wholesale distribution.</h3>
+            <p>(a)   Where the goods are received from out of State but are
+distributed locally, the employees are individually covered. Where there is
+that practical continuity of movement of the goods from the out-of-State
+sources through the wholesaler to the customer, the employees engaged in
+receiving the periodicals, loading them in tucks for delivery to retail
+outlets, or in transporting them, are engaged in interstate commerce.</p><p>(b)   Employees of the “return department” engaged in
+stripping front covers from the returned copies for shipment by parcel post to
+the out-of-State publisher are engaged in the production of goods for
+interstate commerce.</p><p>(c)   Office and clerical employees are in activities that
+are so closely related to the interstate movement of the periodicals as to be
+engaged in interstate commerce. They are also in processes or occupations that
+are closely related and directly essential to the production of goods for
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11m02"></div>
+            <h3>11m02 - Magazine
+subscriptions.</h3>
+            <p>Employees in a local
+office of an organization that is engaged in securing subscriptions for
+magazines from persons throughout the United States are engaged in activities
+that are so closely related to the interstate movement of the orders for the
+magazines that they are regarded as engaged in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11m03"></div>
+            <h3>11m03 - Meat packing.</h3>
+            <p>(a)   Employees of intrastate meat packers whose by-products
+are shipped out of the State, who engage in the production of by-products, are
+engaged in the production of goods for interstate commerce. Employees who
+handle, slaughter, and dress the livestock, remove the inedible portions,
+handle and work on the by-products, fire the boilers, maintain, watch, or guard
+the premises, as well as for those who do the office work, are also
+individually covered. There is no distinction as to volume or amount of
+production for interstate commerce where the shipments are regular and
+recurrent.</p><p>(b)   Employees engaged in the production of by-products for
+a meat packer producing or processing meats which are sold for consumption
+within the same State are engaged in the production of goods for interstate
+commerce if, at the time when they are engaged in the production of the
+by-products the employer intends, hopes, expects, or has reason to believe that
+the by-products will be sent out of the State in the same or altered form.</p><p>(c)   Tankage which is waste material or garbage is given to
+a rendering company free of charge in winter and during the summer the employer
+pays a fee to a rendering company for its removal. The tankage ultimately finds
+its way out of State. Since this is only waste material or garbage, there is no
+production of goods for interstate commerce. This should be distinguished from
+a situation where a by-product is produced and shipped out of the State.</p>
+        
+            <a href="#">Back to top</a><div id="11m04"></div>
+            <h3>11m04 - Medical care.</h3>
+            <p>Medical personnel,
+such as nurses, first aid men and the like, who provide medical and first aid
+services at the place of employment for other employees who are engaged in
+commerce or in the production of goods for commerce are covered. Coverage is
+based on the principle that such employees are engaged in activities which
+facilitate commerce and are so proximately related to commerce as to be
+properly considered engaged therein or that their activities are closely
+related and directly essential to the production of goods for commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11m05"></div>
+            <h3>11m05 - Mining, oil and
+gas wells.</h3>
+            <p>Mining is an activity
+that is production of goods. Among those engaged in production are employees
+who drill oil or gas wells and those who pump oil from wells, even though their
+employer is not the owner of the land or of the lease, but is an independent
+contractor.</p>
+        
+            <a href="#">Back to top</a><div id="11m06"></div>
+            <h3>11m06 - Multi-branch
+enterprises.</h3>
+            <p>(a)   Window dressers.</p><p>(1)  Window dressers of multi-branch establishments who
+regularly travel across State lines in the performance of their duties are
+engaged in interstate commerce. They may also be covered on the basis of
+engaging in interstate commerce if the display materials come from another
+State, depending in each case upon where the interstate journey of the display
+material ends.</p><p>(2)  Goods from out-of-State that are destined for display
+in local outlets of a multi-branch enterprise do not ordinarily come to rest in
+a warehouse even though they may not be earmarked for a particular store in a
+chain. Display materials remain in interstate commerce until actually put on
+display.</p><p>(b)   Inventory crews.  </p><p>Inventory crews who regularly travel across State lines in the
+performance of their duties are individually covered. Additional bases for
+individual coverage are the regular and recurrent use of interstate
+communication facilities and the preparation of information for transmission
+across State lines.</p><p>(c)   Retail chain employees maintaining perpetual
+inventories.</p><p>Central office employees who are engaged in maintaining perpetual
+inventories of merchandise stocked by retail shops of a multi-branch
+enterprise, all located within a single State and which receive merchandise
+from out of the State, are engaged in interstate commerce when their work
+contributes materially to the consummation of the transactions by which
+merchandise is received by the retail stores from outside the State</p><p>(d)   Employees of warehouse engaged in placing price and
+sales tickets on merchandise.</p><p>Warehouse employees of a multi-branch intrastate retail enterprise who
+are engaged in placing tickets containing retail prices, styles, and the like,
+on merchandise still in interstate commerce before delivery to the individual
+shops are engaged in interstate commerce. Such work is not a sufficient
+interruption to the interstate journey to break it.</p>
+        
+            <a href="#">Back to top</a><div id="11m07"></div>
+            <h3>11m07 - Music service.</h3>
+            <p>Music service
+furnished to establishments engaged in the production of goods for interstate
+commerce is not an activity closely related and directly essential to the
+production of the goods.</p>
+        
+            <a href="#">Back to top</a><div id="11n00"></div>
+            <h3>11n00 - Newspapers.</h3>
+            <p>Employees, including
+drivers, engaged in the intrastate distribution and delivery of newspapers
+containing news received from other States are engaged in activities that are
+so closely related to the dissemination of information and advertising received
+from other States as to be in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11n01"></div>
+            <h3>11n01 - Nonprofit research
+and educational institutions.</h3>
+            <p>Employees of
+educational, eleemosynary, or nonprofit organizations may be covered on an
+individual basis. This will be so even though they engage in laboratory and
+other scientific and industrial research which does not result in anything more
+tangible than information. If such information or goods is produced for
+interstate commerce, the employees are individually covered. In addition,
+employees, such as office and clerical personnel, whose work involves the
+regular use of the interstate mails, telegraph, telephone, and similar
+instrumentalities for communication across State lines are actually engaged in
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11o00"></div>
+            <h3>11o00 - Oil wells.</h3>
+            <p>(a)   Employees engaged in extracting oil or gas from wells
+for shipment in interstate commerce are actually producing goods for interstate
+commerce. In addition, those who are engaged in preliminary drilling for oil or
+gas are engaged in a process or occupation closely related and directly
+essential to the production of the oil or gas. It is not material that the
+drilling is performed by an independent contractor, or that the drilling
+operations do not result in a producing an oil or gas well.</p><p>(b)   The clearing of land, digging of pits, building of
+earthen fire walls and construction of derricks or boiler and pump houses,
+preliminary to, and in exclusive connection with, the oil drilling operations
+are individually covered by FLSA.</p><p>(c)   Employees engaged in the installation of storage tanks
+at the well site, or building slush pits, levees, or dikes to prevent the
+flooding of an oil field, the wells of which are producing oil for interstate
+commerce, are in processes or occupations closely related and directly
+essential to the production of the oil.</p><p>(d)   However, employees of a materialman engaged in
+supplying material, such as brick or ready-mixed concrete are not closely
+related to the production of oil.</p><p>(e)   The following processes or occupations are closely
+related and directly essential to the production of oil:</p><p>(1)  the making of geophysical surveys, where the surveys
+are relied upon by the petroleum producing industry as guides to prospective
+fields;</p><p>(2)  the dismantling or moving of oil well drilling
+equipment from a completed oil well to the site of a new well;</p><p>(3)  watching or guarding oil well drilling machinery
+between the times when one well is completed and another begun.</p>
+        
+            <a href="#">Back to top</a><div id="11p00"></div>
+            <h3>11p00 - Personal loan
+companies.</h3>
+            <p>(a)   Specialized financial institutions make loans to
+borrowers on their personal notes which are thereafter discounted in bulk by
+sale to a discounting organization located in a different State from the loan
+company. The employees of the loan company making the loans are so closely
+related to the interstate commerce inherent in the interstate transfer of funds
+as to become a part thereof. The activities of the employees include interstate
+financial transaction analogous to the operations of banks and other financial
+institutions and the regular use of the channels and instrumentalities of
+interstate commerce in maintaining contact with the affiliated company or
+companies as well as in connection with the making of loans and credit
+investigations. If the business of the company requires the regular use of
+interstate channels of communication with borrowers residing in other States,
+the receipt of payments from such accounts, and the collection of such
+accounts, the cashiers, stenographers, and other employees involved in these
+activities are engaged in interstate commerce. (See also FOH 11f05, Finance
+companies.)</p><p>(b)   Where the discounting organization is located within
+the same State as the loan company, and the activities of the loan company are
+confined within the State, individual coverage does not exist for the
+discounting activity.</p>
+        
+            <a href="#">Back to top</a><div id="11p01"></div>
+            <h3>11p01 - Petroleum products
+bulk plants.</h3>
+            <p>(a)   Where a distributor receives out-of-State shipments of
+petroleum products at a bulk plant for distribution to retail service stations
+under long-term leases or contracts, interstate commerce does not end until the
+products are received by the retail service stations. It is not necessary that
+shipments to the bulk plants be based upon prior specific orders. The temporary
+storage at the bulk plants is merely a convenient and intermediate step in the
+process of getting them to their final destination.</p><p>(b)   Employees who transfer the products from tank cars to
+storage tanks and delivery trucks for delivery to retail outlets are actually
+engaged in interstate commerce. Those engaged in the maintenance of the bulk
+plant equipment are also engaged in interstate commerce, since their activities
+of inspecting and servicing motors and pumps used to make the transfer are so
+closely related to the movement of the petroleum products in interstate commerce
+as to be a part of the movement. Such bulk plants may be considered as fixed
+facilities of interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11p02"></div>
+            <h3>11p02 - Post offices,
+mobile truck.</h3>
+            <p>Employees of mobile
+truck post offices engaged under contract in the carriage of United States mails
+are engaged in interstate commerce, since they are either transporting goods
+across State lines or as part of the stream of interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11p03"></div>
+            <h3>11p03 - Printing
+establishments.</h3>
+            <p>Employees of printing
+establishments engaged in printing forms, catalogues, directories, documents,
+letterheads, greeting cards, and advertising materials are engaged in the
+production of goods for interstate commerce where the employer knows or has
+reason to believe that the goods will be taken or sent out of the State by a
+subsequent purchaser or other person into whose possession the goods will come.</p>
+        
+            <a href="#">Back to top</a><div id="11p04"></div>
+            <h3>11p04 - Printing ink
+supply establishments.</h3>
+            <p>Employees engaged in
+producing ink which is purchased by a local establishment to print paper
+shipped in interstate commerce are producing goods for interstate commerce,
+since the ink is a part or ingredient of the goods (paper) which move in
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11p05"></div>
+            <h3>11p05 - Processing -
+Effect on interstate commerce.</h3>
+            <p>(a)   Processing generally interrupts the movement of goods
+in interstate commerce. Individual coverage may exist on other grounds,
+however. The line to be drawn between operations that constitute a mere
+incident of the interstate distribution of goods received from outside the
+State and those that constitute processing that terminates the prior interstate
+movement is a matter of degree. It is not possible to formulate any infallible
+test that will serve to resolve every conceivable situation that may arise. It
+is not necessarily true that any processing defined as “production” in FLSA Sec
+3(j) is sufficient to break the flow of goods in interstate commerce. The test
+of what constitutes processing involves a number of factors, including the
+complexity of the operation, the change that is made in the goods, and the time
+required.</p><p>(b)   Operations that have been held only incidental to
+interstate distribution, and which will not stop the flow of interstate
+commerce, include: the making of minor adjustments and performing minor services
+on new automobiles; the blending of different grades of gasoline; and the
+candling, sizing, and packing of eggs.</p><p>(c)   Among operations that have been held to be processing
+are: the mixing of materials to make concrete; the making of sandwiches and
+other such products from crackers, bread, and the like; the pasteurization and
+bottling of unpasteurized beer; the blending of wines; the grinding or blending
+of coffee; the dilution, pasteurization, clarification and homogenization of
+milk or cream; the bottling of milk; the neutralization and churning of sour
+cream to form butter the processing of cottage cheese to improve consistency
+and increase fat content; and, the making of chocolate milk.</p>
+        
+            <a href="#">Back to top</a><div id="11r00"></div>
+            <h3>11r00 - Refrigerator
+equipment servicemen.</h3>
+            <p>Individual coverage
+does not generally extend to a service employee if his or her work consists
+solely of repair and maintenance work within the State on refrigeration
+equipment for retail stores or other local customers who are not engaged in the
+production of goods for interstate or foreign commerce, even though he or she
+may be employed by a distributor who is engaged in interstate commerce.
+However, where the terms of an interstate contract of sale call for the
+installation of the equipment, and specifically provide for the servicing of
+the equipment for a period subsequent to its installation, employees who
+service the equipment pursuant to the terms of the interstate contract would be
+individually covered by the FLSA.</p>
+        
+            <a href="#">Back to top</a><div id="11r01"></div>
+            <h3>11r01 - Retail and
+service.</h3>
+            <p>(a)   Employees of even primarily local retail and service
+establishments can be individually covered. Examples of covered activities
+include:</p><p>(1)  ordering of supplies and goods by mail, telephone, and
+fax and receipt of goods ordered from out-of-state suppliers;</p><p>(2)  processing of credit card purchases such as
+preparation of credit card slip initiating a transaction with an out-of-state
+credit card company or transmission of a credit card check to an out-of-state
+clearinghouse; and</p><p>(3)  transmission of information regarding a customer’s
+personal check to an out-of-state clearinghouse for approval.</p><p>(b)   In addition to those examples noted in (a) above,
+employees of retail chains with out-of-state main offices are frequently
+individually covered because of their regular contacts by mail, telephone, fax,
+etc. with the main office.</p>
+        
+            <a href="#">Back to top</a><div id="11s00"></div>
+            <h3>11s00 - Sand and gravel.</h3>
+            <p>Employees of a sand
+and gravel company which sells its products to a local tile manufacturer who
+uses it in the manufacture of drainage tile for sale to local farmers engaged
+in the production of goods for interstate commerce, are not engaged in
+processes or occupations closely related and directly essential to the
+production of the farm products which may be shipped out of the State.</p>
+        
+            <a href="#">Back to top</a><div id="11s01"></div>
+            <h3>11s01 - Savings and loan
+associations.</h3>
+            <p>Employees of savings
+and loan associations, like those of banks, which make loans to persons
+residing in other States and take as security property located in other States,
+are engaged in interstate commerce. The sale of stock by such associations to,
+or the acceptance of deposits of the Federal Government also frequently involve
+commercial transactions across State lines. The bank may be engaged in
+interstate commerce because of membership in a Federal Home Loan Bank. The
+insuring of accounts with the Federal Savings and Loan Insurance Corporation
+constitutes engagement in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11s02"></div>
+            <h3>11s02 - Shopping analysts.</h3>
+            <p>Traveling analysts,
+who investigate the efficiency of sales personnel of various stores throughout
+the country and forward or carry reports back across State lines to their
+headquarters, are engaged in interstate commerce and production of goods for
+interstate commerce in any workweek in which the analysts are engaged in
+“handling, transporting, or in any other manner working” on reports, copies of
+which move across State lines. Individual coverage may also be asserted on the
+basis that the work performed by the analyst is closely related and directly
+essential to the production of goods for interstate commerce, if the customer’s
+establishment produces goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11s03"></div>
+            <h3>11s03 - Sign installation
+or painting.</h3>
+            <p>(a)   Employees engaged in the installation, maintenance, or
+servicing of signs which are installed on the premises or in front of an
+instrumentality of interstate commerce, or which are installed within the
+structure to indicate the location of terminal or other facilities or to direct
+customers or passengers in the use of the instrumentality, are engaged in
+activities so closely related to interstate commerce as to be a component part
+thereof.</p><p>(b)   Employees engaged in the installation, maintenance, or
+servicing of signs on factories producing goods for interstate commerce, the
+signs identifying the structure as well as incidentally advertising the
+business, are not performing work which is closely related to the production of
+goods for interstate commerce.</p><p>(c)   Employees engaged in painting signs on trucks which
+are regularly engaged in interstate commerce are covered on an individual
+basis.</p>
+        
+            <a href="#">Back to top</a><div id="11s04"></div>
+            <h3>11s04 - Stock brokerage
+houses.</h3>
+            <p>Employees of stock
+brokerage businesses are ordinarily engaged in interstate commerce. Employees
+engaged in the sale, purchase, transmittal, and receipt of bonds, shares of
+stock, and other securities to and from out-of-State customers and sources are
+directly engaged in interstate commerce. Registered representatives, customers’
+men, and clerical employees performing work directly related to such sales,
+purchases, transfers, transmittals, and receipts are engaged in activities
+which are so closely related to the interstate movement of the securities as to
+be engagement in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11s05"></div>
+            <h3>11s05 - Students and
+instructors repairing planes.</h3>
+            <p>Where planes moving or
+used in interstate commerce are worked upon by students under instructor
+supervision, such students and instructors are engaged in the production of
+goods for interstate commerce. The work is productive work and the fact that
+its performance is part of training for which no compensation is paid to
+students or to the school would not take the students and instructors out of
+the category of employees producing goods for interstate commerce. (See FOH
+11t08 and 10b11.)</p>
+        
+            <a href="#">Back to top</a><div id="11t00"></div>
+            <h3>11t00 - Telephone
+answering service.</h3>
+            <p>(a)   A telephone answering service which offers to and does
+in fact receive and transmit interstate telephone messages holds itself out as
+being engaged in the channels of interstate commerce and in the operation of an
+instrumentality of interstate commerce. It is not material that the percentage
+of interstate calls is small, so long as the service is prepared to handle them
+and they are regularly received and transmitted. Employees of such a telephone
+answering service who are engaged in receiving and transmitting telephone
+messages are continuously covered under the FLSA on an individual basis as
+being engaged in interstate commerce, notwithstanding that in particular
+workweeks no interstate telephone calls or messages regarding such calls are
+received or transmitted.</p><p>(b)   Employees of a telephone answering service who spend
+more than an insignificant amount of their time handling telephone
+communications for establishments engaged in the production of goods for
+interstate commerce are engaged in closely related processes or occupations
+directly essential to the production of such goods for interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11t01"></div>
+            <h3>11t01 - Telephone
+solicitors.</h3>
+            <p>Telephone solicitors
+may also be engaged in commerce or in a closely related process or occupation
+directly essential to the production of goods for commerce. Solicitors who make
+calls out-of-State are clearly engaged in commerce. Solicitors who make only
+intrastate calls are also covered individually if the checks and bank drafts
+received pursuant to their solicitations are sent out of State by their
+employer. Similarly, such intrastate callers are covered individually if they
+work for organizations that operate on a national or multi-state basis, since
+their solicitations are closely related and directly essential to such
+organizations’ interstate activities.</p>
+        
+            <a href="#">Back to top</a><div id="11t02"></div>
+            <h3>11t02 - Telephone and
+telegraph pole production.</h3>
+            <p>Employees engaged in
+the production or supply of telephone or telegraph poles for use in the
+necessary repair, maintenance, or improvement of interstate communication
+systems are covered. Such poles are produced to supply the needs of interstate
+communication.</p>
+        
+            <a href="#">Back to top</a><div id="11t03"></div>
+            <h3>11t03 - Test pilots.</h3>
+            <p>Test pilots are
+engaged in an occupation closely related and directly essential to the
+production of airplanes for interstate commerce by their employer.</p>
+        
+            <a href="#">Back to top</a><div id="11t04"></div>
+            <h3>11t04 - Theatrical booking
+agencies.</h3>
+            <p>Employees of an
+employer who acts as a theatrical booking agency, or as manager and
+representative of various theatrical performers, band leaders, and radio
+artists may be subject to the FLSA on the basis of individual coverage. Where
+such an agent arranges performances throughout the United States, his or her
+employees may be directly engaged in interstate commerce, in connection with
+the carrying on of interstate activities. This is true also of employees of a
+motion picture company which books motion pictures to be displayed in theaters
+throughout the country.</p>
+        
+            <a href="#">Back to top</a><div id="11t05"></div>
+            <h3>11t05 - Theatricals.</h3>
+            <p>Employees of circuses,
+carnivals, and road shows who in the performance of their work are regularly
+engaged in traveling across State lines are individually covered. Employees
+engaged in similar work at a fixed location are not so covered as such work has
+no connection with interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11t06"></div>
+            <h3>11t06 - Toll road
+employees.</h3>
+            <p>Employees of a toll
+road company are engaged in interstate commerce where vehicles move in interstate
+commerce over the toll road. Those who operate the road and operate a bridge
+which carries the highway are engaged in interstate commerce. Those employees
+who repair, maintain, and service the toll road are in activities so closely
+related to the interstate movement of goods transported over the road as also
+to be engaged in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11t07"></div>
+            <h3>11t07 - Trailers.</h3>
+            <p>An establishment
+engaged in the manufacture or repair of trailers which it will sell or rent for
+carrying goods in interstate commerce is engaged in the production of goods for
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11t08"></div>
+            <h3>11t08 - Trainees.</h3>
+            <p>If trainees who are
+employees within the meaning of FLSA (see FOH 10b11 and FOH 10b12) work solely
+on scrap materials which do not leave the State, they are not covered on an individual
+basis. Such employees may, however, be covered as employed in an enterprise
+described in FLSA Sec 3(s).</p>
+        
+            <a href="#">Back to top</a><div id="11t09"></div>
+            <h3>11t09 - Transportation.</h3>
+            <p>(a)   Transportation of semi-finished goods between
+production plants within the State is covered as part of the productive process
+if the finished goods are to be shipped outside the State.</p><p>(b)   The concept of transportation as an aspect of
+interstate movement is not limited to the transportation that, in the narrowest
+view, involves the crossing of a State line. An employee is engaged in
+interstate commerce if he or she is engaged in the hauling of goods or persons
+that are in transit to or from another State. Intrastate transportation is a
+part of interstate commerce if it forms a part of one larger movement in the course
+of which a State line is crossed.</p><p>(c)   The loading of goods onto a conveyance for
+transportation in interstate commerce constitutes engagement in interstate
+commerce, and unloading and reloading at any point in the interstate journey is
+of the same character. Similarly, the unloading of goods at the end of their
+transportation in interstate commerce is engagement in interstate commerce.</p><p>(d)   Coverage under the FLSA on the basis of engagement in
+interstate commerce through engagement in transportation is not confined to
+persons who are immediately concerned in the foregoing activities. Included
+also are employees whose activities are so closely related thereto as to be,
+for all practical purposes, a part thereof, such as inspectors, investigators,
+freight agents, clerical employees, stockroom clerks, and red caps.</p>
+        
+            <a href="#">Back to top</a><div id="11t10"></div>
+            <h3>11t10 - Transportation
+terminals.</h3>
+            <p>(a)   Transportation terminals, through which flow goods,
+freight, or passengers moving in interstate commerce, are fixed facilities of
+interstate commerce. As a general rule, employees engaged in work in or about
+such fixed facilities of interstate commerce are subject to the FLSA as they
+are engaged in interstate commerce, or so closely related to the flow of goods
+through the terminals as to be regarded as engaged in interstate commerce. This
+is applicable to operational, maintenance, custodial, and clerical employees of
+the terminals.</p><p>(b)   Certain employees engaged in work at the terminal
+providing services or facilities which those carrying on interstate commerce
+may use are not covered on an individual basis. This will apply whether such
+personnel are employed by the instrumentality of interstate commerce which
+operates the terminal or by the an independent employer or concessionaire. For
+example, employees of drug stores, lunch counters, newsstands, barbershops, and
+shoeshine parlors are not closely enough related to the movement of goods
+through the terminals to be regarded as engaged in interstate commerce.</p><p>(c)   A terminal porter who not only keeps the station clean
+but also assists passengers with their baggage and employees of an
+establishment owning and operating coin-actuated baggage lockers installed in
+stations are engaged in a terminal service so closely related to the physical
+transportation of goods and passengers in interstate commerce as to be a part
+of interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11t11"></div>
+            <h3>11t11 - Travel.</h3>
+            <p>Employees of a travel
+agency who are engaged in the sale of transportation tickets for interstate or
+foreign travel, or who conduct interstate sight-seeing tours, are individually covered
+by the FLSA.</p>
+        
+            <a href="#">Back to top</a><div id="11t12"></div>
+            <h3>11t12 - Truck renting
+companies.</h3>
+            <p>(a)   Employees of establishments engaged in the business of
+leasing or renting trucks on a “drive-it-yourself” system are covered on an
+individual basis in any workweek in which they are engaged in:</p><p>(1)  maintaining, servicing, and repairing vehicles which
+are used on a regular and recurrent basis to transport goods in interstate
+commerce. (This includes not only vehicles used to transport goods directly
+across State lines, but also those used to transport goods from a wholesale
+establishment to another point within the same State, if such distribution is
+covered under the principles of the Jacksonville Paper case. See FOH 11w08.);</p><p>(2)  maintaining, servicing and repairing vehicles used in
+the production of goods for interstate commerce.</p><p>(b)   Employees who receive and re-ship vehicles received
+from another State which have not come to rest are engaged in interstate
+commerce. Employees whose activities relate to clerical duties connected with
+such receipt and shipment are so closely related to the movement in interstate
+commerce as to be also regarded as engaged in interstate commerce.</p><p>(c)   Employees engaged in maintenance, service, and repair
+activities, and the clerical duties connected with the rental and use of vehicles
+on a regular basis to transport goods in interstate commerce are engaged in
+interstate commerce and the production of goods (vehicles) for interstate
+commerce.  Clerical duties include related bookkeeping, waiting on customers,
+checking out of cars and trucks, making out shop-repairs orders, and similar
+activities.</p><p>(d)   Employees engaged in maintaining, servicing, and
+repairing vehicles used in the production of goods for interstate commerce are
+in closely related processes or occupations directly essential to the
+production of goods for interstate commerce.  All of the employees, including
+watchmen and porters, who are part of their employer’s integrated effort to
+supply to producers of goods for interstate commerce the vehicles used in
+production of goods are similarly individually covered.</p>
+        
+            <a href="#">Back to top</a><div id="11v00"></div>
+            <h3>11v00 - Vending machines.</h3>
+            <p>Vending machine goods
+received from out-of-State sources remain “in commerce” under the Jacksonville
+Paper (See FOH 11w08.) rule through the warehouse where initially received in a
+State and until placed in vending machines within the same State. Thus, for
+example a routeman employed to stock vending machines with such goods is
+engaged in individually covered work.  (See FOH 24c03.)</p>
+        
+            <a href="#">Back to top</a><div id="11w00"></div>
+            <h3>11w00 - Warehousing:
+controlling principles.</h3>
+            <p>(a)   Employees of a warehouse, the storage facilities of
+which are used in the course of interstate transportation and distribution of
+goods, are engaged in interstate commerce.</p><p>(b)   The unloading, inspecting, and checking of goods
+received at warehouse from outside the State, and the keeping of records with
+respect thereto, constitute engagement in interstate commerce.</p><p>(c)   Whether employees engaged in and about a warehouse in
+handling goods after their receipt from outside the State are engaged in
+interstate commerce, depends upon the disposition and destination of the goods
+after they leave the warehouse. In those situations where the flow of
+interstate commerce terminates upon receipt of the goods at the warehouse, only
+those employees are individually covered whose activities pertain to the
+receipt of the goods. In situations where the flow of interstate commerce
+continues through or begins after the warehousing operations, all employees are
+individually covered who participate in any of the work through which goods are
+received, stored, or distributed, or in any activities so closely related
+thereto as to be a part thereof.</p><p>(d)   Where goods are received from outside the State and
+stored in bulk warehouses, the stream of interstate commerce does not
+necessarily end there, but may continue until the goods are delivered from the
+warehouse to a dealer or consumer. In the case of subsequent distribution
+within the same State, if the goods belong to a wholesaler who will distribute
+them to retailers or other wholesalers, the warehouse employees who handle the
+goods during their stay in the warehouse and who deliver them to the retailers
+or wholesalers, may be engaged in interstate commerce under the principles of
+the Jacksonville Paper case. (See FOH 11w08.)</p><p>(e)   Goods that are destined for another State may be
+considered to be moving in interstate commerce even prior to their crossing of
+a State line. Hence, the temporary storage of such goods may be considered
+engagement in interstate commerce, depending upon the circumstances of such
+storage with relation to previous and subsequent movement of the goods. All
+employees in the ordinary warehouse serving chain stores which receives goods
+from outside the State are individually covered even though the distribution
+may be entirely intrastate. A similar result will follow where the distribution
+of the warehouse or wholesale house is confined to a limited group of
+retailers, such as wholesalers who distribute only to members of a particular
+association of retail stores.</p>
+        
+            <a href="#">Back to top</a><div id="11w01"></div>
+            <h3>11w01 - Warehousing: chain
+store.</h3>
+            <p>(a)   Employees of a chain store warehouse engaged in
+storing out-of-State merchandise for direct shipment to customers of several
+retail stores are covered on an individual basis. However, whether a particular
+employee is so covered depends upon his or her own activities. Normally,
+warehouse employees of such chain stores “are performing wholesale duties in
+the very midst of the stream of interstate commerce”, and they “customarily
+deal with both incoming and outgoing interstate shipments”. However, if an individual’s
+work is in no way concerned with the interstate aspect of his or her employer’s
+business, then he or she is not individually covered.</p><p>(b)   A repair and service facility, even though conducted
+in a chain store warehouse servicing retail stores, is to be distinguished in
+its activities from the process of wholesaling. Employees whose activities are
+confined solely to delivery, repair, and servicing of merchandise which has
+already reached the retail stores or which has been sold to retail customers by
+the retail stores are not individually covered by the FLSA if all of the
+merchandise is delivered within the State in which the chain store warehouse is
+located.</p>
+        
+            <a href="#">Back to top</a><div id="11w02"></div>
+            <h3>11w02 - Washers, car or bus.</h3>
+            <p>Car or bus washers
+employed by an interstate bus line, and engaged in work either at the terminal
+or at the company garage, are engaged in work so closely related to the
+movement of goods in interstate commerce as to be engagement in interstate
+commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11w03"></div>
+            <h3>11w03 - Waste material,
+scrap metal and junk.</h3>
+            <p>(a)   The collection, reconditioning, reprocessing,
+salvaging, sorting, loading, unloading or otherwise working on or handling
+waste material, scrap metal or junk for shipment out of the State, is covered
+on an individual basis. For example, the loading of scrap metal on railroad
+cars for interstate shipment constitutes engagement in interstate commerce.
+Likewise, operations performed on waste paper, rags or metal for shipment,
+directly or indirectly out of the State or for use by producers in the
+manufacture of goods to be shipped out of the state, such as paper boxes,
+reclaimed woolens and the like, is the production of goods for interstate
+commerce since such materials are a part or ingredient of the goods produced
+which ultimately move in interstate commerce.</p><p>(b)   The removal of waste material, scrap metal and junk
+from establishments that are engaged in the production of goods for interstate
+commerce is covered on an individual basis. The removal of such waste material
+is closely related and directly essential to the production of such goods. It
+is immaterial that the waste material is picked up at the door of such an
+establishment or from the adjoining alley or sidewalk, or that it does not
+subsequently move in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11w04"></div>
+            <h3>11w04 Watching and guarding.</h3>
+            <p>(a)   Personnel engaged in watching and guarding buildings,
+premises, equipment and other goods may be subject to the FLSA as either
+engaged in interstate commerce, or in the production of goods for interstate
+commerce. Employees engaged in watching or guarding the following instrumentalities
+of interstate commerce are engaged in interstate commerce:</p><p>(1)  movable facilities of interstate commerce, such as
+trucks, railroad cars, or ships, whether empty or loaded;</p><p>(2)  fixed facilities of interstate commerce, such as
+interstate warehouse buildings, freight and passenger terminals, power
+transmission buildings, telephone exchanges, and radio stations; and</p><p>(3)  covered construction of the channels of interstate
+commerce, such as interstate highways, waterways, and railroad roadbeds. This
+is true even though the watchman is employed by an independent protective
+agency.</p><p>(b)   watchman who is employed at a fixed facility of
+interstate commerce, such as a warehouse or distribution depot devoted to the
+receipt and shipment of goods in interstate commerce is covered on an
+individual basis. Similarly, an employee who watches goods which by their
+nature have not yet come to rest is engaged in activities closely enough
+related to interstate commerce to be engagement in interstate commerce. For
+example, if he watches trucks freight cars, and boats prior to the unloading of
+out-of-State goods, his work is individually covered.</p><p>(c)   Employees engaged in watching or guarding buildings,
+premises, equipment, materials, or other goods that are being used in the
+production of goods for interstate commerce are subject to the FLSA as being
+engaged in the production of goods for interstate commerce. They are in
+processes or occupations that are closely related and directly essential to the
+production of goods watched or guarded.</p><p>(d)   It is not necessary that the production operations
+must be carried on at the precise moment that the watching or guarding is done.
+If that which the employee guards is used regularly in the day time in the
+production of goods for interstate commerce, the night watchman is covered. Nor
+is it material that the plant which he or she guards is temporarily shut down,
+although for a fairly long period. However, where production has definitely
+ceased and no further production is being contemplated, the watching or
+guarding cannot be said to be closely related and directly essential to the
+production of any goods.</p><p>(e)   Whether a watchman who watches building materials on
+construction jobs is individually covered depends upon the nature of the
+construction job. In general, the watchman stands in the same position as other
+employees, such as carpenters and laborers. Where the other employees are
+subject to the Act because they are in processes or occupations that are
+closely related and directly essential to the production of goods for
+interstate commerce, the guard is individually covered. For example, employees,
+including watchmen engaged in the maintenance, repair, reconstruction,
+improvement, or extension of facilities used in the production of goods for
+interstate commerce are in closely related processes or occupations directly
+essential to the production thereof. Similarly, such work in connection with
+fixed facilities and channels of interstate commerce, such as warehouse
+buildings, freight and passenger terminals, pipeline stations, telephone
+exchanges, radio stations, interstate highways, waterways, and railroad
+roadbeds, is so closely related to the interstate movement of goods through or
+over them as to be engagement in interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11w05"></div>
+            <h3>11w05 - Wholesaling: general
+considerations.</h3>
+            <p>(a)   Employees engaged in activities characteristic of the
+wholesaling business may be engaged in interstate commerce by virtue of their
+connection with the procurement or receipt of goods received directly from
+outside the State, the handling and distribution of goods moving in interstate
+commerce, or the original shipment of goods out of the State.</p><p>(b)   Employees of a wholesaler who participate in the sale,
+shipment, et cetera, of goods to points outside the State are engaged in
+interstate commerce.</p><p>(c)   Employees of wholesalers (with the exception of
+employees engaged in work relating to the ordering and receipt of merchandise
+from outside the State) are not individually covered, if the wholesaler brings
+goods into the State for general distribution to the trade, stores them to
+await orders, and then distributes them on order.</p>
+        
+            <a href="#">Back to top</a><div id="11w06"></div>
+            <h3>11w06 - Wholesaling: receipt
+of out-of-State goods.</h3>
+            <p>(a)   Employees of a wholesaler who are engaged in the
+procurement and receipt of goods from outside the State are engaged in
+interstate commerce without regard to the nature of the employer’s business or
+the subsequent disposition of the goods. This is true whether the goods are
+received by the wholesaler or directly by the customer on behalf of whom they
+were procured to be shipped. Included within the coverage of the FLSA on this
+basis are employees whose work is so closely related to the actual procurement
+or receipt of the goods as to be, for all practical purposes, a part thereof.
+For example, employees who keep records of interstate purchases and goods
+received, maintain the accounts payable ledger, and other allied and receiving
+employees, are so closely related to the interstate movement of the goods as to
+be engaged in interstate commerce. Moreover, maintenance and custodial
+employees of such a wholesale establishment are covered on an individual basis
+for similar reasons. For example, maintenance employees engaged in repairing
+the materials-handling equipment, the watchman who protects goods prior to
+unloading, and the janitor who cleans the office of the wholesaler are likewise
+so closely related to the movement of the goods ordered and received as to be
+engaged in interstate commerce.</p><p>(b)   The coverage of the employees whose activities are
+performed with respect to the out-of-State goods while such goods are in or
+about the establishment of the wholesaler is determined by the status of the
+goods at the time of the performance of the activity in question. If at that
+time the goods are in fact still in the stream of interstate commerce,
+performance of work connected therewith by any employee will be either actual
+engagement in interstate commerce or so closely related thereto as to be
+regarded as part thereof.</p>
+        
+            <a href="#">Back to top</a><div id="11w07"></div>
+            <h3>11w07 - Wholesaling: where
+out-of-State goods come to rest.</h3>
+            <p>(a)   Out-of-State goods of an intrastate wholesaler do not
+come to rest until they reach the destination intended for them by the
+importer. Normally, the destination intended for goods received for storage and
+subsequent distribution in intrastate commerce is the place where they are held
+for future distribution, such as shelves or storage bins, rather than the first
+place at which they are set after unloading from the carrier. The fact that
+there may be some delay in moving the goods from the point of unloading to the
+shelves or bins is an immaterial circumstance which does not alter the results.</p><p>(b)   Thus any employee whose duties relate to the ordering
+of goods from other States is subject to the FLSA as engaged in interstate
+commerce. This will include not only those who make telephone calls or send
+telegrams, or write letters, or handle payments, all in connection with such
+purchases, but also employees who keep records of purchases, orders, and
+receipts, or in any manner perform work which is materially related to the
+purchases.</p><p>(c)   Employees engaged in receiving out-of-State goods are
+actually engaged in interstate commerce, and those whose work is materially
+related thereto are so closely related to the interstate movement as to be
+engaged in interstate commerce.</p><p>(d)   Any employee whose duties includes the performance of
+the following types of work, even after the out-of-State goods have been
+unloaded and deposited on the unloading platform or warehouse floor, is engaged
+in interstate commerce:</p><p>(1)  checking goods against invoices;</p><p>(2)  placing goods on shelves or in storage bins;</p><p>(3)  making reports on missing or damaged goods; or</p><p>(4)  entering articles received in interstate commerce in
+the stock book. </p>
+        
+            <a href="#">Back to top</a><div id="11w08"></div>
+            <h3>11w08 - Wholesaling: prior
+orders, pre-existent understandings, and anticipation of needs.</h3>
+            <p>(a)   The Supreme Court, in the Jacksonville Paper Company
+case, has defined those conditions under which goods remain within the channels
+of interstate commerce until delivered to the customer level. The first group
+comprises those goods purchased by the wholesaler upon the order of a customer
+with the definite intention that the goods shall be carried at once to the
+customer.</p><p>(b)   The second group comprises those goods obtained by the
+wholesaler from the manufacturer or supplier to meet the needs of specified
+customers pursuant to some understanding with the customer even though not
+necessarily for immediate delivery. The Court ruled that the goods comprising
+each of these two groups are within the channels of interstate commerce until
+delivery is finally effected to the specific customer, known and intended at
+the time of purchase by the wholesaler.</p><p>(c)   The third group comprises those goods the orders for
+which have been based, by the wholesaler, on anticipation of the needs of a
+stable group of specific customers rather than upon prior orders or
+understandings.</p>
+        
+            <a href="#">Back to top</a><div id="11w09"></div>
+            <h3>11w09 - Wholesaling: chain
+store distribution.</h3>
+            <p>In the American Stores
+case, the Court of Appeals held that where the warehouse and the retail stores,
+located within the same State, are part of an integrated unit, goods do not
+come to rest in the warehouse in the sense that the flow of goods in interstate
+commerce has been terminated. Thus, all employees in the ordinary chain store
+warehouse receiving goods from outside the State are individually covered, even
+though the distribution effected is entirely intrastate. Likewise, the
+employees would be individually covered where the distribution of the warehouse
+or wholesale house is confined to a limited group of retailers, such as
+wholesalers who distribute only to members of a particular association of
+retail stores or to a limited number of retailers who handle the particular
+product or brand.</p>
+        
+            <a href="#">Back to top</a><div id="11w10"></div>
+            <h3>11w10 - Wholesaling:
+interstate shipment by wholesaler.</h3>
+            <p>Employees of a
+wholesaler who participate in the sale or shipment of goods outside of the
+State are engaged in interstate commerce. The movement of the goods is
+initiated by the employee who first removes them from the point at which
+previously stored for future distribution; all employees whose duties are
+thereafter related to such movement are individually covered. This broad group
+includes such typical and illustrative occupations as order pickers, checkers,
+packers, shipping clerks, loaders, clerical and office employees who keep
+records or prepare correspondence relative to either the sale or the movement
+of the goods, and maintenance and custodial employees, including watchmen and
+janitors.</p>
+        
+            <a href="#">Back to top</a><div id="11w11"></div>
+            <h3>11w11 - Wholesaling: second
+wholesalers.</h3>
+            <p>If, in fact, the
+movement of goods in interstate commerce has ceased in the establishment of the
+first wholesaler, the subsequent handling of such goods by the employees of the
+second wholesaler is not covered on an individual basis, unless or until the second
+wholesaler initiates a new movement in interstate commerce. However, if the
+goods have remained in interstate commerce through the establishment of the
+first wholesaler, the receipt of such goods in the establishment of the second
+wholesaler is the same as receiving the goods directly from outside the State
+and is therefore individually covered. Similarly, if the second wholesaler
+receives the out-of-State goods by direct consignment or by drop-shipment from
+their out-of-State source, they are deemed to have been received directly from
+outside the State. Those employees who in any manner perform work which is
+materially related to the purchase or receipt of such goods prior to their
+arrival at their intended destination are covered on an individual basis.</p>
+        
+            <a href="#">Back to top</a><div id="11w12"></div>
+            <h3>11w12 - Woods and mine crew
+auxiliary employees.</h3>
+            <p>Employees of an
+isolated lumber or mining camp such as cooks, kitchen helpers, timekeepers, and
+repair shop mechanics who are engaged solely in connection with, and for the
+purpose of aiding FLSA covered productive activities are engaged in a closely
+related process or occupation directly essential to the production of goods for
+interstate commerce.</p>
+        
+            <a href="#">Back to top</a><div id="11w13"></div>
+            <h3>11w13 - Wrecking contractor.</h3>
+            <p>(a)   Employees of a wrecking contractor engaged in
+demolition work and in the sale of the salvaged parts are covered on an
+individual basis where the employer has reason to believe that part of the
+salvaged material will move in interstate commerce or will become part of goods
+that are shipped in interstate commerce, whether as a result of a direct sale
+by the employer or indirectly as a result of its disposition by his customer.</p><p>(b)   Individual coverage also exists where the employees
+are engaged partially or wholly in wrecking buildings as a part of the
+reconstruction, remodeling, or expansion of facilities used in the production
+of goods for interstate or foreign commerce, whether the employees are engaged
+in work at the job site, such as office and clerical workers, watchmen and
+guards, employees maintaining and repairing equipment used on the job, or
+employees transporting such equipment to and from the job site</p>
+        
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <script src="/assets/bower_components/lunr.js/lunr.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

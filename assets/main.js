@@ -3,11 +3,16 @@
 
 var store;
 var index;
-var data = $.getJSON('{{ site.baseurl }}/assets/searchIndex.json');
+var data = $.getJSON('{{site.baseurl}}/assets/searchIndex.json');
 
 data.then(function(d) {
   store = d.store;
   index = lunr.Index.load(d.index);
+}).then(function (){  
+  var out = search(getParameterByName('q'),getParameterByName('chapter')).map(function (e){
+    return "<p><a href='/chapters/" + e.section.slice(0,2) + "#" + e.section + "'>" + e.title + "</a></p>";
+  }).join('')
+  $("#searchResults").html(out);
 })
 
 /**
@@ -34,10 +39,30 @@ function mapResultsToStore(results) {
 }
 
 // Bind search to the searchbox... 
-$("#searchbox").keyup(function (e){
-  console.log(search($("#searchbox").val()))
+//$("#searchbox").keyup(function (e){
+//  console.log(search($("#searchbox").val()))
+//})
+
+$("#searchForm").submit(function (event){
+  event.preventDefault();
+  q = $("#searchbox").val();
+  url = "{{site.baseurl}}/search/?q=" + q
+  if ($("#chapterCheckbox").prop("checked")){
+    url = url + "&chapter=" + window.location.href.split('#')[0].split('chapters/')[1].slice(0,2)
+  }
+  window.location.href = url
 })
 
-$("#searchButton").on("click", function (e){
-  console.log("You clicked me!")
+$(document).ready(function(){
+  var q = getParameterByName('q');
+  if (q) {
+    $("#searchbox").val(q)
+  }
 })
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}

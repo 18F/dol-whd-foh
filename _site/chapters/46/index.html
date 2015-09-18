@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+           
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#">WHD</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#">FOH Online</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </div>
+        
+          </nav>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+            <div class="panel-body">
+                <form id="searchForm" class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input id="searchbox" type="text" class="form-control" />
+                        <button type="submit" class="btn btn-default">
+                            Search
+                        </button>
+                        <p>
+                            <label>
+                                <input id="chapterCheckbox" type="checkbox">Selected chapter
+                            </label>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                     
+                    <a href="/chapters/10" class="list-group-item ">CHAPTER 10 - FLSA COVERAGE - EMPLOYMENT RELATIONSHIP, STATUTORY EXCLUSIONS, GEOGRAPHICAL LIMITS
+                    </a>  
+                    <a href="/chapters/11" class="list-group-item ">CHAPTER 11 - INDIVIDUAL COVERAGE-FLSA
+                    </a>  
+                    <a href="/chapters/12" class="list-group-item ">CHAPTER 12 - ENTERPRISE COVERAGE – FLSA
+                    </a>  
+                    <a href="/chapters/13" class="list-group-item ">CHAPTER 13 - COVERAGE OF THE PUBLIC CONTRACTS ACT
+                    </a>  
+                    <a href="/chapters/14" class="list-group-item ">CHAPTER 14 - THE MCNAMARA-O’HARA SERVICE CONTRACT ACT
+                    </a>  
+                    <a href="/chapters/15" class="list-group-item ">CHAPTER 15 - DAVIS-BACON AND RELATED ACTS ANDCONTRACT WORK HOURS AND SAFETY STANDARDS ACT
+                    </a>  
+                    <a href="/chapters/16" class="list-group-item ">CHAPTER 16  - TITLE III - CONSUMER CREDIT PROTECTION ACT (WAGE GARNISHMENT) TABLE OF CONTENTS
+                    </a>  
+                    <a href="/chapters/20" class="list-group-item ">CHAPTER 20 - AGRICULTURE, RELATED AND SEASONAL EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/21" class="list-group-item ">CHAPTER 21 - RETAIL OR SERVICE ESTABLISHMENT EXEMPTIONS FROM SECS 6 AND 7
+                    </a>  
+                    <a href="/chapters/22" class="list-group-item ">CHAPTER 22 - EXECUTIVE, ADMINISTRATIVE, PROFESSIONAL, COMPUTER, AND OUTSIDE SALES EXEMPTIONS – FLSA § 13(A)(1) (29 U.S.C. § 213(A)(1))
+                    </a>  
+                    <a href="/chapters/23" class="list-group-item ">CHAPTER 23 - NEWSPAPER AND OTHER COMMUNICATION EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/24" class="list-group-item ">CHAPTER 24 - TRANSPORTATION EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/25" class="list-group-item ">CHAPTER 25 - OTHER EXEMPTIONS
+                    </a>  
+                    <a href="/chapters/30" class="list-group-item ">CHAPTER 30 - RECORDS, MINIMUM WAGE, AND PAYMENT OF WAGES
+                    </a>  
+                    <a href="/chapters/31" class="list-group-item ">CHAPTER 31 - HOURS WORKED
+                    </a>  
+                    <a href="/chapters/32" class="list-group-item ">CHAPTER 32 - OVERTIMETABLE OF CONTENTS
+                    </a>  
+                    <a href="/chapters/33" class="list-group-item ">CHAPTER 33 - CHILD LABOR – FLSA
+                    </a>  
+                    <a href="/chapters/36" class="list-group-item ">CHAPTER 36 - FIELD SANITATION AND TEMPORARY LABOR CAMP STANDARDS IN AGRICULTURE UNDER THE OCCUPATIONAL SAFETY AND HEALTH ACT
+                    </a>  
+                    <a href="/chapters/39" class="list-group-item ">CHAPTER 39 - THE FAMILY AND MEDICAL LEAVE ACT (FMLA)
+                    </a>  
+                    <a href="/chapters/46" class="list-group-item  active ">CHAPTER 46 - ENFORCEMENT OF H-2B
+                    </a> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-md-1">
+            </div>-->
+    <div class="col-md-8">
+        <h2>Chapter 46</h2>
+        <ul>
+            
+            <li><a href="/chapters/46#46a00">46a00 - Purpose.</a></li>
+            
+            <li><a href="/chapters/46#46a01">46a01 - H-2B petition process.</a></li>
+            
+            <li><a href="/chapters/46#46a02">46a02 - Enforcement authority.</a></li>
+            
+            <li><a href="/chapters/46#46a03">46a03 - Coverage.</a></li>
+            
+            <li><a href="/chapters/46#46a04">46a04 - Territory of Guam.</a></li>
+            
+            <li><a href="/chapters/46#46b00">46b00 - General.</a></li>
+            
+            <li><a href="/chapters/46#46b01">46b01 - Temporary need.</a></li>
+            
+            <li><a href="/chapters/46#46b02">46b02 - Pre-filing obligations – recruitment.</a></li>
+            
+            <li><a href="/chapters/46#46b03">46b03  Employer obligations - Application for Temporary Employment Certification
+information.</a></li>
+            
+            <li><a href="/chapters/46#46b04">46b04 - Employer obligations - Application for Temporary Employment
+Certification Appendix B.1.</a></li>
+            
+            <li><a href="/chapters/46#46c00">46c00 - Required/offered wage rate.</a></li>
+            
+            <li><a href="/chapters/46#46c01">46c01 - Deductions.</a></li>
+            
+            <li><a href="/chapters/46#46c02">46c02 - Effect of the FLSA.</a></li>
+            
+            <li><a href="/chapters/46#46d00">46d00 - Authority of WHD.</a></li>
+            
+            <li><a href="/chapters/46#46d01">46d01 - Employer cooperation.</a></li>
+            
+        </ul>
+        
+            <a href="#">Back to top</a><div id="46a00"></div>
+            <h3>46a00 - Purpose.</h3>
+            <p>The H-2B provisions of the Immigration and
+Nationality Act (INA) provide for the admission of nonimmigrants to the United
+States to perform temporary non-agricultural labor or services. See 8 USC §
+1101(a)(15)(H)(ii)(b). This chapter provides information on regulations and
+interpretations with respect to the Wage and Hour Division’s (WHD) enforcement authority
+under the H-2B nonimmigrant program.</p>
+        
+            <a href="#">Back to top</a><div id="46a01"></div>
+            <h3>46a01 - H-2B petition process.</h3>
+            <p>(a)   ETA. The H-2B
+petition process begins when the Employment and Training Administration (ETA) certifies
+that the prospective H-2B employer performed the required recruitment and was
+unable to obtain sufficient numbers of qualified U.S. workers to meet its
+temporary employment need. The ETA certifying officer (CO) reviews the complete
+Application for Temporary Employment Certification ETA Form 9142 and Appendix B.1
+and makes a determination to certify or deny the application. ETA may issue a
+Request for Further Information (RFI) to, or at its discretion conduct an audit
+of, the employer if ETA believes the employer has not established its need or
+met its domestic recruitment obligations. Included within ETA jurisdiction are
+determinations related to such issues as justification and appropriate classification
+of the temporary need, availability of U.S. workers, positive recruitment,
+prevailing wage determinations, methodology for establishing the prevailing
+wage, and similar matters.</p><p>(b)   DHS/USCIS. After
+obtaining a certified Application from ETA the employer then submits a petition
+to Department of Homeland Security’s U.S. Citizenship and Immigration Services
+(USCIS). USCIS reviews the petition which includes the certified Application
+for Temporary Employment Certification and the DHS Form I-129, Petition for a
+Nonimmigrant Worker.  USCIS either approves or denies the petition.</p><p>(c)   DOS. After the
+employer has an adjudicated petition from the USCIS, the Department of State
+(DOS) issues the visa to the H-2B workers. </p>
+        
+            <a href="#">Back to top</a><div id="46a02"></div>
+            <h3>46a02 - Enforcement authority.</h3>
+            <p>Effective January 18, 2009, WHD was delegated
+enforcement authority from the Department of Homeland Security (DHS) under INA
+§ 214(c)(14)(A). This includes authority to impose administrative remedies on
+an employer who substantially fails to meet any of the conditions of the
+petition to admit or provide status to an H-2B worker or who willfully
+misrepresents a material fact on such petition. The regulations for this
+program are in 20 CFR Part 655 Subpart A. Questions or complaints concerning
+the H-2B program should be directed to the nearest Wage and Hour Division
+District Office. See http://www.dol.gov/whd/america2.htm. </p><p>On February 21, 2012, the Department issued new Final
+Rule for the H-2B program.  77 FR 10038.  On April 26, 2012, the Final Rule was
+preliminarily enjoined by the court in Bayou Lawn &amp; Landscape Servs. v.
+Solis, No. 3:12-cv-00183-MC-CJK, slip op. (N.D. Fla. Apr. 26, 2012), appeal
+docketed, No. 12-12462 (11th Cir. May 15, 2012).  The 2008 H-2B regulations
+were not at issue and are not affected by the district court's preliminary
+decision in Bayou Lawn.  Rather, as the district court explained, its
+preliminary injunction had the effect of &quot;preserving the status quo&quot;
+of the 2008 rules.  Bayou Lawn, Slip. Op. at 7.  This FOH Chapter relates to
+the 2008 rules only.   </p>
+        
+            <a href="#">Back to top</a><div id="46a03"></div>
+            <h3>46a03 - Coverage.</h3>
+            <p>(a)   Employers who
+have an approved ETA Form 9142 are covered by the H-2B provisions.</p><p>(1)  The H-2B employer
+identified on the Application for Temporary Employment Certification is the
+employer responsible for compliance with H-2B requirements and is the subject
+of the H‑2B investigation.</p><p>(2)  A
+&quot;successor-in-interest&quot; to the employer listed on the Application for
+Temporary Employment Certification may be held responsible for the actions of
+its predecessor if the successor has explicitly accepted the predecessor's H‑2B
+obligations.  See 20 CFR 655.4.</p><p>(b)   H-2B workers
+are also entitled to all of same protections as U.S. workers under all other
+applicable programs enforced by the WHD, such as the Fair Labor Standards Act
+(FLSA), the Migrant and Seasonal Agricultural Worker Protection Act (MSPA), the
+Davis Bacon Act (DBA), the Service Contract Act (SCA), and any other program
+enforced by the WHD. </p>
+        
+            <a href="#">Back to top</a><div id="46a04"></div>
+            <h3>46a04 - Territory of Guam.</h3>
+            <p>The Department of Labor
+(DOL) does not certify to USCIS the temporary employment of H‑2B workers, or
+enforce compliance with the provisions of the H-2B visa program, in the
+Territory of Guam. The administration of the H-2B temporary labor certification
+program is performed by the Governor of Guam, or the Governor's designated
+representative.  See 20 CFR 655.2 and 8 CFR 214.2(h)(6)(iii-v)</p>
+        
+            <a href="#">Back to top</a><div id="46b00"></div>
+            <h3>46b00 - General.</h3>
+            <p>(a)   Starting on
+January 18, 2009, an employer seeking to hire H-2B workers must file a
+completed Application for Temporary Employment Certification (Application) along
+with a copy of the recruitment report with ETA. See 20 CFR 655.20.</p><p>(b)   Certification
+of more than one H-2B position may be requested on a single Application so long
+as all H-2B workers being sought will perform the same services or labor on the
+same terms and conditions, in the same occupation, in the same area of intended
+employment, and during the same period of employment.</p><p>(c)   The Application
+for Temporary Employment Certification is valid only for the period of time
+between the beginning and ending dates of employment certified by ETA. The
+certification expires on the last day of authorized employment.</p><p>(d)   The Application
+is valid only for the number of H‑2B positions, the area of intended
+employment, the specific services or labor to be performed, and the employer
+specified on the certified Application for Temporary Employment Certification
+and may not be transferred from one employer to another. Employers may amend
+applications pursuant to 20 CFR 655.34.</p>
+        
+            <a href="#">Back to top</a><div id="46b01"></div>
+            <h3>46b01 - Temporary need.</h3>
+            <p>(a)   The employer
+must establish that its need for non-agricultural services or labor is
+temporary, regardless of whether the underlying job is permanent or temporary. See
+20 CFR 655.6. The employer must provide a detailed statement regarding its
+temporary need as directed in 20 CFR 655.21.</p><p>(b)   The employer’s
+need is considered temporary if it is a one-time occurrence or a seasonal,
+peakload, or intermittent need as defined by DHS. See 8 CFR 214.2(h)(6)(ii)(B).</p><p>(c)   Where a
+one-time occurrence lasts longer than one year, the employer must reapply for
+certification on an annual basis after performing good-faith recruitment,
+except that an employer with an approved need for more than one year, but less
+than 18 months will not be required to conduct another labor market test for
+the portion of time beyond 12 months. See 20 CFR 655.20(f).</p><p>(d)   Documentation
+and all supporting evidence justifying the need for temporary employment must
+be retained by the employer for a period of no less than three years from the
+date of the certification.  See 20 CFR 655.21(c).</p>
+        
+            <a href="#">Back to top</a><div id="46b02"></div>
+            <h3>46b02 - Pre-filing obligations – recruitment.</h3>
+            <p>(a)   General recruitment
+obligations. Prior to filing the Application for Temporary Employment
+Certification, an employer must perform all necessary steps of the recruitment
+process as specified in 20 CFR 655.15. The employer's signature on the Application
+for Temporary Employment Certification attests that:</p><p>(1)  It has completed
+recruitment and found no or insufficient qualified U.S. workers to meet its
+temporary need,  and</p><p>(2)  That any eligible
+U.S. workers who applied for temporary or seasonal employment were either hired
+or rejected for lawful, job-related reasons. </p><p>(b)   Prevailing wage.
+The H-2B employer first must obtain a prevailing wage determination (PWD) from
+ETA by submitting an ETA Form 9141, Application for Prevailing Wage
+Determination. Prevailing wage requests are handled by the ETA National Processing
+Center (NPC). Information concerning PWDs may be found at http://www.foreignlaborcert.doleta.gov/contacts.cfm.
+See 20 CFR 655.10.</p><p>(1)  The NPC will enter the
+prevailing wage on the form, indicate the source and validity period, and
+return the certified prevailing wage (electronically or by mail) to the employer.
+The employer must offer this wage (or higher) to both its H‑2B workers and any
+similarly employed U.S. workers hired in response to the recruitment required
+as part of the Application for Temporary Employment Certification application. See
+20 CFR 655.10(b)(6). “Similarly employed” means having substantially comparable
+jobs in the occupational category in the area of intended employment. See 20 CFR
+655.10(c).</p><p>(2)  No PWD issued for use
+on an Application for Temporary Employment Certification permits an employer to
+pay a wage lower than the highest wage required by any applicable federal, state,
+or local law. See 20 CFR 655.10(h).</p><p>(c)   Job order. The
+employer must submit a job order to the State Workforce Agency (SWA) serving
+the area of intended employment no more than 120 calendar days before the
+employer’s date of need for H-2B workers, identifying it as a job order to be
+placed in connection with a future Application for Temporary Employment
+Certification. See 20 CFR 655.15(e).</p><p>(d)   Advertisements.
+The employer must publish two print advertisements for the job which must
+contain terms and conditions of employment which are not less favorable than
+those to be offered to the H-2B workers and must satisfy all of the following
+requirements:</p><p>(1)  During the period of time
+that the job order is being circulated for clearance by the SWA, the
+advertisement must appear on two separate days (may be consecutive) in a
+newspaper of general circulation serving the area of intended employment. The
+newspaper must have a reasonable distribution and be appropriate to the
+occupation and the workers likely to apply for the job opportunity.</p><p>(2)  One of the advertisements
+must be a Sunday advertisement unless the job opportunity is located in a rural
+area that does not have a newspaper with a Sunday edition; in such a case the
+H-2B employer must, in place of a Sunday edition advertisement, advertise in
+the regularly published daily edition with the widest circulation in the area
+of intended employment.</p><p>(3)  If a professional,
+trade, or ethnic publication is more appropriate than a general circulation
+newspaper for the occupation or the type of workers likely to apply for the job,
+and it is the source most likely to bring responses from able, available, and
+qualified U.S. workers, the H‑2B employer may use a professional, trade, or
+ethnic publication in place of one of the newspaper advertisements, but may not
+to replace the Sunday advertisement.</p><p>See 20 CFR 655.15 and 655.17</p><p>(e)   Union. If the
+employer is party to a Collective Bargaining Agreement (CBA) governing the job
+classification, the employer must formally contact the local union as a
+recruitment source for able, willing, qualified, and available U.S. workers. This
+contact may be made by U.S. mail or other effective means during the period of
+time that the job order is being circulated for clearance by the SWA. See 20 CFR
+655.15(g).</p><p>(f)   Layoffs. If the
+H-2B employer has laid off U.S. workers in the occupation and area of intended
+employment within 120 days of the first date an H‑2B worker is needed as
+indicated on the Application for Temporary Employment Certification, the
+employer must document that it has notified or will notify each laid-off worker
+of the job opportunity and that it has considered or will consider each laid off
+worker who expressed interest in the job opportunity, and the result of the
+notification and consideration. See 20 CFR 655.15(h).</p><p>(g)   Recruitment
+Report. Per guidelines specified in 20 CFR 655.15(j) the H-2B employer must
+prepare, sign, and date a written recruitment report. The recruitment report
+must be submitted to the NPC with the Application for Temporary Employment
+Certification application.</p><p>(h)  Recruitment Records.
+The employer filing the Application must maintain documentation of its
+advertising and recruitment efforts for a period of no less than three years
+from the date of the certification or from the date of determination if the
+Application for Temporary Employment Certification is denied or withdrawn.
+Documentation includes:</p><p>(1)  A copy of the
+recruitment report,</p><p>(2)  Prevailing wage
+documentation,</p><p>(3)  Resumes of and
+evidence of contact with each U.S. worker who applied or was referred to the
+job opportunity,</p><p>(4)  Dated logs
+demonstrating that the labor union was contacted and notified of the position
+openings and whether it referred qualified U.S. workers, the number of
+referrals (if any) or whether the union was non-responsive to the notification,
+and</p><p>(5)  Copies of newspaper
+pages, tear sheets of the publication pages, or other proof containing the full
+text and dates of the advertisements. </p>
+        
+            <a href="#">Back to top</a><div id="46b03"></div>
+            <h3>46b03  Employer obligations - Application for Temporary Employment Certification
+information.</h3>
+            <p>(a)   The employer
+and, where applicable, the employer's attorney/agent attest by signature that they
+will abide by the terms, assurances, and obligations in accordance with the
+Regulations as a condition of Application for Temporary Employment
+Certification approval.</p><p>(b)   The employer
+attests by its signature in Appendix B.1 that it has reviewed the Application
+for Temporary Employment Certification and that the information contained is
+true and accurate.</p><p>(c)   The following
+information is included on the ETA Form 9142 - Application for Temporary
+Employment Certification and must be accurately stated by the employer:</p><p>(1)  Temporary need
+information including job title, SOC job code/title, full time indication,
+begin/end dates of intended employment, total positions requested, basis for
+visa classification, nature of temporary need, and statement of need,</p><p>(2)  Employer information
+including legal name, trade name, address, phone, EIN, NAICS code, type of
+application,</p><p>(3)  Employer point of
+contact information,</p><p>(4)  Attorney or agent
+information,</p><p>(5)  Job offer information
+including job title, work hours and schedule, supervisory responsibilities and
+job duties,</p><p>(6)  Job offer information
+including job requirements such as education, training, experience, and special
+requirements,</p><p>(7)  Place of employment
+information including addresses and specific geographic area,</p><p>(8)  Rate of pay including
+basic and overtime rate, pay schedule, piece rate information, and additional
+wage information, and</p><p>(9)  Recruitment
+information including SWA identity, SWA job order number and dates,
+advertisement information, and additional recruitment information.</p>
+        
+            <a href="#">Back to top</a><div id="46b04"></div>
+            <h3>46b04 - Employer obligations - Application for Temporary Employment
+Certification Appendix B.1.</h3>
+            <p>An employer seeking to
+employ H-2B workers declares by its signature on the Application for Temporary
+Employment Certification that it will meet the conditions of employment in
+Appendix B.1.</p><p>(a)   The job opportunity
+must:</p><p>(1)  Be a bona fide,
+full-time temporary position with qualifications that are consistent with normal
+and accepted qualifications required by non-H‑2B employers in the same or comparable
+occupations. See 20 CFR 655.22(h)</p><p>(2)  Not be vacant due to
+a strike, lockout, or work stoppage in the course of a labor dispute. See 20 CFR
+655.22(b).</p><p>(3)  Be open to any
+qualified U.S. worker regardless of race, color, national origin, age, sex,
+religion, handicap, or citizenship, and the employer has conducted the required
+recruitment, contacted the union and retained records of any U.S. applicant(s)
+and the disposition of the application(s). See 20 CFR 655.22(c) and Appendix B
+- Conditions 1-3.</p><p>(b)   The job offer
+must:</p><p>(1)  Include terms and
+working conditions normal to U.S. workers similarly employed in the area of
+intended employment and no less favorable than those offered to H-2B workers
+and not less than the minimum required terms and conditions. See 20 CFR
+655.22(a).</p><p>(2)  Include an offered
+wage that equals or exceeds the highest of the prevailing wage, the applicable federal,
+state, or local minimum wage, and the employer must pay the offered wage during
+the entire period of the approved Application for Temporary Employment
+Certification. See 20 CFR 655.22(e).</p><p>(3)  Not be based on
+commissions, bonuses, or other incentives, unless the employer guarantees a
+wage paid on a weekly, bi-weekly, or monthly basis that equals or exceeds the prevailing
+wage or the legal federal, state, or local minimum wage, whichever is highest. See
+20 CFR 655.22(g)(1).</p><p>(4)  Specify all
+deductions not required by law. See 20 CFR 655.22(g)(1) and Appendix B.1 -
+Conditions 4-6.</p><p>(c)   Compliance with
+other laws. The employer must comply with applicable federal, state, and local
+employment-related laws and regulations, including employment-related health
+and safety laws. See 20 CFR 655.22(d) and Appendix B.1 - Condition 7.</p><p>(d)   Layoffs. The
+employer is prohibited, with certain exceptions, from laying off any similarly
+employed U.S. workers in the occupation that is the subject of the Application
+for Temporary Employment Certification in the area of intended employment
+beginning 120 calendar days before the date of requested need of the first H-2B
+workers through 120 calendar days after the date of need. Layoffs are permitted
+where the H-2B employer has offered the job to the laid-off U.S. workers and
+the U.S. workers refused the job or the U.S. worker was rejected for the job for
+lawful, job-related reasons. See 20 CFR § 655.22(i) and Appendix B.1 -
+Condition 8.</p><p>(e)   Fee Recovery.</p><p>(1)  The H-2B employer and
+its attorney or agents are prohibited from receiving payment of any kind from an
+employee for any activity related to obtaining the Application for Temporary
+Employment Certification, including payment of the H-2B employer’s attorney or
+agent fees, any fees related to the Application for Temporary Employment
+Certification, or recruitment costs. Payments include, but are not limited to,
+monetary payments, deductions from wages, salary or benefits, kickbacks,
+bribes, and free labor See 20 CFR 655.22(j) and Appendix B.1 - Condition 9.</p><p>(2)  FLSA covered employer
+with H-2B workers who are not exempt from the FLSA are also responsible for
+paying these H-2B workers’ visa fees to the extent that the fees would bring
+the worker below the minimum wage. See FOH 46c02.</p><p>(f)   Separation from
+Employment Notifications.</p><p>(1)  Upon the separation
+from employment of any H-2B workers employed under the Application for
+Temporary Employment Certification prior to the end date of the employment
+specified in the Application for Temporary Employment Certification, the H-2B
+employer must notify ETA and USCIS in writing of the separation from employment
+not later than two work days after separation is discovered. See 20 CFR
+655.22(f).</p><p>(2)  If an H-2B worker is
+dismissed by the H-2B employer prior to the end of the period, the H-2B
+employer is liable for return transportation.  If the H-2B employer is required,
+as a part of the pilot program referenced in § 655.35, it must inform the H-2B
+worker of the requirement to leave the United States at the end of the
+authorized period of stay or separation from the employer, whichever is earlier,
+unless the H‑2B worker will be sponsored by another subsequent employer.  See 8
+USC 1184(c)(5); 8 CFR 214.2(h)(6)(vi)(E); 20 CFR 655.22(m); and Appendix B.1 -
+Conditions 10-11.</p><p>(g)   Area of
+Intended Employment.</p><p>(1)  The employer will not
+place any H-2B workers employed pursuant to the Application for Temporary
+Employment Certification outside the area of intended employment listed on the Application
+for Temporary Employment Certification unless the employer has obtained a new Application
+from ETA. See 20 CFR 655.22(l) and Appendix B.1 - Condition 12.</p><p>(2)  “Area of intended
+employment” means the geographic area within normal commuting distance of the
+place (worksite address) of intended employment of the job opportunity for
+which the certification is sought. See 20 CFR § 655.4.</p><p>a.     An H-2B
+worker may have more than one worksite during a certified period of employment.</p><p>1.     Multiple
+worksites. Employers may not include more than one area of intended
+employment on a single 9142, with the exception of itinerant reforestation and
+entertainment employers, which are covered by ETA special procedures that are
+explained below.  If the employer has multiple worksites within a single area
+of intended employment, the workers may be employed at any of the worksites
+provided the job duties are identical and the employer has listed all of the
+worksites on the 9142 in section F Job Offer Information, subsection c Place of
+Employment. The employer must provide enough geographic detail to cover all the
+intended worksites.</p><p>2.     Itineraries. 
+Employers in the reforestation and entertainment industries have been granted
+special procedures by ETA per 20 CFR 655.3 permitting them to place H-2B
+workers in multiple areas of intended employment, based on a multi-state
+itinerary. See Training and Employment Guidance Letters No. 31-05 (issued May
+31, 2006) and No. 27-06 (issued June 12, 2007). Employers who will work H-2B
+workers on an itinerary must attach the itinerary to the 9142.  The
+employer must list all of the work locations and the duration of work at each
+location.  ETA requires the employer to recruit only in one area of
+intended employment, typically the area where the work begins. The employer is
+required to pay the appropriate prevailing wage at each work location as
+identified on the ETA 9141, Application for Prevailing Wage Determination.</p><p>b.     An
+employer cannot apply for H-2B workers for a job opportunity at a worksite and
+in an occupation in which U.S. workers are on strike or locked out. See 20 CFR
+655.22(b) and Appendix B - Condition 2.</p><p>(h)  Temporary Need. The
+H-2B employer must accurately state the dates of temporary need, reasons for
+temporary need, and number of positions being requested for labor certification.
+See 20 CFR 655.22(n) and Appendix B.1 - Condition 13.</p><p>(i)    Secondary
+Displacement. An H-2B employer that is a job contractor is prohibited from
+placing an H-2B worker at a worksite of a secondary/other employer unless:</p><p>(1)  The H-2B employer
+makes a written, bona fide inquiry as to whether the secondary/other employer
+has displaced or intends to displace any similarly employed U.S. workers within
+the area of intended employment beginning 120 days before through 120 calendar
+days after the date of need. The H-2B job contractor employer must secure a
+written confirmation from such secondary/other employer that the employer has
+not displaced and does not intend to displace any similarly employed U.S.
+workers within the area of intended employment, and</p><p>(2)  All worksites where
+H-2B workers will be placed are listed on the Application for Temporary
+Employment Certification. See 20 CFR 655.22(k) and Appendix B.1 - Condition 14.</p>
+        
+            <a href="#">Back to top</a><div id="46c00"></div>
+            <h3>46c00 - Required/offered wage rate.</h3>
+            <p>(a)   The H-2B
+employer is required to pay at least the highest of the prevailing wage, federal,
+state, or local minimum wages. See 20 CFR 655.22(e). The offered wage listed on
+the Application for Temporary Employment Certification must meet this
+requirement, and the offered wage (including any offered overtime wage rate) must
+be paid to H-2B workers and similarly employed U.S. workers who were hired
+during the 10 day recruitment period. See FOH 46b04(b).  Additionally, if an
+employer does not comply with 20 CFR § 655.22(n) and willfully places workers
+outside the area of intended employment or in occupations not certified on the ETA
+Form 9142, the employer is still obligated to pay the higher of the rate listed
+on the 9142 or the prevailing wage in the location or occupation where the
+employee is actually working.</p><p>(b)   Satisfaction of
+wage obligation. Except as discussed below, the H-2B worker must be paid
+his/her wages, free and clear, when due at the end of the pay period in which
+the hours of work are performed.</p><p>(c)   Facilities
+furnished to H-2B workers.</p><p>(1)  Deductions must be
+specified in the H-2B job offer, and all deductions must be reasonable.</p><p>(2)  An employer may take
+a “wage credit” (i.e., may reduce or make a deduction from the cash payment of
+the required/offered wage) for facilities that are primarily for the benefit of
+the H-2B worker.</p><p>(3)  Housing and food allowances
+are generally considered to be for the primary benefit of the worker.</p><p>(4)  The wage credit
+(deduction) for facilities cannot exceed the fair market value or the actual
+cost to the employer of the facility (whichever is lower) and must be
+documented by the H-2B employer. See 29 CFR Part 531.</p>
+        
+            <a href="#">Back to top</a><div id="46c01"></div>
+            <h3>46c01 - Deductions.</h3>
+            <p>(a)   “Deduction”
+means any amount by which the H-2B worker’s cash wages are decreased. A
+deduction may be shown on the payroll records, marked as a deduction or a wage
+credit (e.g., FICA, housing). However, a deduction will also be considered to
+exist where the H-2B worker’s cash wages have been decreased through
+out-of-pocket expenditures made by the H-2B worker for business expenses of the
+H-2B employer incurred in obtaining the worker's H-2B status. Such expenses
+include:</p><p>(1)  Attorney's or agent's
+fees incurred for any activity related to the Application for Temporary
+Employment Certification or petition filing.</p><p>(2)  Recruitment costs,
+including the cost of advertising or payment to a foreign or domestic
+recruitment service.</p><p>(3)  A discussion of the
+FLSA’s impact on visa fees and inbound and outbound transportation for H-2B
+workers is set forth in FOH 46c01(f) and 46c02.</p><p>(b)   A wage
+violation will exist where a deduction causes the cash wage to fall below the
+required wage, unless the deduction is made in accordance with the H-2B
+regulations. If the H-2B worker receives the required wage despite the
+deduction, there is no violation.</p><p>(c)   The employer
+must make all deductions from the worker's wages that are required by law (e.g.,
+income tax and FICA).</p><p>(d)   The H-2B
+employer may make deductions not required by law if such deductions:</p><p>(1)  Are specified in the
+job offer,</p><p>(2)  Are reasonable (the
+employer may not profit from the deduction), and</p><p>(3)  Do not violate federal,
+state, or local law.</p><p>(e)   Fees paid to
+USCIS when filing a Petition for Nonimmigrant Worker (Form I-129) may not be
+deducted to the extent they reduce the worker's wages to below the required
+wage. Such fees include:</p><p>(1)  A basic filing fee of
+$320.00,</p><p>(2)  An additional premium
+processing fee of $1,000.00 if expedited processing is requested, and</p><p>(3)  A “fraud prevention
+and detection fee” of $150.00 mandated by the Save Our Small and Seasonal
+Business Act of 2005 (SOBA) to be paid by all H-2B petitioning employers.</p><p>(f)   The statute
+requires that the employer pay the reasonable cost of the H-2B's return
+transportation to his/her last place of residence abroad if the employer
+terminates the worker prior to the end of the approved status. See 8 USC
+1184(c)(5).</p>
+        
+            <a href="#">Back to top</a><div id="46c02"></div>
+            <h3>46c02 - Effect of the FLSA.</h3>
+            <p>(a)   The H-2B
+regulations allow employers to receive reimbursement for certain specific
+costs, including government required passport and visa fees. Under the FLSA,
+visa fees are an employer business expense. Consequently, H-2B employers that
+are covered under the FLSA may not make deductions that would bring the
+employee below the FLSA minimum wage. See 20 CFR 655.22(g), see also Field
+Assistance Bulletin 2009-2 available at:  http://www.dol.gov/whd/FieldBulletins/FieldAssistanceBulletin2009_2.htm</p><p>(b)   FLSA Minimum
+Wage.  Under the FLSA, the employer is liable for the inbound transportation of
+the H-2B worker and the outbound transportation when the worker's H-2B status
+has ended. If failure to pay such transportation costs results in a failure to
+pay the FLSA minimum wage in a non-overtime initial or terminal workweek or the
+regular rate in an overtime workweek, there is an FLSA wage violation for the
+affected initial or terminal workweek(s). See Field Assistance Bulletin 2009-2.</p><p>(c)   FLSA Overtime
+(OT) Pay. Where the FLSA OT requirement is applicable, the 40-hour workweek/time-and-one-half
+standard will be used to determine whether the worker has been properly paid. Premium
+pay is based on the H-2B employee's regular rate of pay, which can be no less
+than the required/offered wage.</p>
+        
+            <a href="#">Back to top</a><div id="46d00"></div>
+            <h3>46d00 - Authority of WHD.</h3>
+            <p>Pursuant to the delegation
+of authority from the Secretary of Homeland Security to the Secretary of Labor,
+the WHD will, either pursuant to a complaint or otherwise, conduct
+investigations to determine compliance with the H-2B requirements. In
+connection with such investigations, WHD may enter any places, inspect any
+records (and make transcriptions and copies thereof), question persons, and
+gather any information deemed necessary to determine the status of compliance. See
+20 CFR 655.50(a) &amp; (b).</p>
+        
+            <a href="#">Back to top</a><div id="46d01"></div>
+            <h3>46d01 - Employer cooperation.</h3>
+            <p>An employer shall, at all
+times, cooperate in administrative and enforcement proceedings. See 20 CFR
+655.50(c). </p><p>(a)   An employer
+being investigated shall make available to the WHI: records, information,
+persons and places as deemed appropriate to copy, transcribe, question, or
+inspect.</p><p>(b)   Where the
+records are maintained at the central recordkeeping office, other than the
+place or places of employment, such records must be made available for
+inspection and copying within 72 hours following notice from the WHI.</p><p>(c)   H-2B employers
+are required to develop and maintain certain employment records to support
+their compliance with the attestations made on the Application for Temporary
+Employment Certification. These records include those specifically required by
+the H-2B program as well as those required by the FLSA for covered employers,
+including the following:</p><p>(1)  Temporary need. See 20
+CFR 655.6(e).</p><p>(2)  Determination of the
+prevailing wage. See 20 CFR 655.10(i).</p><p>(3)  Pre-filing
+recruitment, including newspaper advertisements. See 20 CFR 655.1.</p><p>(4)  Recruitment report
+and evidence of U.S. worker referrals. See 20 CFR 655.16(j).</p><p>(5)  Supporting evidence
+for temporary need. See 20 CFR 655.21(c).</p><p>These records must be kept
+for a period of no less than three years from the date of certification or from
+the date of determination if the Application for Temporary Employment
+Certification is denied or withdrawn, so they are available in the event they
+are requested in an ETA request for further information (RFI) or audit, or a
+WHD investigation.</p><p>(d)   No employer or
+representative or agent of an employer shall interfere with any official of DOL
+who is performing an investigation, inspection, or law enforcement function.
+Any such interference shall be a violation of the Application for Temporary
+Employment Certification and regulations. See 20 CFR 655.50(c).</p><p>(e)   The WHD shall,
+to the extent possible under existing law, protect the confidentiality of any
+person who provides information in the course of an investigation. See 20 CFR 655.50(d).
+</p>
+        
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <script src="/assets/bower_components/lunr.js/lunr.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

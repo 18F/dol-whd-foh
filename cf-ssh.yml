@@ -1,0 +1,14 @@
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  command: curl https://18f-tmate-bootstrap.s3.amazonaws.com/tmate-debug-init.sh |
+    sh
+  directory: visible
+  domain: 18f.gov
+  env:
+    FORCE_HTTPS: true
+  hostname: dol-foh-mvp
+  instances: 1
+  memory: 64M
+  name: dol-foh-mvp-ssh
+  no-route: true
+  path: _site
