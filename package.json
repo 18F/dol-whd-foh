@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node run.js",
     "convert": "node build/convert.js",
-    "test": "tape tests/**/*.js"
+    "test": "tape tests/**/*.js",
+    "build": "node src/build.js",
+    "make": "node src/make.js"
   },
   "main": "run.js",
   "dependencies": {
