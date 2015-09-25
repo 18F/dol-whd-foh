@@ -6,7 +6,7 @@ var _ = require('lodash');
 var cheerio = require('cheerio');
 var Citation = require('citation');
 
-html = fs.readdirSync('html');
+html = fs.readdirSync(__dirname + '/html');
 var titles = [];
 
 function cleanTitle(title) {
@@ -19,7 +19,7 @@ function cleanTitle(title) {
 
 // Main function
 _.forEach(html, function (h) {
-    var content = fs.readFileSync('html/' + h, encoding="utf-8");
+    var content = fs.readFileSync(__dirname + '/html/' + h, encoding="utf-8");
     var title = getTitle(content);
     content = convertChapter(content);
     c = Citation.find(content, {
@@ -36,11 +36,11 @@ _.forEach(html, function (h) {
         }
     });
     titles.push({src: h, heading: title, content: c.text});
-    res = swig.renderFile('template/chapter.html', {
+    res = swig.renderFile(__dirname + '/template/chapter.html', {
         content: c.text,
         title: title
     });
-    fs.writeFileSync('../_site/chapters/' + h, res);
+    fs.writeFileSync(__dirname + '/../_site/chapters/' + h, res);
 });
 
 // Helper function
@@ -65,10 +65,10 @@ function convertChapter(html) {
 }
 
 // Generate the TOC
-toc = swig.renderFile('template/toc.html', {
+toc = swig.renderFile(__dirname + '/template/toc.html', {
     chapters: titles,
 });
-fs.writeFileSync('../_site/index.html', toc);
+fs.writeFileSync(__dirname + '/../_site/index.html', toc);
 
 
 // Load to elasticsearch
