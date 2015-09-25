@@ -38,9 +38,12 @@
             {% endfor %}
         </ul>
         {% for section in page.sections %}
-            <a href="#">Back to top</a><div id="{{section.section}}"></div>
-            <h3>{{section.section_title}}</h3>
-            {{section.html}}
+            <div id="{{section.section}}">
+              <h3>{{section.section_title}}</h3>
+              {{section.html}}
+            </div>
+            <a href="#">Back to top</a> |
+            <button data-section={{section.section}} class="print_section">Print this section</button>
         {% endfor %}
     </div>
 </div>
