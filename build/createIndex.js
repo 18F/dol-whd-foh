@@ -27,12 +27,12 @@ function loadToIndex(d) {
   f = fs.readFileSync('data/sections/' + d, 'utf8');
   data = JSON.parse(f);
   var doc = {
-    'title': data["title"],
+    'title': data["section_title"],
     'body': data["text"],
     'ref': data["section"]
   };
   store[data.section] = {
-    'title': data["title"]
+    'title': data["section_title"]
   };
   searchIndex.add(doc);
   return true
