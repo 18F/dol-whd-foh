@@ -24,10 +24,6 @@ function getSectionsFromChapter(chapter){
 
       var sectionPattern = /^\s?\d+[a-zA-Z]\d+/
       
-      // STILL A WIP: THE TITLES ARE _WRONG_
-      var toc = genTOC($("div[class=WordSection1]").children().text())
-      fs.writeFileSync('data/toc/' + chapter + '.json', JSON.stringify(toc,null,2))
-
       $("div[class=WordSection1]").remove();  //Eliminate the Table of Contents from the DOM
       
 
@@ -82,24 +78,6 @@ function getSectionsFromChapter(chapter){
 function cleanHTML(html){
   return sanitizeHtml(html);
 }
-
-
-/**
- * This function cleans HTML from wacky tags.
- * @param {html} The dirty HTML string.
- * @returns {html} A cleaned-up HTML string.
- */
-function genTOC(toc){
-  toc = toc.replace(/\n/g, ' ').replace(/·/g,'')
-  subchapterPattern = /(\d{1,2}[A-Za-z] -.*?)(?=\d{1,2}[A-Za-z] .*?)/g
-  sectionsPattern = /(\d{1,2}[A-Za-z]\d{1,2}.*?)(?=\d{1,2}[A-Za-z]\d{1,2}.*?)/g
-  var subs = toc.split(subchapterPattern);
-  var res = subs.map(function (d){return d.split(sectionsPattern).map(function (d){return d.trim()}).filter(function (d){return d != ''})}).filter(function (d){return d != ''})
-  var chapter = res[0].pop(0).replace(" Table of Contents","")
-  var subchapters = res.map(function (d){var subchapter = d.shift();return {subchapter: subchapter, sections: d}})
-  return {chapter: chapter, results: subchapters}
-}
-
 
 /**
  * This is the main function.
