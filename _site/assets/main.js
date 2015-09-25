@@ -19,6 +19,7 @@ data.then(function(d) {
  * @return {results} an array of results 
  */
 function search(query, chapter) {
+  console.log(index.search(query))
   var results = index.search(query).filter(function (d){
     return (chapter ? d.ref.slice(0,2) == chapter.toString() : true)
   });
@@ -36,9 +37,9 @@ function mapResultsToStore(results) {
 }
 
 // Bind search to the searchbox... 
-//$("#searchbox").keyup(function (e){
+// $("#searchbox").keyup(function (e){
 //  console.log(search($("#searchbox").val()))
-//})
+// })
 
 $("#searchForm").submit(function (event){
   event.preventDefault();

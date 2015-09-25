@@ -12,7 +12,7 @@ function getSectionsFromChapter(chapter){
   var toc = []
 
   // Read the Chapter file
-  var content = fs.readFileSync('../src/nativehtml/' + f, 'utf8');
+  var content = fs.readFileSync('src/nativehtml/' + f, 'utf8');
   console.log('parsing: ' + f)
   // Load the file into a DOM and let jquery work its magic...
   jsdom.env(
@@ -26,7 +26,7 @@ function getSectionsFromChapter(chapter){
       
       // STILL A WIP: THE TITLES ARE _WRONG_
       var toc = genTOC($("div[class=WordSection1]").children().text())
-      fs.writeFileSync('../data/toc/' + chapter + '.json', JSON.stringify(toc,null,2))
+      fs.writeFileSync('data/toc/' + chapter + '.json', JSON.stringify(toc,null,2))
 
       $("div[class=WordSection1]").remove();  //Eliminate the Table of Contents from the DOM
       
@@ -64,7 +64,7 @@ function getSectionsFromChapter(chapter){
           // Add all of the data into an object for file write
         results = {section: sectionName, chapter: chapter.replace('.htm',''), section_title: $(this).text().trim(), text: text.trim(), html: cleanHTML(html)}
 
-        fs.writeFileSync('../data/sections/' + sectionName + '.json', JSON.stringify(results, null, 2), encoding="utf8")
+        fs.writeFileSync('data/sections/' + sectionName + '.json', JSON.stringify(results, null, 2), encoding="utf8")
           // Write to file
         return results;
       })
@@ -106,8 +106,8 @@ function genTOC(toc){
  */
 
 function init(){
-  var html = fs.readdirSync('../src/nativehtml/').filter(function (filename) {
-   return fs.statSync('../src/nativehtml/' + filename).isFile();
+  var html = fs.readdirSync('src/nativehtml/').filter(function (filename) {
+   return fs.statSync('src/nativehtml/' + filename).isFile();
   })
   html.map(function(e, i, a){
     return getSectionsFromChapter(e.replace('.htm',''))
