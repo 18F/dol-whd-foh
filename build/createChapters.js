@@ -8,11 +8,11 @@ var _ = require('lodash');  // Alan made me do it.
 //var foh = [];
 
 function init(){
-  var sections = fs.readdirSync('../data/sections/').filter(function (filename) {
-   return fs.statSync('../data/sections/' + filename).isFile();
+  var sections = fs.readdirSync('data/sections/').filter(function (filename) {
+   return fs.statSync('data/sections/' + filename).isFile();
   })
   sections = sections.map(function(e, i, a){
-    d = JSON.parse(fs.readFileSync('../data/sections/' + e, 'utf8'));
+    d = JSON.parse(fs.readFileSync('data/sections/' + e, 'utf8'));
     return d;
   });
 
@@ -29,7 +29,7 @@ function init(){
     };
   });
 
-  fs.writeFileSync('../data/master.json', JSON.stringify(foh, indent=2))
+  fs.writeFileSync('data/master.json', JSON.stringify(foh, indent=2))
 }
 
 // getSectionsFromChapter('24')

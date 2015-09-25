@@ -13,6 +13,8 @@
     "swig": "^1.4.2"
   },
   "scripts": {
-    "build:convert": "node build/convert.js"
+    "build:convert": "node build/convert.js",
+    "build:index": "node build/createChapters.js && node build/createIndex.js",
+    "build": "npm run build:convert && npm run build:index"
   }
 }
