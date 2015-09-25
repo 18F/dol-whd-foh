@@ -30,3 +30,25 @@ page_gen:
     template: 'chapter'
     name: 'chapter'
     dir: 'chapters'
+    
+chapters:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 30
+  - 31
+  - 32
+  - 33
+  - 36
+  - 39
+  - 46
