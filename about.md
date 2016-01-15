@@ -2,4 +2,4 @@
 layout: main
 ---
 
-# Welcome to FOH
+# About FOH

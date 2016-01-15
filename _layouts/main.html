@@ -23,7 +23,7 @@
             <div class="panel-body">
                 <ul class="list-group">
                     {% for chapter in site.data.toc %}
-                    <a href="/chapters/{{chapter[0]}}" class="list-group-item">{{ chapter[1].chapter | upcase  }}
+                    <a href="{{site.baseurl}}/chapters/{{chapter[0]}}" class="list-group-item">{{ chapter[1].chapter | upcase  }}
                     </a> {% endfor %}
                 </ul>
             </div>

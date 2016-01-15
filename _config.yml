@@ -1,4 +1,5 @@
 name: DOL/WHD FOH
+baseurl: "/dol-whd-foh"
 markdown: kramdown
 
 data_source: data

@@ -24,7 +24,7 @@
                     {% assign chunks = page.url | split:'/' %}
                     {% assign currentPage = chunks[2] %}
                     {% for chapter in site.data.toc %} 
-                    <a href="/chapters/{{chapter[0]}}" class="list-group-item {% if chapter[0] == chunks[2] %} active {% endif %}">{{ chapter[1].chapter | upcase }}
+                    <a href="{{site.baseurl}}/chapters/{{chapter[0]}}" class="list-group-item {% if chapter[0] == chunks[2] %} active {% endif %}">{{ chapter[1].chapter | upcase }}
                     </a> {% endfor %}
                 </ul>
             </div>
@@ -48,7 +48,7 @@
         <h2>Chapter {{ page.chapter }} <small>(<a href="{{site.baseurl}}/chapters/{{prevChapter}}">Previous Chapter</a> | <a href="{{site.baseurl}}/chapters/{{nextChapter}}">Next Chapter</a>)</small></h2>
         <ul>
             {% for section in page.sections %}
-            <li><a href="{{site.baseurl}}/chapters/{{chunks[2]}}#{{section.section}}">{{section.section_title}}</a></li>
+            <li><a href="#{{section.section}}">{{section.section_title}}</a></li>
             {% endfor %}
         </ul>
         {% for section in page.sections %}
